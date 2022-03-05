@@ -28,6 +28,8 @@ public class GameManager : MonoBehaviour
         village = GetComponent<Village>();
         salleDattente = GetComponent<SalleDattente>();
 
+        village.UpdateVillage();
+
         DébutDeJournée();
     }
 
@@ -57,7 +59,7 @@ public class GameManager : MonoBehaviour
 
     public void FinConsultation()
     {
-        patientActuel.GetComponent<Animator>().SetTrigger("Sortie");
+        patient.GetComponent<Animator>().SetTrigger("Sortie");
 
         // Crée une fiche de prescription vierge
         Destroy(prescription);
@@ -80,7 +82,8 @@ public class GameManager : MonoBehaviour
 
         patient.villageois = salleDattente.salleDattente[0];
         patient.AssignerPatient();
-        
+        patient.GetComponent<Animator>().SetTrigger("Entrée");
+
         Informations();
 
         FindObjectOfType<DialogueTrigger>().TriggerDialogue(patient);

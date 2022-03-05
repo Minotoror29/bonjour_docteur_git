@@ -11,4 +11,9 @@ public class Villageois : ScriptableObject
     public int age;
 
     public Dialogue dialogue;
+
+    public void Condition()
+    {
+        Debug.Log("coucou");
+    }
 }
