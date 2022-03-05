@@ -16,7 +16,7 @@ public class DialogueManager : MonoBehaviour
     int ligneIndex = 0;
     public int dialogueIndex = 0;
     Phrase[] dialogueActuel;
-    Patient patientActuel;
+    public PatientObject patient;
 
     private void Start()
     {
@@ -26,9 +26,9 @@ public class DialogueManager : MonoBehaviour
         types = new Queue<TypeLigne>();
     }
 
-    public void StartDialogue(Patient patient)
+    public void StartDialogue(PatientObject patient)
     {
-        patientActuel = patient;
+        this.patient = patient;
 
         ContinueDialogue(1);
     }
@@ -40,15 +40,15 @@ public class DialogueManager : MonoBehaviour
         // Détermine à quelle partie du dialogue on est
         if (this.dialogueIndex == 1)
         {
-            dialogueActuel = patientActuel.Introduction();
+            dialogueActuel = patient.Introduction();
         }
         else if (this.dialogueIndex == 2)
         {
-            dialogueActuel = patientActuel.Symptomes();
+            dialogueActuel = patient.Symptomes();
         }
         else if (this.dialogueIndex == 3)
         {
-            dialogueActuel = patientActuel.Conclusion();
+            dialogueActuel = patient.Conclusion();
         }
 
         phrases.Clear();

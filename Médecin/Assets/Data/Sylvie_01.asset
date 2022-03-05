@@ -1,0 +1,97 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf4e5973660b105478e4a2e29709d926, type: 3}
+  m_Name: Sylvie_01
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: a2a7ff841d51d2a49b4c9d53b6622abd, type: 3}
+  nom: 1
+  maladie: 1
+  age: 9
+  dialogue:
+    introduction:
+    - type: 0
+      phrase: 'Bonjour madame docteur ! '
+    - type: 1
+      phrase: "Bonjour... Sylvie, tu as quel \xE2ge ?"
+    - type: 0
+      phrase: "9 ans et demi ! Je savais pas qu'il y avait d'autres docteurs que
+        le monsieur. Est-ce que tu es all\xE9e \xE0 l'\xE9cole pour pouvoir donner
+        des m\xE9dicaments et tout ?"
+    - type: 1
+      phrase: "Oui, je viens de sortir d'\xE9cole de m\xE9decine."
+    - type: 0
+      phrase: "Tu viens de sortir de l'\xE9cole ! Mais tu es vieille ! Tu dois avoir
+        au moins 15 ans, par l\xE0."
+    - type: 1
+      phrase: "Un peu plus ! Toi aussi tu aimerais \xEAtre m\xE9decin ?"
+    - type: 0
+      phrase: "Euh nan les maladies c'est un peu trop d\xE9go\xFBtant, \xE0 chaque
+        fois je dirais berk. Moi ce que je veux c'est aller dans l'espace, mais ma
+        maman dit que c'est les gar\xE7ons qui ont le droit."
+    - type: 1
+      phrase: "Tu sais, moi aussi on m'a dit que seulement les gar\xE7ons pouvaient
+        \xEAtre m\xE9decin."
+    - type: 0
+      phrase: "Ah bon mais c'est pas pareil, l'espace c'est super loin et il faut
+        \xEAtre trop fort pour y aller et avoir des bonnes notes aussi et savoir
+        plein de trucs. Et aussi ils sont jamais malades, m\xEAme dans le truc qui
+        tourne."
+    - type: 1
+      phrase: Tu es souvent malade ?
+    - type: 0
+      phrase: "Des fois un peu, c'est nul. Mais \xE7a passe, c'est pas grave comme
+        Bruno."
+    - type: 1
+      phrase: Bruno ?
+    - type: 0
+      phrase: "Avant je jouais tout le temps avec lui mais plus depuis qu'il tousse
+        et qu'il est fatigu\xE9 et qu'on sait pas ce qu'il a."
+    - type: 1
+      phrase: "Quand tu seras gu\xE9rie, tu pourras dire \xE0 Bruno de venir me voir
+        ?"
+    - type: 0
+      phrase: Tu peux l'aider ? Oh super ! Mais je viendrais avec lui, il peut pas
+        venir tout seul !
+    - type: 1
+      phrase: "Tr\xE8s bien. N'oublie pas surtout, c'est important. Revenons-en \xE0
+        toi..."
+    symptomes:
+    - type: 1
+      phrase: Tu viens pour quoi aujourd'hui ?
+    - type: 0
+      phrase: "En fait je tousse depuis euh... Lundi je crois et au d\xE9but \xE7a
+        allait mais maintenant \xE7a fait mal \xE0 la gorge."
+    - type: 1
+      phrase: "Est-ce que tu as d'autres probl\xE8mes ?"
+    - type: 0
+      phrase: "J'\xE9tais malade et alors maman m'a pris la temp\xE9rature et j'avais
+        beaucoup de fi\xE8vre."
+    - type: 1
+      phrase: "\xC0 part la toux et la fi\xE8vre, est-ce que tu as mal quelque part
+        ?"
+    - type: 0
+      phrase: "Alors j'ai mal l\xE0, \xE0 la t\xEAte, mais pas tout le temps, mais
+        des fois \xE7a fait mal."
+    - type: 1
+      phrase: D'accord merci.
+    conclusion:
+    - type: 0
+      phrase: Merci madame docteur, au revoir !
+    conclusion_2:
+    - type: 0
+      phrase: "Tu me donnes pas de m\xE9dicaments ? Le monsieur docteur a toujours
+        des pillules."
+    - type: 1
+      phrase: "Pour ce que tu as je pr\xE9f\xE8re attendre que \xE7a passe. \xC7a
+        va aller mieux, ne t'inqui\xE8te pas."
+    - type: 0
+      phrase: D'accord, merci madame docteur, au revoir !

@@ -8,4 +8,5 @@ public class Dialogue
     public Phrase[] introduction;
     public Phrase[] symptomes;
     public Phrase[] conclusion;
+    public Phrase[] conclusion_2;
 }

@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class Village : MonoBehaviour
 {
-    public List<GameObject> village;
+    public List<Villageois> village;
 }

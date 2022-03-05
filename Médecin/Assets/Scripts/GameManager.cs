@@ -10,8 +10,11 @@ public class GameManager : MonoBehaviour
     SalleDattente salleDattente;
 
     GameObject patientObject;
-    Patient patientScript;
+    PatientObject patientScript;
     GameObject patientActuel;
+
+    public PatientObject patient;
+
     [SerializeField] GameObject prescriptionPrefab;
     [SerializeField] GameObject prescription;
 
@@ -40,13 +43,13 @@ public class GameManager : MonoBehaviour
     // Remplit les informations du personnage sur la fiche de prescription à son arrivée
     void Informations()
     {
-        prescription.transform.Find("Canvas").Find("Patient").GetComponent<Text>().text = "Patient : " + patientScript.nom.ToString();
-        prescription.transform.Find("Canvas").Find("Âge").GetComponent<Text>().text = "Âge : " + patientScript.age.ToString();
+        prescription.transform.Find("Canvas").Find("Patient").GetComponent<Text>().text = "Patient : " + patient.nom.ToString();
+        prescription.transform.Find("Canvas").Find("Âge").GetComponent<Text>().text = "Âge : " + patient.age.ToString();
     }
 
     public void Prescrire()
     {
-        patientScript.Prescription(prescription.GetComponent<Prescription>().traitements);
+        patient.Prescription(prescription.GetComponent<Prescription>().traitements);
 
         if (dialogueManager.dialogueIndex < 3)
             dialogueManager.ContinueDialogue(3);
@@ -67,10 +70,7 @@ public class GameManager : MonoBehaviour
             Destroy(dialogueViewportContent.transform.GetChild(i).gameObject);
         }
 
-        salleDattente.salleDattente.Remove(patientObject);
-        patientObject = null;
-        patientScript = null;
-        
+        salleDattente.salleDattente.Remove(salleDattente.salleDattente[0]);
     }
 
     public void PatientSuivant()
@@ -78,14 +78,12 @@ public class GameManager : MonoBehaviour
         if (salleDattente.salleDattente.Count == 0)
             return;
 
-        patientObject = salleDattente.salleDattente[0];
-        patientScript = patientObject.GetComponent<Patient>();
-
-        patientActuel = Instantiate(patientObject);
-
+        patient.villageois = salleDattente.salleDattente[0];
+        patient.AssignerPatient();
+        
         Informations();
 
-        FindObjectOfType<DialogueTrigger>().TriggerDialogue(patientScript);
+        FindObjectOfType<DialogueTrigger>().TriggerDialogue(patient);
     }
 
     public void JourSuivant()

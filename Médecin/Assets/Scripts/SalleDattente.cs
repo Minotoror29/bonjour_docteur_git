@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class SalleDattente : MonoBehaviour
 {
-    public List<GameObject> salleDattente;
+    public List<Villageois> salleDattente;
 }

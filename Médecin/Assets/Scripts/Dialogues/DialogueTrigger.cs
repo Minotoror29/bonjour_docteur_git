@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DialogueTrigger : MonoBehaviour
 {
-    public void TriggerDialogue(Patient patient)
+    public void TriggerDialogue(PatientObject patient)
     {
         FindObjectOfType<DialogueManager>().StartDialogue(patient);
     }
