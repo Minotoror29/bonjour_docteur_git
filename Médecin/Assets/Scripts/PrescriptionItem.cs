@@ -10,7 +10,6 @@ public class PrescriptionItem : MonoBehaviour, IDropHandler
 
     public void OnDrop(PointerEventData eventData)
     {
-        Debug.Log("OnDrop");
         if (eventData.pointerDrag != null)
         {
             // Remplit l'information en drag & droppant un item dans un slot

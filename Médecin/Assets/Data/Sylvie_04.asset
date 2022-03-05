@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf4e5973660b105478e4a2e29709d926, type: 3}
+  m_Name: Sylvie_04
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: a2a7ff841d51d2a49b4c9d53b6622abd, type: 3}
+  nom: 1
+  maladie: 1
+  age: 9
+  dialogue:
+    introduction:
+    - type: 0
+      phrase: Bonjour madame docteur !
+    - type: 1
+      phrase: "Bonjour Sylvie. Je vois que tu as ramen\xE9 un chat ! C'est le tien
+        ?"
+    - type: 0
+      phrase: Oui !
+    - type: 1
+      phrase: "Il est tr\xE8s mignon.  J'esp\xE8re qu'il est sage."
+    - type: 0
+      phrase: "Oui il est tr\xE8s gentil et ne fait jamais pipi \xE0 l'int\xE9rieur,
+        sauf une fois ou deux."
+    - type: 1
+      phrase: "C'est bien, il est bien \xE9lev\xE9. Comment vas-tu Sylvie ?"
+    - type: 0
+      phrase: "\xC7a va !"
+    - type: 1
+      phrase: "Tu n'as plus de fi\xE8vre, de mal de t\xEAte ou de gorge ?"
+    - type: 0
+      phrase: Non non, je suis plus malade du tout, c'est chouette !
+    - type: 1
+      phrase: C'est une bonne nouvelle.
+    symptomes:
+    - type: 1
+      phrase: "Je t'avais dit de revenir avec Bruno, tu sais \xE0 quel moment je
+        pourrai le voir pour lui parler de ce qu'il a ?"
+    - type: 0
+      phrase: "Ben maintenant, c'est pour \xE7a que je l'ai amen\xE9."
+    - type: 1
+      phrase: Pardon ?
+    - type: 0
+      phrase: "Par contre il pourra pas r\xE9pondre, \xE0 part dire miaou."
+    - type: 1
+      phrase: Mais... Bruno c'est le chat ?
+    - type: 1
+      phrase: Ben oui, tu peux l'aider ?
+    - type: 1
+      phrase: Euh... Je vais voir ce que je peux faire. Qu'est-ce qu'il a, Bruno
+        ?
+    - type: 0
+      phrase: "Eh bien il a toujours la goutte au nez et puis il est tout fatigu\xE9
+        et maman fait que de lui donner de la p\xE2t\xE9e et \xE0 boire mais il mange
+        pas."
+    - type: 1
+      phrase: D'accord, merci Sylvie.
+    conclusion:
+    - type: 0
+      phrase: Merci beaucoup pour Bruno madame docteur !
+    conclusion_2:
+    - type: 0
+      phrase: Tu ne me donnes pas de pillules pour Bruno ?
+    - type: 1
+      phrase: "Les m\xE9dicaments que j'ai c'est pour les gens. Pour les chats il
+        faut un v\xE9t\xE9rinaire."
+    - type: 0
+      phrase: Mais est-ce que Bruno va aller mieux ?
+    - type: 1
+      phrase: "J'en suis s\xFBre mais il faut que ta maman l'emm\xE8ne chez le v\xE9t\xE9rinaire,
+        d'accord ?"
+    - type: 0
+      phrase: D'accord... Merci beaucoup pour Bruno madame docteur !
+  "cons\xE9quences": []

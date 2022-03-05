@@ -643,7 +643,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sylvie: {fileID: 11400000, guid: df5db678eca7ce24c9c95bb9f3b397c7, type: 2}
   village:
-  - {fileID: 0}
+  - {fileID: 11400000, guid: df5db678eca7ce24c9c95bb9f3b397c7, type: 2}
 --- !u!114 &92488628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6825,6 +6825,7 @@ MonoBehaviour:
     conclusion: []
     conclusion_2: []
   spriteRenderer: {fileID: 1370671598}
+  conditions: 
 --- !u!95 &2033255616
 Animator:
   serializedVersion: 3

@@ -24,15 +24,11 @@ public class GameManager : MonoBehaviour
         village = GetComponent<Village>();
         salleDattente = GetComponent<SalleDattente>();
 
-       // patient.conditions = new List<CONDITIONS>();
-
         DébutDeJournée();
     }
 
     void DébutDeJournée()
     {
-        village.UpdateVillage();
-
         // Remplit la salle d'attente
         for (int i = 0; i < village.village.Count; i++)
         {
@@ -59,7 +55,13 @@ public class GameManager : MonoBehaviour
     {
         if (patient.villageois.ChangeState(patient.conditions) != null)
         {
-            village.sylvie = patient.villageois.ChangeState(patient.conditions);
+            for (int i = 0; i < village.village.Count; i++)
+            {
+                if (patient.villageois.nom == village.village[i].nom)
+                {
+                    village.village[i] = patient.villageois.ChangeState(patient.conditions);
+                }
+            }
         }
 
         patient.GetComponent<Animator>().SetTrigger("Sortie");

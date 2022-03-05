@@ -25,6 +25,7 @@ public class Villageois : ScriptableObject
         {
             return null;
         }
+
         if (!c.Contains(CONDITIONS.Soigné))
         {
             return conséquences[0].conséquence;
@@ -32,12 +33,22 @@ public class Villageois : ScriptableObject
 
         foreach (Conséquence conséquence in conséquences)
         {
-            if (conséquence.conditions == c)
+            int i = 0;
+
+            foreach (CONDITIONS c1 in conséquence.conditions)
+            {
+                foreach (CONDITIONS c2 in c)
+                {
+                    if (c1 == c2)
+                    {
+                        i++;
+                    }
+                }
+            }
+
+            if (i == conséquence.conditions.Count && i == c.Count)
             {
                 return conséquence.conséquence;
-            } else
-            {
-                return null;
             }
         }
 

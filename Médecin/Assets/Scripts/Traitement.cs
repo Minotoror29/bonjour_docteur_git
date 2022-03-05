@@ -20,8 +20,6 @@ public class Traitement : MonoBehaviour, IPointerDownHandler, IDragHandler, IEnd
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        Debug.Log("OnPointerDown");
-
         dragDropInstance = Instantiate(dragDropPrefab, transform);
         dragDropInstance.GetComponent<Text>().text = GetComponent<Text>().text;
         dragDropInstance.GetComponent<Traitement>().traitement = traitement;
@@ -29,18 +27,15 @@ public class Traitement : MonoBehaviour, IPointerDownHandler, IDragHandler, IEnd
 
     public void OnDrag(PointerEventData eventData)
     {
-        Debug.Log("OnDrag");
         dragDropInstance.GetComponent<RectTransform>().anchoredPosition += eventData.delta;
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        Debug.Log("OnEndDrag");
         Destroy(dragDropInstance);
     }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        Debug.Log("OnBeginDrag");
     }
 }

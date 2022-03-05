@@ -18,53 +18,62 @@ MonoBehaviour:
   age: 9
   dialogue:
     introduction:
-    - type: 1
-      phrase: Bonjour Sylvie.
     - type: 0
-      phrase: Bonjour madame...
+      phrase: Bonjour madame docteur !
     - type: 1
-      phrase: "\xC7a va bien depuis la derni\xE8re fois ?"
+      phrase: Bonjour Sylvie, comment vas-tu ?
     - type: 0
-      phrase: "Pas trop trop. \xC7a va pas bien et je suis encore malade."
+      phrase: "Tr\xE8s bien ! Hier je suis all\xE9e \xE0 l'\xE9cole et puis c'\xE9tait
+        dict\xE9e, mais moi j'aime pas c'est trop dur, et puis \xE0 la r\xE9cr\xE9
+        on a jou\xE9 aux astronautes avec Veronique et puis apr\xE8s..."
     - type: 1
-      phrase: Tu as bien suivi ma prescription ?
+      phrase: "Ta grippe a pass\xE9, tu te sens mieux ?"
     - type: 0
-      phrase: Oui... Maman a fait attention et tout.
+      phrase: ...euh, quoi ? Ah oui oui je suis plus malade du tout, merci !
     - type: 1
-      phrase: "Et tu n'as pas pris d'autres m\xE9dicaments ?"
+      phrase: Tant mieux.
     - type: 0
-      phrase: Non, enfin je crois pas.
+      phrase: "Tiens maman m'a donn\xE9 \xE7a pour te remercier."
     - type: 1
-      phrase: D'accord. Voyons ce que tu as.
+      phrase: "Oh c'est gentil, mais c'\xE9tait pas n\xE9cessaire."
+    - type: 0
+      phrase: Prends-le, maman m'a dit de pas rentrer avec.
+    - type: 1
+      phrase: Merci ! Qu'est-ce que c'est dans ce panier... Ah... C'est un lapin...
+        Mort ?
+    - type: 0
+      phrase: Oui c'est le cadeau de maman.
+    - type: 1
+      phrase: "Qu'est-ce que suis je suis sens\xE9e faire avec un lapin..."
+    - type: 0
+      phrase: Ben le manger !
+    - type: 1
+      phrase: Euh... D'accord merci.
     symptomes:
     - type: 1
-      phrase: "Est-ce que tu as toujours mal \xE0 la gorge ?"
+      phrase: "Pour \xEAtre s\xFBre, tu n'as plus de fi\xE8vre, de mal de t\xEAte
+        ou de gorge ?"
     - type: 0
-      phrase: "Oui... Mais c'est diff\xE9rent d'avant."
+      phrase: Non plus rien c'est chouette !
     - type: 1
-      phrase: "Comment \xE7a ?"
+      phrase: Et tu n'a pas mal autre part ?
     - type: 0
-      phrase: "Avant c'\xE9tait tout sec mais maintenant c'est gluant."
+      phrase: "Non non \xE7a va."
     - type: 1
-      phrase: "Hmm... Et ta fi\xE8vre ?"
-    - type: 0
-      phrase: Maman a dit que j'en avais encore plus, au moins 40 je crois.
-    - type: 1
-      phrase: "Tu avais aussi mal \xE0 la t\xEAte la derni\xE8re fois, c'est toujours
-        le cas ?"
-    - type: 0
-      phrase: "Oui... Je suis fatigu\xE9e aussi."
-    - type: 1
-      phrase: D'accord, merci Sylvie.
+      phrase: Parfait merci Sylvie.
     conclusion:
     - type: 0
-      phrase: Merci madame docteur.
+      phrase: Je dois encore prendre des pillules ?
+    - type: 1
+      phrase: Oui je pense que c'est mieux pour toi.
+    - type: 0
+      phrase: "Bon j'aime pas trop \xE7a mais d'accord. Merci madame docteur, au
+        revoir !"
+    - type: 1
+      phrase: Au revoir et merci pour le euh... lapin.
     conclusion_2:
     - type: 0
-      phrase: "Euh... Maman a dit qu'il fallait que je revienne avec des m\xE9dicaments."
+      phrase: Au revoir madame docteur !
     - type: 1
-      phrase: "Je te promets, \xE7a finira par passer. Il faut que tu sois courageuse,
-        d'accord ?"
-    - type: 0
-      phrase: D'accord... Merci madame docteur.
+      phrase: Au revoir et merci pour le euh... lapin.
   "cons\xE9quences": []
