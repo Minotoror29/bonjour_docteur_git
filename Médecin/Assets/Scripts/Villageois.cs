@@ -12,8 +12,35 @@ public class Villageois : ScriptableObject
 
     public Dialogue dialogue;
 
-    public void Condition()
+    public List<Conséquence> conséquences;
+
+    public Villageois ChangeState(List<CONDITIONS> c)
     {
-        Debug.Log("coucou");
+        if (conséquences.Count == 0)
+        {
+            return null;
+        }
+
+        if (c == null)
+        {
+            return null;
+        }
+        if (!c.Contains(CONDITIONS.Soigné))
+        {
+            return conséquences[0].conséquence;
+        }
+
+        foreach (Conséquence conséquence in conséquences)
+        {
+            if (conséquence.conditions == c)
+            {
+                return conséquence.conséquence;
+            } else
+            {
+                return null;
+            }
+        }
+
+        return null;
     }
 }

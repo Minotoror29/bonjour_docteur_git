@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PatientObject : MonoBehaviour
+public class Patient : MonoBehaviour
 {
     public Villageois villageois;
 
@@ -15,6 +15,8 @@ public class PatientObject : MonoBehaviour
     public SpriteRenderer spriteRenderer;
 
     bool prescription = false;
+
+    public List<CONDITIONS> conditions;
 
     public void AssignerPatient()
     {
@@ -55,6 +57,7 @@ public class PatientObject : MonoBehaviour
         } else
         {
             prescription = true;
+            conditions.Add(CONDITIONS.Soigné);
         }
     }
 

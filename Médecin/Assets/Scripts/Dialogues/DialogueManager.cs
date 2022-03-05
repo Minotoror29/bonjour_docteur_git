@@ -16,7 +16,7 @@ public class DialogueManager : MonoBehaviour
     int ligneIndex = 0;
     public int dialogueIndex = 0;
     Phrase[] dialogueActuel;
-    public PatientObject patient;
+    public Patient patient;
 
     private void Start()
     {
@@ -26,7 +26,7 @@ public class DialogueManager : MonoBehaviour
         types = new Queue<TypeLigne>();
     }
 
-    public void StartDialogue(PatientObject patient)
+    public void StartDialogue(Patient patient)
     {
         this.patient = patient;
 
@@ -103,6 +103,7 @@ public class DialogueManager : MonoBehaviour
             return;
 
         ContinueDialogue(2);
+        gm.patient.conditions.Add(CONDITIONS.Interrompu);
     }
 
     void FinDialogue()

@@ -95,3 +95,6 @@ MonoBehaviour:
         va aller mieux, ne t'inqui\xE8te pas."
     - type: 0
       phrase: D'accord, merci madame docteur, au revoir !
+  "cons\xE9quences":
+  - conditions: 
+    "cons\xE9quence": {fileID: 11400000, guid: 2f0dddbbfde1f9341ad88253d3a4d925, type: 2}

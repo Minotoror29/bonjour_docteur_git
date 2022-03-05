@@ -7,3 +7,5 @@ public enum VILLAGEOIS { Personne, Sylvie }
 public enum MALADIES { Aucune, Grippe }
 
 public enum TRAITEMENTS { Aucun, Aspirine, Antitussif, Antibiotiques }
+
+public enum CONDITIONS { Soigné, Interrompu }
