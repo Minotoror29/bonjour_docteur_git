@@ -67,4 +67,4 @@ MonoBehaviour:
         d'accord ?"
     - type: 0
       phrase: D'accord... Merci madame docteur.
-  conditions: []
+  "cons\xE9quences": []

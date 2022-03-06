@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf4e5973660b105478e4a2e29709d926, type: 3}
+  m_Name: "Ren\xE9_01"
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: 91bd460c37a3ee24a8fcf24799352352, type: 3}
+  nom: 2
+  maladie: 2
+  age: 80
+  dialogue:
+    introduction:
+    - type: 0
+      phrase: "O\xF9 est le docteur ?"
+    - type: 1
+      phrase: "Bonjour \xE0 vous. Vous \xEAtes ?"
+    - type: 0
+      phrase: "Bonjour, Ren\xE9. O\xF9 est le docteur ?"
+    - type: 1
+      phrase: Je le remplace pendant sa convalescence.
+    - type: 0
+      phrase: Ah, excusez moi... je suis un peu sur les nerfs en ce moment.
+    - type: 1
+      phrase: Qu'est-ce qu'il vous arrive ?
+    - type: 0
+      phrase: "Oh... par quoi je commence? Je suis au chom\xE2ge depuis que j'ai
+        perdu mon bras \xE0 la scierie, des fois je me sens inutile et je repense
+        \xE0 mon ancien travail, alors je commence \xE0\r avoir mon bras qui gratte
+        donc j'essaie de le gratter, sauf que je peux pas le gratter parce que mon
+        bras est pas l\xE0, du coup je me sens encore plus inutile.\r\n\r\nSinon,
+        vous \xE7a va ?"
+    - type: 1
+      phrase: Oh, vous savez...
+    - type: 0
+      phrase: "Ah, et je me suis fait mordre par un \xE9cureuil."
+    - type: 1
+      phrase: "Un \xE9cureuil ?"
+    - type: 0
+      phrase: Au doigt, il m'a bien eu le salaud.
+    - type: 1
+      phrase: "C'est la premi\xE8re fois que j'entend que quelqu'un s'est fait mordre
+        par un \xE9cureuil."
+    - type: 0
+      phrase: "C'\xE9tait pas n'importe quel \xE9cureuil ! Celui l\xE0 avait la bave
+        aux l\xE8vres et s'est jet\xE9 sur moi depuis l'autre bout de la for\xEAt
+        ! Un vrai diable !"
+    - type: 1
+      phrase: "Et bien on va s'occuper de \xE7a."
+    symptomes:
+    - type: 1
+      phrase: Qu'est-ce qu'on a, donc ?
+    - type: 0
+      phrase: "Regardez la morsure par vous-m\xEAme. J'ai l'impression que c'est
+        infect\xE9."
+    - type: 1
+      phrase: "Effectivement. Vous vous \xEAtes fait mordre quand ?"
+    - type: 0
+      phrase: Il y a deux jours.
+    - type: 1
+      phrase: "D'autres sympt\xF4mes ?"
+    - type: 0
+      phrase: Pas que je sache.
+    conclusion:
+    - type: 0
+      phrase: "Merci bien, madame. Si vous avez besoin de quoi que ce soit, j'habite
+        la ferme tout au bout du village. N'h\xE9sitez pas, c'est pas comme si j'\xE9tais
+        tr\xE8s occup\xE9."
+    conclusion_2:
+    - type: 0
+      phrase: Vous ne me donnez rien ?
+    - type: 1
+      phrase: "L'infection est quasi-inexistante. Lavez-vous bien les mains, \xE7a
+        ira."
+    - type: 0
+      phrase: "Tr\xE8s bien... Si vous avez besoin de quoi que ce soit, j'habite
+        la ferme tout au bout du village. N'h\xE9sitez pas, c'est pas comme si j'\xE9tais
+        tr\xE8s occup\xE9."
+  "cons\xE9quences": []

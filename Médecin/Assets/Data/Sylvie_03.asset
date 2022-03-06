@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: a2a7ff841d51d2a49b4c9d53b6622abd, type: 3}
   nom: 1
-  maladie: 1
+  maladie: 0
   age: 9
   dialogue:
     introduction:
