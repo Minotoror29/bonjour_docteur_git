@@ -66,6 +66,11 @@ public class DialogueManager : MonoBehaviour
 
     public void PhraseSuivante()
     {
+        if (!patient.villageois)
+        {
+            return;
+        }
+
         // Si le dialogue est fini on passe à la section suivante ou on finit la conversation
         if (phrases.Count == 0)
         {
