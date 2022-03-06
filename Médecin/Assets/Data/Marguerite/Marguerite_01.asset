@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bf4e5973660b105478e4a2e29709d926, type: 3}
-  m_Name: "Ren\xE9_04"
+  m_Name: Marguerite_01
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
-  nom: 0
+  sprite: {fileID: 21300000, guid: 05a65ab12a4718740a339ba84683accf, type: 3}
+  nom: 3
   maladie: 0
-  age: 0
+  age: 80
   dialogue:
     introduction: []
     symptomes: []

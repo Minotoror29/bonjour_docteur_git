@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf4e5973660b105478e4a2e29709d926, type: 3}
+  m_Name: "Ren\xE9_04"
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: 91bd460c37a3ee24a8fcf24799352352, type: 3}
+  nom: 2
+  maladie: 0
+  age: 50
+  dialogue:
+    introduction:
+    - type: 0
+      phrase: 
+    - type: 0
+      phrase: 
+    - type: 0
+      phrase: 
+    - type: 0
+      phrase: 
+    - type: 0
+      phrase: 
+    - type: 0
+      phrase: 
+    - type: 0
+      phrase: 
+    - type: 0
+      phrase: 
+    - type: 0
+      phrase: 
+    - type: 0
+      phrase: 
+    - type: 0
+      phrase: 
+    - type: 0
+      phrase: 
+    symptomes:
+    - type: 0
+      phrase: 
+    - type: 0
+      phrase: 
+    - type: 0
+      phrase: 
+    - type: 0
+      phrase: 
+    - type: 0
+      phrase: 
+    conclusion:
+    - type: 0
+      phrase: "A la prochaine, docteur. Je vous l'ai dit, si vous avez besoin de
+        quoi que ce soit, n'h\xE9sitez pas !"
+    conclusion_2: []
+  "cons\xE9quences": []

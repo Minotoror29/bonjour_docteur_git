@@ -78,7 +78,7 @@ public class GameManager : MonoBehaviour
         }
 
         salleDattente.salleDattente.Remove(salleDattente.salleDattente[0]);
-        //patient.conditions.Clear();
+        patient.conditions.Clear();
     }
 
     public void PatientSuivant()

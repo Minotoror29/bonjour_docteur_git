@@ -99,7 +99,7 @@ public class DialogueManager : MonoBehaviour
 
     public void Interrompre()
     {
-        if (dialogueIndex >= 2)
+        if (dialogueIndex >= 2 || dialogueIndex == 0)
             return;
 
         ContinueDialogue(2);
