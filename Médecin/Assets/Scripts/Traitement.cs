@@ -6,5 +6,5 @@ using UnityEngine;
 public class Traitement : ScriptableObject
 {
     public string nom;
-    public List<SYMPTOMES> symtomes;
+    public List<SYMPTOMES> symptomes;
 }
