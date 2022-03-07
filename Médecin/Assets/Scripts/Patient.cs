@@ -7,7 +7,7 @@ public class Patient : MonoBehaviour
     public Villageois villageois;
 
     public VILLAGEOIS nom;
-    public MALADIES maladie;
+    public Maladie maladie;
     public int age;
 
     public Dialogue dialogue;
@@ -21,7 +21,10 @@ public class Patient : MonoBehaviour
     public void AssignerPatient()
     {
         nom = villageois.nom;
-        maladie = villageois.maladie;
+        if (maladie)
+        {
+            maladie = villageois.maladie;
+        }
         age = villageois.age;
         dialogue = villageois.dialogue;
 
@@ -65,7 +68,7 @@ public class Patient : MonoBehaviour
     {
         villageois = null;
         nom = VILLAGEOIS.Personne;
-        maladie = MALADIES.Aucune;
+        maladie = null;
         age = 0;
 
         dialogue = null;

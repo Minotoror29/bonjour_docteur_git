@@ -7,7 +7,7 @@ public class Villageois : ScriptableObject
 {
     public Sprite sprite;
     public VILLAGEOIS nom;
-    public MALADIES maladie;
+    public Maladie maladie;
     public int age;
 
     public Dialogue dialogue;
