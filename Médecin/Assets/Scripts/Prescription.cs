@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class Prescription : MonoBehaviour
 {
-    public List<TRAITEMENTS> traitements;
+    public List<Traitement> traitements;
 }

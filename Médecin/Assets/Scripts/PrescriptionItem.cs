@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class PrescriptionItem : MonoBehaviour, IDropHandler
 {
-    public TRAITEMENTS traitement;
+    public Traitement traitement;
 
     public void OnDrop(PointerEventData eventData)
     {

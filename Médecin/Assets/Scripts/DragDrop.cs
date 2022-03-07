@@ -10,7 +10,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IDragHandler, IEndDr
     GameObject dragDropPrefab;
     GameObject dragDropInstance;
 
-    public TRAITEMENTS traitement;
+    public Traitement traitement;
 
     private void Awake()
     {

@@ -52,15 +52,34 @@ public class Patient : MonoBehaviour
         }
     }
 
-    public void Prescription(List<TRAITEMENTS> traitements)
+    public void Prescription(List<Traitement> traitements)
     {
+        List<SYMPTOMES> symptomes = maladie.symptomes;
+
         if (traitements.Count == 0)
         {
             prescription = false;
         } else
         {
             prescription = true;
-            conditions.Add(CONDITIONS.Soigné);
+            foreach (Traitement traitement in traitements)
+            {
+                foreach (SYMPTOMES s1 in traitement.symptomes)
+                {
+                    foreach (SYMPTOMES s2 in symptomes)
+                    {
+                        if (s1 == s2)
+                        {
+                            symptomes.Remove(s2);
+                        }
+                    }
+                }
+            }
+
+            if (symptomes.Count == 0)
+            {
+                conditions.Add(CONDITIONS.Soigné);
+            }
         }
     }
 
