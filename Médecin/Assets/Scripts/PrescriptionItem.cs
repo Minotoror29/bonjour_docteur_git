@@ -14,7 +14,7 @@ public class PrescriptionItem : MonoBehaviour, IDropHandler
         {
             // Remplit l'information en drag & droppant un item dans un slot
             GetComponent<Text>().text = eventData.pointerDrag.GetComponent<Text>().text;
-            traitement = eventData.pointerDrag.GetComponent<Traitement>().traitement;
+            traitement = eventData.pointerDrag.GetComponent<DragDrop>().traitement;
 
             // Rajoute des slots au fur et à mesure que l'on remplit la presciption
             if (transform.GetSiblingIndex() < transform.parent.childCount - 1)
