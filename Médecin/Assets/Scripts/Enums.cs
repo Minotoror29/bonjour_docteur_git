@@ -10,4 +10,4 @@ public enum TRAITEMENTS { Aucun, Aspirine, Antitussif, Antibiotiques }
 
 public enum SYMPTOMES { Aucun, MaladieBactérienne, Fièvre, Douleurs, Toux, Infection, Rage, Diarhée, Nausée, Inflammation }
 
-public enum CONDITIONS { Soigné, Interrompu }
+public enum CONDITIONS { Soigné, Interrompu, PasInterrompu, PasSoigné }

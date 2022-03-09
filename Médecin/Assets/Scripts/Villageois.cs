@@ -18,11 +18,6 @@ public class Villageois : ScriptableObject
     {
         List<CONDITIONS> conditions = new List<CONDITIONS>();
 
-        for (int i = 0; i < c.Count; i++)
-        {
-            conditions.Add(c[i]);
-        }
-
         if (conséquences.Count == 0)
         {
             return null;
@@ -33,13 +28,14 @@ public class Villageois : ScriptableObject
             return null;
         }
 
-        if (!c.Contains(CONDITIONS.Soigné))
-        {
-            return conséquences[0].conséquence;
-        }
-
         for (int i = 0; i < conséquences.Count; i++)
         {
+            conditions.Clear();
+            for (int l = 0; l < conséquences[i].conditions.Count; l++)
+            {
+                conditions.Add(conséquences[i].conditions[l]);
+            }
+
             for (int j = 0; j < conséquences[i].conditions.Count; j++)
             {
                 for (int k = 0; k < c.Count; k++)

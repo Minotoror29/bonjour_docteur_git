@@ -77,6 +77,7 @@ public class DialogueManager : MonoBehaviour
             if (dialogueIndex == 1)
             {
                 ContinueDialogue(dialogueIndex + 1);
+                gm.patient.conditions.Add(CONDITIONS.PasInterrompu);
             }
             else if (dialogueIndex == 2)
             {

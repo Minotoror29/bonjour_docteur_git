@@ -68,26 +68,30 @@ public class Patient : MonoBehaviour
             prescription = false;
         } else
         {
-            prescription = true;
+            prescription = true;            
+        }
 
-            for (int i = 0; i < traitements.Count; i++)
+        for (int i = 0; i < traitements.Count; i++)
+        {
+            for (int j = 0; j < traitements[i].symptomes.Count; j++)
             {
-                for (int j = 0; j < traitements[i].symptomes.Count; j++)
+                for (int k = 0; k < maladie.symptomes.Count; k++)
                 {
-                    for (int k = 0; k < maladie.symptomes.Count; k++)
+                    if (traitements[i].symptomes[j] == maladie.symptomes[k])
                     {
-                        if (traitements[i].symptomes[j] == maladie.symptomes[k])
-                        {
-                            symptomes.Remove(maladie.symptomes[k]);
-                        }
+                        symptomes.Remove(maladie.symptomes[k]);
                     }
                 }
             }
+        }
 
-            if (symptomes.Count == 0)
-            {
-                conditions.Add(CONDITIONS.Soigné);
-            }
+        if (symptomes.Count == 0)
+        {
+            conditions.Add(CONDITIONS.Soigné);
+        }
+        else
+        {
+            conditions.Add(CONDITIONS.PasSoigné);
         }
     }
 
