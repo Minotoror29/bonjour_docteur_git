@@ -84,7 +84,7 @@ MonoBehaviour:
         la ferme tout au bout du village. N'h\xE9sitez pas, c'est pas comme si j'\xE9tais
         tr\xE8s occup\xE9."
   "cons\xE9quences":
-  - conditions: 
+  - conditions: 03000000
     "cons\xE9quence": {fileID: 11400000, guid: e0eb2028cd95198479633136cd1b3c10, type: 2}
   - conditions: 00000000
-    "cons\xE9quence": {fileID: 11400000, guid: 5dd9476da0da40e448b7b9834585c5bf, type: 2}
+    "cons\xE9quence": {fileID: 11400000, guid: 7c7ceb4cf0ba580439c3dd9f240ada54, type: 2}
