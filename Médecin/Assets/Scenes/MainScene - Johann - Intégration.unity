@@ -961,7 +961,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textToWrite: 
   characterIndex: 0
-  Voice: {fileID: 0}
 --- !u!114 &92488626
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1779,7 +1778,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c0f2e02054d256040b56ce784673b659, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1946,7 +1945,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1155601515}
   m_Direction: 2
   m_Value: 0
-  m_Size: 1
+  m_Size: 0.49999997
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2145,7 +2144,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 18bafee390c42e14da543e81bd775ab0, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 80f5b29c2f2d7fd449fab1cd7d08b3a2, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -8014,7 +8013,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f099d4d9a987b564087586a15c30bd1f, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -8618,6 +8617,10 @@ PrefabInstance:
     - target: {fileID: 61613550990332651, guid: e1cf80e9aefc75f41bc47110e9545a43, type: 3}
       propertyPath: m_Name
       value: Voices
+      objectReference: {fileID: 0}
+    - target: {fileID: 6024063009462891441, guid: e1cf80e9aefc75f41bc47110e9545a43, type: 3}
+      propertyPath: m_Volume
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6859286964781007779, guid: e1cf80e9aefc75f41bc47110e9545a43, type: 3}
       propertyPath: m_RootOrder

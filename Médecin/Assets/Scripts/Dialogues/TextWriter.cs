@@ -8,7 +8,9 @@ public class TextWriter : MonoBehaviour
     Text UIText;
     public string textToWrite;
     public int characterIndex;
-    private AudioSource Voice;
+    private GameObject voiceObj;
+    private AudioSource voice;
+    private float numberletters;
     float timePerCharacter;
     float timer;
 
@@ -22,7 +24,8 @@ public class TextWriter : MonoBehaviour
 
     private void Start()
     {
-        // Chercher l'audio source de la voix
+        voiceObj = GameObject.Find("Voices");
+        voice = voiceObj.GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -35,7 +38,15 @@ public class TextWriter : MonoBehaviour
                 timer += timePerCharacter;
                 characterIndex++;
                 UIText.text = textToWrite.Substring(0, characterIndex);
-                //Voice.PlayDelayed(Random.Range(0,1));
+                if (numberletters == 0)
+                {
+                    voice.PlayDelayed(Random.Range(0, 3 / 2));
+                }
+                numberletters += 1;
+                if (numberletters >= 5)
+                {
+                    numberletters = 0;
+                }
 
                 if (characterIndex >= textToWrite.Length)
                 {
