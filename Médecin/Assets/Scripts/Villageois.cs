@@ -16,6 +16,13 @@ public class Villageois : ScriptableObject
 
     public Villageois ChangeState(List<CONDITIONS> c)
     {
+        List<CONDITIONS> conditions = new List<CONDITIONS>();
+
+        for (int i = 0; i < c.Count; i++)
+        {
+            conditions.Add(c[i]);
+        }
+
         if (conséquences.Count == 0)
         {
             return null;
@@ -31,24 +38,22 @@ public class Villageois : ScriptableObject
             return conséquences[0].conséquence;
         }
 
-        foreach (Conséquence conséquence in conséquences)
+        for (int i = 0; i < conséquences.Count; i++)
         {
-            int i = 0;
-
-            foreach (CONDITIONS c1 in conséquence.conditions)
+            for (int j = 0; j < conséquences[i].conditions.Count; j++)
             {
-                foreach (CONDITIONS c2 in c)
+                for (int k = 0; k < c.Count; k++)
                 {
-                    if (c1 == c2)
+                    if (conséquences[i].conditions[j] == c[k])
                     {
-                        i++;
+                        conditions.Remove(c[k]);
                     }
                 }
             }
 
-            if (i == conséquence.conditions.Count && i == c.Count)
+            if (conditions.Count == 0)
             {
-                return conséquence.conséquence;
+                return conséquences[i].conséquence;
             }
         }
 

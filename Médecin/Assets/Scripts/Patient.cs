@@ -29,6 +29,8 @@ public class Patient : MonoBehaviour
         dialogue = villageois.dialogue;
 
         spriteRenderer.sprite = villageois.sprite;
+
+        maladie = villageois.maladie;
     }
 
     public Phrase[] Introduction()
@@ -54,7 +56,12 @@ public class Patient : MonoBehaviour
 
     public void Prescription(List<Traitement> traitements)
     {
-        List<SYMPTOMES> symptomes = maladie.symptomes;
+        List<SYMPTOMES> symptomes = new List<SYMPTOMES>();
+
+        for (int i = 0; i < maladie.symptomes.Count; i++)
+        {
+            symptomes.Add(maladie.symptomes[i]);
+        }
 
         if (traitements.Count == 0)
         {
@@ -62,15 +69,16 @@ public class Patient : MonoBehaviour
         } else
         {
             prescription = true;
-            foreach (Traitement traitement in traitements)
+
+            for (int i = 0; i < traitements.Count; i++)
             {
-                foreach (SYMPTOMES s1 in traitement.symptomes)
+                for (int j = 0; j < traitements[i].symptomes.Count; j++)
                 {
-                    foreach (SYMPTOMES s2 in symptomes)
+                    for (int k = 0; k < maladie.symptomes.Count; k++)
                     {
-                        if (s1 == s2)
+                        if (traitements[i].symptomes[j] == maladie.symptomes[k])
                         {
-                            symptomes.Remove(s2);
+                            symptomes.Remove(maladie.symptomes[k]);
                         }
                     }
                 }

@@ -331,7 +331,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.05, y: 0.5}
   m_AnchorMax: {x: 0.05, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -428.99997}
+  m_AnchoredPosition: {x: -28.709, y: -428.99997}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &48066550
@@ -1090,7 +1090,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '- Brasitam'
+  m_Text: '- Luparast'
 --- !u!222 &187061376
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1111,7 +1111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fa9653c156363542ae1f60b081c8c68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  traitement: {fileID: 11400000, guid: ae8272a8024e03d40b8f499137f6a244, type: 2}
+  traitement: {fileID: 11400000, guid: fa69273d8d39d4247b3fef6b79592e68, type: 2}
 --- !u!1 &198260602
 GameObject:
   m_ObjectHideFlags: 0
@@ -1401,8 +1401,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1155601516}
   m_HandleRect: {fileID: 1155601515}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.50000006
+  m_Value: 0
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2309,7 +2309,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &650478051
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5617,7 +5617,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '- Alatusium
+  m_Text: '- Flesemine
 
 '
 --- !u!222 &1668173383
@@ -5640,7 +5640,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fa9653c156363542ae1f60b081c8c68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  traitement: {fileID: 11400000, guid: ecad5766e5186f848bcf873e0761773f, type: 2}
+  traitement: {fileID: 11400000, guid: 9bf0524872a215b4e864583ba1dd7f01, type: 2}
 --- !u!1 &1684743653
 GameObject:
   m_ObjectHideFlags: 0
@@ -5828,7 +5828,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1733990215
 RectTransform:
   m_ObjectHideFlags: 0

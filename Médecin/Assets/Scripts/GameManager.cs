@@ -83,7 +83,7 @@ public class GameManager : MonoBehaviour
 
     public void PatientSuivant()
     {
-        if (salleDattente.salleDattente.Count == 0)
+        if (salleDattente.salleDattente.Count == 0 || patient.villageois)
             return;
 
         patient.villageois = salleDattente.salleDattente[0];
@@ -97,6 +97,9 @@ public class GameManager : MonoBehaviour
 
     public void JourSuivant()
     {
+        if (patient.villageois)
+            return;
+
         DébutDeJournée();
     }
 }
