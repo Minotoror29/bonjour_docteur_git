@@ -19,40 +19,50 @@ MonoBehaviour:
   dialogue:
     introduction:
     - type: 0
-      phrase: 
+      phrase: Docteur !
+    - type: 1
+      phrase: "Ren\xE9 ! Vous m'avez l'air d'aller mieux !"
     - type: 0
-      phrase: 
+      phrase: Je suis encore en convalescence, mais oui, je vais mieux!
+    - type: 1
+      phrase: "Qu'est-ce que c'\xE9tait alors ?"
     - type: 0
-      phrase: 
+      phrase: La rage.
+    - type: 1
+      phrase: "C'est bien ce que je pensais... Heureusement qu'on vous a soign\xE9
+        \xE0 temps, cette maladie est souvent mortelle..."
     - type: 0
-      phrase: 
+      phrase: "Et \xE7a m'apprendra \xE0 moi, \xE0 pas me m\xE9fier des \xE9cureuils
+        ! Ils ont l'air tout mignon comme \xE7a, mais ce sont de vrais teignes !"
+    - type: 1
+      phrase: "Ils sont inoffensifs vous savez, celui-l\xE0 avait probablement la
+        rag..."
     - type: 0
-      phrase: 
+      phrase: "Des petits d\xE9mons ! Ils me rappellent mon chef ! Ah il avait un
+        beau sourire, \xE7a oui ! Avec de belles dents blanches ! \xC7a n'l'a pas
+        emp\xEAch\xE9 de me \rla mettre \xE0 l'envers quand j'ai perdu mon bras !"
+    - type: 1
+      phrase: "Qu'est-ce que vous faisiez dans cette for\xEAt, au fait ?"
     - type: 0
-      phrase: 
-    - type: 0
-      phrase: 
-    - type: 0
-      phrase: 
-    - type: 0
-      phrase: 
-    - type: 0
-      phrase: 
-    - type: 0
-      phrase: 
-    - type: 0
-      phrase: 
+      phrase: "Quand je n'aide pas les vieux \xE0 la ferme, je m'en vais cueillir
+        des champignons, \xE7a me d\xE9tend."
+    - type: 1
+      phrase: "C'est une bonne id\xE9e!"
     symptomes:
+    - type: 1
+      phrase: "Ravi que vous soyez r\xE9tabli Ren\xE9 ! Maintenant, si vous voulez
+        bien m'ex..."
     - type: 0
-      phrase: 
+      phrase: "Tenez, avant de partir. J'ai tenu \xE0 vous les offrir pour vous remerciez
+        !"
+    - type: 1
+      phrase: Des champignons ?
     - type: 0
-      phrase: 
-    - type: 0
-      phrase: 
-    - type: 0
-      phrase: 
-    - type: 0
-      phrase: 
+      phrase: "Des morilles, pour \xEAtre pr\xE9cis ! Vous allez voir, c'est parfait
+        pour accompagner un poulet cuit au vin. Mais cuisez les bien ! Cru, c'est
+        toxique."
+    - type: 1
+      phrase: "C'est not\xE9! Merci beaucoup, Ren\xE9 !"
     conclusion:
     - type: 0
       phrase: "A la prochaine, docteur. Je vous l'ai dit, si vous avez besoin de
