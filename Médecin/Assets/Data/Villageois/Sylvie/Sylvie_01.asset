@@ -96,9 +96,9 @@ MonoBehaviour:
     - type: 0
       phrase: D'accord, merci madame docteur, au revoir !
   "cons\xE9quences":
-  - conditions: 
+  - conditions: 03000000
     "cons\xE9quence": {fileID: 11400000, guid: 2f0dddbbfde1f9341ad88253d3a4d925, type: 2}
   - conditions: 0100000000000000
     "cons\xE9quence": {fileID: 11400000, guid: 16f1845552c3e2344a3dccaf4760bd29, type: 2}
-  - conditions: 00000000
+  - conditions: 0000000002000000
     "cons\xE9quence": {fileID: 11400000, guid: b5bd7153c95f37a499b6b75046ef4d8c, type: 2}
