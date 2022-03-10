@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class DragDrop : MonoBehaviour, IPointerDownHandler, IDragHandler, IEndDragHandler, IBeginDragHandler
+public class DragDrop : MonoBehaviour, IPointerDownHandler, IDragHandler, IEndDragHandler, IBeginDragHandler, IPointerUpHandler
 {
     GameManager gm;
     GameObject dragDropPrefab;
@@ -37,5 +37,10 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IDragHandler, IEndDr
 
     public void OnBeginDrag(PointerEventData eventData)
     {
+    }
+
+    public void OnPointerUp(PointerEventData eventData)
+    {
+        Destroy(dragDropInstance);
     }
 }

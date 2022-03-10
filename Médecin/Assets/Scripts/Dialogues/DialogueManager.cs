@@ -81,7 +81,13 @@ public class DialogueManager : MonoBehaviour
             }
             else if (dialogueIndex == 2)
             {
-                return;
+                if (!patient.maladie)
+                {
+                    ContinueDialogue(dialogueIndex + 1);
+                } else
+                {
+                    return;
+                }
             } else if (dialogueIndex == 3)
             {
                 FinDialogue();
