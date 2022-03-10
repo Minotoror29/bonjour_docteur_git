@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf4e5973660b105478e4a2e29709d926, type: 3}
   m_Name: "Ren\xE9_03"
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 91bd460c37a3ee24a8fcf24799352352, type: 3}
+  sprite: {fileID: 21300000, guid: 53a5583b38759904684eec8a58e009f4, type: 3}
   nom: 2
   maladie: {fileID: 11400000, guid: ba2f3c2fde16c1142924952a2534b5f7, type: 2}
   age: 50
