@@ -5,6 +5,10 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+    // Son
+    private AudioSource NextPatient;
+    private AudioSource NextDay;
+
     DialogueManager dialogueManager;
     Village village;
     SalleDattente salleDattente;
@@ -20,6 +24,10 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        // Son
+        NextDay = GameObject.Find("Jour Suivant").GetComponent<AudioSource>();
+        NextPatient = GameObject.Find("Patient Suivant").GetComponent<AudioSource>();
+
         dialogueManager = GetComponent<DialogueManager>();
         village = GetComponent<Village>();
         salleDattente = GetComponent<SalleDattente>();
@@ -92,6 +100,9 @@ public class GameManager : MonoBehaviour
         if (salleDattente.salleDattente.Count == 0 || patient.villageois)
             return;
 
+        // Son
+        NextPatient.Play();
+
         patient.villageois = salleDattente.salleDattente[0];
         patient.AssignerPatient();
         patient.GetComponent<Animator>().SetTrigger("Entrée");
@@ -105,7 +116,10 @@ public class GameManager : MonoBehaviour
     {
         if (patient.villageois)
             return;
+        // Son
+        NextDay.Play();
 
         DébutDeJournée();
+        PatientSuivant();
     }
 }
