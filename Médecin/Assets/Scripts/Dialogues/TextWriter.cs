@@ -5,12 +5,13 @@ using UnityEngine.UI;
 
 public class TextWriter : MonoBehaviour
 {
+    //
+    private AudioSource voice;
+    private float numberletters;
+
     Text UIText;
     public string textToWrite;
     public int characterIndex;
-    private GameObject voiceObj;
-    private AudioSource voice;
-    private float numberletters;
     float timePerCharacter;
     float timer;
 
@@ -24,8 +25,8 @@ public class TextWriter : MonoBehaviour
 
     private void Start()
     {
-        voiceObj = GameObject.Find("Voices");
-        voice = voiceObj.GetComponent<AudioSource>();
+        // Son
+        voice = GameObject.Find("Voices").GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -38,6 +39,7 @@ public class TextWriter : MonoBehaviour
                 timer += timePerCharacter;
                 characterIndex++;
                 UIText.text = textToWrite.Substring(0, characterIndex);
+                // Son
                 if (numberletters == 0)
                 {
                     voice.PlayDelayed(Random.Range(0, 3 / 2));

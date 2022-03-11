@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class Patient : MonoBehaviour
 {
+    // Son
+    private AudioSource Prescript;
+    public bool Pass = false;
+    private bool Make = false;
+
     public Villageois villageois;
 
     public VILLAGEOIS nom;
@@ -17,6 +22,12 @@ public class Patient : MonoBehaviour
     bool prescription = false;
 
     public List<CONDITIONS> conditions;
+
+    private void Start()
+    {
+        // Son
+        Prescript = GameObject.Find("AudioPrescript").GetComponent<AudioSource>();
+    }
 
     public void AssignerPatient()
     {
@@ -56,6 +67,14 @@ public class Patient : MonoBehaviour
 
     public void Prescription(List<Traitement> traitements)
     {
+        // Son
+        if (Make == false)
+        {
+            Prescript.Play();
+            Pass = true;
+            Make = true;
+        }
+
         List<SYMPTOMES> symptomes = new List<SYMPTOMES>();
 
         for (int i = 0; i < maladie.symptomes.Count; i++)
@@ -97,6 +116,9 @@ public class Patient : MonoBehaviour
 
     public void ResetPatient()
     {
+        // Son
+        Make = false;
+
         villageois = null;
         nom = VILLAGEOIS.Personne;
         maladie = null;

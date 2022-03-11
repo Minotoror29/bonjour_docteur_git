@@ -3,7 +3,13 @@ guid: 86ea7ba8e498b0b419609123f711290b
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - Interruption: {fileID: 8300000, guid: c0f2e02054d256040b56ce784673b659, type: 3}
+  - Continuer: {fileID: 8300000, guid: f099d4d9a987b564087586a15c30bd1f, type: 3}
+  - texteDialogue: {instanceID: 0}
+  - scrollViewContent: {instanceID: 0}
+  - ligneDialoguePrefab: {instanceID: 0}
+  - patient: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

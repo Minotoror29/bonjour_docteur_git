@@ -5,6 +5,11 @@ using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
+    // Son
+    private AudioSource Interruption;
+    private AudioSource Continuer;
+    private bool Star = false;
+    
     GameManager gm;
 
     public Text texteDialogue;
@@ -24,11 +29,18 @@ public class DialogueManager : MonoBehaviour
 
         phrases = new Queue<string>();
         types = new Queue<TypeLigne>();
+
+        // Son
+        Interruption = GameObject.Find("AudioInterruption").GetComponent<AudioSource>();
+        Continuer = GameObject.Find("AudioContinuer").GetComponent<AudioSource>();
     }
 
     public void StartDialogue(Patient patient)
     {
         this.patient = patient;
+
+        // Son
+        Star = true;
 
         ContinueDialogue(1);
     }
@@ -51,6 +63,7 @@ public class DialogueManager : MonoBehaviour
             dialogueActuel = patient.Conclusion();
         }
 
+
         phrases.Clear();
         types.Clear();
 
@@ -66,6 +79,17 @@ public class DialogueManager : MonoBehaviour
 
     public void PhraseSuivante()
     {
+        // Son
+        if (Star == false && patient.Pass == false)
+        {
+            Continuer.Play();
+        }
+        else
+        {
+            Star = false;
+            patient.Pass = false;
+        }
+
         if (!patient.villageois)
         {
             return;
@@ -97,6 +121,7 @@ public class DialogueManager : MonoBehaviour
 
         if (GetComponent<TextWriter>().characterIndex < GetComponent<TextWriter>().textToWrite.Length)
         {
+
             return;
         }
 
@@ -116,6 +141,8 @@ public class DialogueManager : MonoBehaviour
 
         ContinueDialogue(2);
         gm.patient.conditions.Add(CONDITIONS.Interrompu);
+        // Son
+        Interruption.Play();
     }
 
     void FinDialogue()
@@ -123,5 +150,6 @@ public class DialogueManager : MonoBehaviour
         Debug.Log("Fin de la conversation");
 
         gm.FinConsultation();
+        // Son de fin de conversation?
     }
 }

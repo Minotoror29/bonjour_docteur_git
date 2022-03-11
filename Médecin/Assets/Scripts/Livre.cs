@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class Livre : MonoBehaviour
 {
+    // Son
+    private AudioSource Book;
+
     [SerializeField] List<GameObject> pages;
     int pageActuelle;
 
     private void Start()
     {
         pageActuelle = pages.IndexOf(pages[0]);
+        Book = GameObject.Find("LIVRE").GetComponent<AudioSource>();
     }
 
     public void Suivant()
@@ -20,6 +24,8 @@ public class Livre : MonoBehaviour
         pages[pageActuelle].SetActive(false);
         pageActuelle += 1;
         pages[pageActuelle].SetActive(true);
+        // Son
+        Book.Play();
 
     }
 
@@ -31,5 +37,7 @@ public class Livre : MonoBehaviour
         pages[pageActuelle].SetActive(false);
         pageActuelle -= 1;
         pages[pageActuelle].SetActive(true);
+        // Son
+        Book.Play();
     }
 }
