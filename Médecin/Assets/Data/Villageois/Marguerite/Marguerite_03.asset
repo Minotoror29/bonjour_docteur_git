@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf4e5973660b105478e4a2e29709d926, type: 3}
+  m_Name: Marguerite_03
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: 05a65ab12a4718740a339ba84683accf, type: 3}
+  nom: 0
+  maladie: {fileID: 11400000, guid: 280f8437c3bca4446bad54d93cfac104, type: 2}
+  age: 82
+  dialogue:
+    introduction:
+    - type: 0
+      phrase: Bonjour ma petite.
+    - type: 1
+      phrase: "Bonjour Marguerite. Vous allez mieux depuis votre derni\xE8re visite
+        ?"
+    - type: 0
+      phrase: "On fait aller. Hier je suis ressortie, je suis all\xE9e \xE0 la fromagerie,
+        j'y ai crois\xE9 la Madeleine, elle pr\xE9parait le repas."
+    - type: 0
+      phrase: "Elle avait sa petite fille \xE0 manger. La petite, Sylvie, elle adore
+        la cancoillotte \xE0 chaque fois qu'elle vient la Madeleine en ach\xE8te."
+    - type: 0
+      phrase: "Moi je vois m\xEAme pas mes petits enfants. Imaginez comme ils ont
+        grandi depuis la derni\xE8re fois."
+    - type: 0
+      phrase: "Mais c'est de la faute \xE0 mon fils \xE7a ! Depuis qu'ils sont partis
+        \xE0 la ville, ils viennent jamais au village."
+    - type: 0
+      phrase: "Il dit qu'il va venir plus souvent, mais j'ai d\xE9j\xE0 de la chance
+        s'il est l\xE0 \xE0 No\xEBl ou \xE0 Paques."
+    - type: 0
+      phrase: "Moi depuis que mon Joseph est d\xE9c\xE9d\xE9, tout le monde m'abandonne.
+        On peut compter que sur le pr\xEAtre et le docteur."
+    - type: 0
+      phrase: "J'en parlais \xE0 la Marcelle en allant \xE0 la messe l'autre jour.
+        Et quand je suis arriv\xE9e \xE0 l'\xE9glise, j'\xE9tais essoufl\xE9e. Alors
+        que j'habite tout \xE0 c\xF4t\xE9."
+    - type: 0
+      phrase: "Vous arrivez \xE0 un certain \xE2ge et vous \xEAtes fatigu\xE9e pour
+        moins que rien. Vous savez pas ce que c'est vous, vous vous \xEAtes encore
+        jeune !"
+    - type: 0
+      phrase: "Mais je vois que je vous emb\xEAte avec mes probl\xE8mes. Vous n'avez
+        pas le temps pour ces b\xEAtises."
+    symptomes:
+    - type: 1
+      phrase: "Vous n'avez plus de d\xE9sagr\xE9ments ?"
+    - type: 0
+      phrase: "La collique a disparue. Mais qu'est-ce que je suis fatigu\xE9e."
+    - type: 1
+      phrase: "Il faut vous m\xE9nager."
+    - type: 0
+      phrase: Pour mes coup de mou le docteur Lacroix me donne un machin, un sirop
+        avec un nom boche...
+    - type: 1
+      phrase: Et vous voulez que je vous en prescrive ?
+    - type: 0
+      phrase: "Regardez moi, j'en ai besoin, je tiens \xE0 peine debout..."
+    - type: 1
+      phrase: "Laissez moi r\xE9flechir."
+    conclusion:
+    - type: 0
+      phrase: "Merci ma petite. \xC0 tant\xF4t."
+    conclusion_2:
+    - type: 0
+      phrase: Et mon sirop ?
+    - type: 1
+      phrase: "Le sirop dont vous parlez n'a aucun effet th\xE9rapeutique. "
+    - type: 0
+      phrase: "Et pourquoi le docteur Lacroix m'en donnerait si c'\xE9tait le cas
+        ?"
+    - type: 1
+      phrase: "Mes m\xE9thodes sont diff\xE9rentes de celles du docteur Lacroix."
+    - type: 1
+      phrase: "Quelle id\xE9e... Tant pis, vous me fatiguez. \xC0 tant\xF4t."
+    conclusion_3: []
+  "cons\xE9quences": []

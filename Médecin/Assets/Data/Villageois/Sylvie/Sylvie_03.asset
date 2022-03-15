@@ -25,11 +25,11 @@ MonoBehaviour:
     - type: 0
       phrase: "Tr\xE8s bien ! Hier je suis all\xE9e \xE0 l'\xE9cole et puis c'\xE9tait
         dict\xE9e, mais moi j'aime pas c'est trop dur, et puis \xE0 la r\xE9cr\xE9
-        on a jou\xE9 aux astronautes avec Veronique et puis apr\xE8s..."
+        on a jou\xE9 \xE0 aller surs avec Veronique."
     - type: 1
       phrase: "Ta grippe a pass\xE9, tu te sens mieux ?"
     - type: 0
-      phrase: ...euh, quoi ? Ah oui oui je suis plus malade du tout, merci !
+      phrase: ...Euh, quoi ? Ah oui oui je suis plus malade du tout, merci !
     - type: 1
       phrase: Tant mieux.
     - type: 0
@@ -76,4 +76,5 @@ MonoBehaviour:
       phrase: Au revoir madame docteur !
     - type: 1
       phrase: Au revoir et merci pour le euh... lapin.
+    conclusion_3: []
   "cons\xE9quences": []

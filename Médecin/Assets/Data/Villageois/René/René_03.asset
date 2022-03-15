@@ -15,7 +15,7 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: 84086045e0cab984cb99ee4f508495af, type: 3}
   nom: 2
   maladie: {fileID: 11400000, guid: ba2f3c2fde16c1142924952a2534b5f7, type: 2}
-  age: 50
+  age: 51
   dialogue:
     introduction:
     - type: 0
@@ -54,10 +54,11 @@ MonoBehaviour:
       phrase: PAS LAVER ! PAS D'EAU ! RAAAH !
     conclusion:
     - type: 0
-      phrase: "Merci docteur ! Je sais pas comment je vais r\xE9ussir \xE0 d\xE9glutir
-        ce que vous me refilez, mais va bien falloir..."
+      phrase: "Merci docteur ! Je sais pas comment je vais r\xE9ussir \xE0 avaler
+        ce que vous me refilez, mais bon, va bien falloir..."
     conclusion_2:
     - type: 0
       phrase: "Pas de m\xE9docs cette fois non plus, hein ? Tant mieux, je peux rien
         avaler de toute fa\xE7on."
+    conclusion_3: []
   "cons\xE9quences": []

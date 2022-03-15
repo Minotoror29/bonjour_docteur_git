@@ -9,4 +9,5 @@ public class Dialogue
     public Phrase[] symptomes;
     public Phrase[] conclusion;
     public Phrase[] conclusion_2;
+    public Phrase[] conclusion_3;
 }

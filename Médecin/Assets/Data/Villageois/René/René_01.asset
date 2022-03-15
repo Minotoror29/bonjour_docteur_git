@@ -15,7 +15,7 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: 84086045e0cab984cb99ee4f508495af, type: 3}
   nom: 2
   maladie: {fileID: 11400000, guid: ca9f82aeef5025546b045472659efc2b, type: 2}
-  age: 50
+  age: 51
   dialogue:
     introduction:
     - type: 0
@@ -31,25 +31,44 @@ MonoBehaviour:
     - type: 1
       phrase: Qu'est-ce qu'il vous arrive ?
     - type: 0
-      phrase: "Oh... par quoi je commence? Je suis au chom\xE2ge depuis que j'ai
-        perdu mon bras \xE0 la scierie, des fois je me sens inutile et je repense
-        \xE0 mon ancien travail, alors je commence \xE0\r avoir mon bras qui gratte
-        donc j'essaie de le gratter, sauf que je peux pas le gratter parce que mon
-        bras est pas l\xE0, du coup je me sens encore plus inutile.\r\n\r\nSinon,
-        vous \xE7a va ?"
+      phrase: Oh... par quoi je commence?
     - type: 1
-      phrase: Oh, vous savez...
+      phrase: Par ce qui vous semble le plus important ?
     - type: 0
-      phrase: "Ah, et je me suis fait mordre par un \xE9cureuil."
+      phrase: "Je suis au ch\xF4mage..."
+    - type: 1
+      phrase: "Ah! Navr\xE9, je ne pense pas pouvoir vous aider pour \xE7a..."
+    - type: 0
+      phrase: "C'est mon chef. Depuis que j'ai perdu mon bras il veut plus d'moi
+        \xE0 la scierie. Alors que j'peux encore tr\xE8s bien travailler !"
+    - type: 1
+      phrase: "Et o\xF9 avez vous perdu votre bras ?"
+    - type: 0
+      phrase: "\xC0 la scierie."
+    - type: 1
+      phrase: "Du coup c'est peut \xEAtre mieux mieux que vous n'y travailliez plus,
+        non ?"
+    - type: 0
+      phrase: Je me sens inutile docteur ! Sans ce travail, je n'suis rien !
+    - type: 1
+      phrase: "Ne d\xEEtes pas \xE7a, allons !"
+    - type: 0
+      phrase: "Ce travail \xE9tais tout pour moi ! Des fois j'y repense, alors je
+        commence \xE0 avoir le bras qui me d\xE9mange donc j'essaie de le gratter,
+        sauf qu'il est pas l\xE0 du coup je peut pas et je me sens encore plus inutile..."
+    - type: 1
+      phrase: "Je vois... et c'est donc pour \xE7a que vous veniez me voir..."
+    - type: 0
+      phrase: "Ah non, c'est parce que je me suis fait mordre par un \xE9cureuil."
     - type: 1
       phrase: "Un \xE9cureuil ?"
     - type: 0
-      phrase: Au doigt, il m'a bien eu le salaud.
+      phrase: Au doigt, il m'a bien eu le salaud !
     - type: 1
       phrase: "C'est la premi\xE8re fois que j'entend que quelqu'un s'est fait mordre
-        par un \xE9cureuil."
+        par un \xE9cureil."
     - type: 0
-      phrase: "C'\xE9tait pas n'importe quel \xE9cureuil ! Celui l\xE0 avait la bave
+      phrase: "C'\xE9tait pas n'importe quel \xE9cureil ! Celui l\xE0 avait la bave
         aux l\xE8vres et s'est jet\xE9 sur moi depuis l'autre bout de la for\xEAt
         ! Un vrai diable !"
     - type: 1
@@ -83,6 +102,7 @@ MonoBehaviour:
       phrase: "Tr\xE8s bien... Si vous avez besoin de quoi que ce soit, j'habite
         la ferme tout au bout du village. N'h\xE9sitez pas, c'est pas comme si j'\xE9tais
         tr\xE8s occup\xE9."
+    conclusion_3: []
   "cons\xE9quences":
   - conditions: 03000000
     "cons\xE9quence": {fileID: 11400000, guid: e0eb2028cd95198479633136cd1b3c10, type: 2}

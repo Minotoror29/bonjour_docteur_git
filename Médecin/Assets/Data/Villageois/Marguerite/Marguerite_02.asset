@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf4e5973660b105478e4a2e29709d926, type: 3}
+  m_Name: Marguerite_02
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: 05a65ab12a4718740a339ba84683accf, type: 3}
+  nom: 0
+  maladie: {fileID: 11400000, guid: 57f6b6cc6c4c8db4497399f2367a51cf, type: 2}
+  age: 82
+  dialogue:
+    introduction:
+    - type: 0
+      phrase: Bonjour...
+    - type: 1
+      phrase: Bonjour Marguerite. Vous allez mieux ?
+    - type: 0
+      phrase: "Je suis si fatigu\xE9e..."
+    - type: 1
+      phrase: "Vous \xEAtes toujours malade ?"
+    - type: 0
+      phrase: La collique...
+    - type: 1
+      phrase: Vous avez suivi mes recommandations ?
+    - type: 0
+      phrase: "Oui... J'aurais d\xFB me m\xE9fier. Et demander l'opinion du docteur
+        Lacroix."
+    - type: 1
+      phrase: "Vous savez que le docteur la croix est malade. Il a d'autres pr\xE9occupations."
+    - type: 0
+      phrase: Mais c'es tune urgence voyons ! Je vais mourir...
+    - type: 1
+      phrase: "Calmez-vous, voyons plut\xF4t ce que vous avez."
+    symptomes:
+    - type: 1
+      phrase: "Vos sympt\xF4mes sont toujours pr\xE9sents ?"
+    - type: 1
+      phrase: "Oui... Et c'est m\xEAme devenu pire."
+    - type: 1
+      phrase: "C'est-\xE0-dire... ?"
+    - type: 0
+      phrase: "La naus\xE9e \xE0 en vomir, des crampes terribles \xE0 l'estomac..."
+    - type: 1
+      phrase: "Vous avez encore de la diarh\xE9e ?"
+    - type: 0
+      phrase: "\xC7a aussi... Oui."
+    - type: 1
+      phrase: "Tr\xE8s bien."
+    conclusion:
+    - type: 0
+      phrase: Si vous vous trompez encore... Le docteur Lacroix en entendra parler
+        !
+    conclusion_2:
+    - type: 0
+      phrase: Rien du tout... Vous voulez vraiment ma mort, ma parole !
+    - type: 1
+      phrase: "Les sympt\xF4mes vont finir par passer.  En attendant hydratez-vous
+        bien."
+    - type: 0
+      phrase: "Le docteur Lacroix en entendra parler, \xE7a je peut vous le dire
+        !"
+    conclusion_3: []
+  "cons\xE9quences": []

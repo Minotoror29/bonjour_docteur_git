@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 247e86934d1ccf447ac61cf2e20f66f3, type: 3}
   nom: 1
-  maladie: {fileID: 0}
+  maladie: {fileID: 11400000, guid: 7b53f61f02673c3498a78159257f9fc4, type: 2}
   age: 9
   dialogue:
     introduction:
@@ -42,8 +42,8 @@ MonoBehaviour:
       phrase: C'est une bonne nouvelle.
     symptomes:
     - type: 1
-      phrase: "Je t'avais dit de revenir avec Bruno, tu sais \xE0 quel moment je
-        pourrai le voir pour lui parler de ce qu'il a ?"
+      phrase: "Je t'avais demand\xE9 de revenir avec Bruno, tu sais \xE0 quel moment
+        je pourrai le voir pour lui parler de ce qu'il a ?"
     - type: 0
       phrase: "Ben maintenant, c'est pour \xE7a que je l'ai amen\xE9."
     - type: 1
@@ -70,12 +70,23 @@ MonoBehaviour:
     - type: 0
       phrase: Tu ne me donnes pas de pillules pour Bruno ?
     - type: 1
-      phrase: "Les m\xE9dicaments que j'ai c'est pour les gens. Pour les chats il
-        faut un v\xE9t\xE9rinaire."
+      phrase: "Non, je pense que \xE7a ira bient\xF4t mieux."
     - type: 0
-      phrase: Mais est-ce que Bruno va aller mieux ?
+      phrase: "Vraiment, tu est s\xFBre ?"
     - type: 1
-      phrase: "J'en suis s\xFBre mais il faut que ta maman l'emm\xE8ne chez le v\xE9t\xE9rinaire,
+      phrase: "J'en suis s\xFBre. "
+    - type: 0
+      phrase: Merci beaucoup pour Bruno madame docteur !
+    conclusion_3:
+    - type: 0
+      phrase: Tu ne donnes pas de pillules pour Bruno  ?
+    - type: 1
+      phrase: "Les m\xE9dicaments que j'ai c'est pour les gens. Pour les chats il
+        faut un v\xE9t\xE9rinaire. Du coup je t'ai pass\xE9 un mot pour ta maman."
+    - type: 0
+      phrase: Mais Bruno va allez mieux ?
+    - type: 1
+      phrase: "J'en suis s\xFBr mais il faut que ta maman l'emm\xE8ne chez le v\xE9t\xE9rinaire,
         d'accord ?"
     - type: 0
       phrase: D'accord... Merci beaucoup pour Bruno madame docteur !

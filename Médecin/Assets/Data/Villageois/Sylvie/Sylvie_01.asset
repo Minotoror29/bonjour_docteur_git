@@ -24,8 +24,8 @@ MonoBehaviour:
       phrase: "Bonjour... Sylvie, tu as quel \xE2ge ?"
     - type: 0
       phrase: "9 ans et demi ! Je savais pas qu'il y avait d'autres docteurs que
-        le monsieur. Est-ce que tu es all\xE9e \xE0 l'\xE9cole pour pouvoir donner
-        des m\xE9dicaments et tout ?"
+        le monsieur. Tu es all\xE9e \xE0 l'\xE9cole pour donner des m\xE9dicaments
+        et tout ?"
     - type: 1
       phrase: "Oui, je viens de sortir d'\xE9cole de m\xE9decine."
     - type: 0
@@ -35,20 +35,19 @@ MonoBehaviour:
       phrase: "Un peu plus ! Toi aussi tu aimerais \xEAtre m\xE9decin ?"
     - type: 0
       phrase: "Euh nan les maladies c'est un peu trop d\xE9go\xFBtant, \xE0 chaque
-        fois je dirais berk. Moi ce que je veux c'est aller dans l'espace, mais ma
-        maman dit que c'est les gar\xE7ons qui ont le droit."
+        fois je dirais berk. Moi ce que je veux c'est aller sur la Lune, mais maman
+        dit que c'est les gar\xE7ons qui ont le droit."
     - type: 1
-      phrase: "Tu sais, moi aussi on m'a dit que seulement les gar\xE7ons pouvaient
-        \xEAtre m\xE9decin."
+      phrase: "Tu sais, moi aussi on m'a dit que seul les gar\xE7ons pouvaient \xEAtre
+        m\xE9decin."
     - type: 0
-      phrase: "Ah bon mais c'est pas pareil, l'espace c'est super loin et il faut
-        \xEAtre trop fort pour y aller et avoir des bonnes notes aussi et savoir
-        plein de trucs. Et aussi ils sont jamais malades, m\xEAme dans le truc qui
-        tourne."
+      phrase: "Ah bon mais c'est pas pareil, la Lune c'est trop loin et il faut \xEAtre
+        trop fort pour y aller et puis avoir des bonnes notes aussi et savoir plein
+        de trucs comme F\xE9lix... Et aussi ils sont jamais malades."
     - type: 1
       phrase: Tu es souvent malade ?
     - type: 0
-      phrase: "Des fois un peu, c'est nul. Mais \xE7a passe, c'est pas grave comme
+      phrase: "Des fois un peu, j'aime pasl. Mais \xE7a passe, c'est pas grave comme
         Bruno."
     - type: 1
       phrase: Bruno ?
@@ -59,8 +58,8 @@ MonoBehaviour:
       phrase: "Quand tu seras gu\xE9rie, tu pourras dire \xE0 Bruno de venir me voir
         ?"
     - type: 0
-      phrase: Tu peux l'aider ? Oh super ! Mais je viendrais avec lui, il peut pas
-        venir tout seul !
+      phrase: Tu peux l'aider ? Oh chouette ! Mais je viendrais avec lui, il peut
+        pas venir tout seul !
     - type: 1
       phrase: "Tr\xE8s bien. N'oublie pas surtout, c'est important. Revenons-en \xE0
         toi..."
@@ -95,6 +94,7 @@ MonoBehaviour:
         va aller mieux, ne t'inqui\xE8te pas."
     - type: 0
       phrase: D'accord, merci madame docteur, au revoir !
+    conclusion_3: []
   "cons\xE9quences":
   - conditions: 03000000
     "cons\xE9quence": {fileID: 11400000, guid: 2f0dddbbfde1f9341ad88253d3a4d925, type: 2}

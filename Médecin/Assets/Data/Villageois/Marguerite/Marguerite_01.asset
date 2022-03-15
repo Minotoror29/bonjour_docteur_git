@@ -15,10 +15,84 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: 05a65ab12a4718740a339ba84683accf, type: 3}
   nom: 3
   maladie: {fileID: 11400000, guid: 57f6b6cc6c4c8db4497399f2367a51cf, type: 2}
-  age: 80
+  age: 82
   dialogue:
-    introduction: []
-    symptomes: []
-    conclusion: []
-    conclusion_2: []
+    introduction:
+    - type: 0
+      phrase: "Bonjour ma petite, vous \xEAtes la nouvelle secr\xE9taire du Docteur
+        Lacroix ?"
+    - type: 1
+      phrase: "Bonjour madame, je suis sa rempla\xE7ante. Pourriez-vous me donner
+        votre nom et votre \xE2ge ?"
+    - type: 0
+      phrase: "C'est Margerite, comme la fleur. J'en fait de la tisane d'ailleurs.
+        Vous remplacez sa secr\xE9taire... mais il n'en avais pas il me semble ?"
+    - type: 1
+      phrase: Non, je remplace le docteur Lacroix.
+    - type: 0
+      phrase: "Ah... Je vois... Je n'ai jamais vu de femme docteur, certainement
+        pas \xE0 la Roche-La-Rugeuse. "
+    - type: 1
+      phrase: "Il y a une premi\xE8re fois \xE0 tout. Est-ce que vous pouvez me donner
+        votre \xE2ge ?"
+    - type: 0
+      phrase: "Le docteur Lacroix ne me posait pas cette question... Vous \xEAtes
+        s\xFBre d'\xEAtre comp\xE9tente ?"
+    - type: 1
+      phrase: "Oui, j'ai besoin de conna\xEEtre votre \xE2ge, \xE7a peut \xEAtre
+        important pour la prescription."
+    - type: 0
+      phrase: "Excusez-moi ma petite, avec cette cr\xE8ve se suis si fatigu\xE9e."
+    - type: 1
+      phrase: Je comprend.
+    - type: 0
+      phrase: "Le probl\xE8me c'est... Je ne suis pas s\xFBr de me souvenir de mon
+        \xE2ge. Vous savez, avec le temps on ne pense plus trop \xE0 ce genre de
+        chose."
+    - type: 1
+      phrase: Et votre date de naissance sinon?
+    - type: 0
+      phrase: "Euh... Je ne sais plus mais je me souvient qu'on est arriv\xE9 \xE0
+        Roche-La-Rugeuse avant la grande guerre, la premi\xE8re, avec mon Joseph,
+        on avais tout juste vingt ans..."
+    - type: 1
+      phrase: "Tr\xE8s bien. Laissez moi calculer, on est en 1974 et vous aviez vingt
+        ans au d\xE9but du si\xE8cle."
+    - type: 0
+      phrase: " ...Je me souviens dans le temps, il n'y avais encore tout ces gens.
+        On avais m\xEAme pas de docteur et encore moins une femme..."
+    - type: 1
+      phrase: Vous avez donc environ 80 ans.
+    - type: 0
+      phrase: "Peut \xEAtre bien, mais vous devriez savoir que c'est impolie de rappeler
+        son \xE2ge \xE0 une vieille femme. Vous savez quand j'\xE9tait jeune..."
+    symptomes:
+    - type: 1
+      phrase: Bon. Vous venez pour quoi ?
+    - type: 0
+      phrase: C'est pour une collique.
+    - type: 1
+      phrase: "Une collique ? Vous pouvez pr\xE9ciser vos sympt\xF4mes ?"
+    - type: 0
+      phrase: "Hum... Mal \xE0 l'estomac, la naus\xE9e et aussi... Vous savez..."
+    - type: 1
+      phrase: "Non, qu'est ce que je suis cens\xE9e savoir ?"
+    - type: 0
+      phrase: "Le docteur Lacroix aurait compris, lui. Eh bien... La coulante, la
+        diarrh\xE9e."
+    - type: 1
+      phrase: Merci beaucoup Marguerite.
+    conclusion:
+    - type: 0
+      phrase: "Merci ma petite. \xC0 tant\xF4t."
+    conclusion_2:
+    - type: 0
+      phrase: Vous ne me donnez rien ? Vous allez vraiment laisser une vieille dame
+        souffrir ?
+    - type: 1
+      phrase: "Vous n'avez pas besoin de tra\xEEtement, vos symptomes vont passer
+        tout seuls."
+    - type: 0
+      phrase: "Je me demande ce que le docteur Lacroix dirait de \xE7a..."
+    conclusion_3: []
   "cons\xE9quences": []

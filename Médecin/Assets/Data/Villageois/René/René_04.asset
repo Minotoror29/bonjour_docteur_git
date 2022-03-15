@@ -15,7 +15,7 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: 84086045e0cab984cb99ee4f508495af, type: 3}
   nom: 2
   maladie: {fileID: 0}
-  age: 50
+  age: 51
   dialogue:
     introduction:
     - type: 0
@@ -62,10 +62,18 @@ MonoBehaviour:
         pour accompagner un poulet cuit au vin. Mais cuisez les bien ! Cru, c'est
         toxique."
     - type: 1
-      phrase: "C'est not\xE9! Merci beaucoup, Ren\xE9 !"
+      phrase: "C'est not\xE9 ! Merci beaucoup, Ren\xE9 !"
     conclusion:
     - type: 0
-      phrase: "A la prochaine, docteur. Je vous l'ai dit, si vous avez besoin de
+      phrase: "Vous me donnez encore des m\xE9docs, vraiment ?"
+    - type: 1
+      phrase: "C'est juste pour \xEAtre s\xFBr que tout ira bien."
+    - type: 0
+      phrase: "Bon tr\xE8s bien, \xE0 la prochaine docteur. Je vous l'ai dit, si
+        vous avez besoin de quoi que ce soit, n'h\xE9sitez pas !"
+    conclusion_2:
+    - type: 0
+      phrase: "\xC0 la prochaine docteur. Je vous l'ai dit, si vous avez besoin de
         quoi que ce soit, n'h\xE9sitez pas !"
-    conclusion_2: []
+    conclusion_3: []
   "cons\xE9quences": []

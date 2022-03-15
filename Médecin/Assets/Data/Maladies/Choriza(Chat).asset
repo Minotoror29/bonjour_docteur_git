@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5c1f70242273f314189f6da3dd39305b, type: 3}
-  m_Name: Gastro-Enterite
+  m_Name: Choriza(Chat)
   m_EditorClassIdentifier: 
-  nom: Gastro-Enterite
-  symptomes: 070000000800000003000000
+  nom: Choriza
+  symptomes: 0e000000
