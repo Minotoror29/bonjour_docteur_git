@@ -5,7 +5,19 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/MainScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/MainMenu.unity
+    guid: 9f57f3e50be07fd409ea83dfae8bea24
+  - enabled: 1
+    path: Assets/Scenes/Introduction.unity
+    guid: 2ab8c32a4e09ee142924417713e13e39
+  - enabled: 1
+    path: "Assets/Scenes/MainScene - Johann - Int\xE9gration.unity"
+    guid: fb1b6f0392e79ba48926c9868361149c
+  - enabled: 1
+    path: Assets/Scenes/Conclusion.unity
+    guid: 8f27a70a3457f884d88a1bb1fe3a73f4
   m_configObjects: {}
