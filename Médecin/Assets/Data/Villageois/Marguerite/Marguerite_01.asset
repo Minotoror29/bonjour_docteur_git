@@ -16,6 +16,7 @@ MonoBehaviour:
   nom: 3
   maladie: {fileID: 11400000, guid: 57f6b6cc6c4c8db4497399f2367a51cf, type: 2}
   age: 82
+  textSpeed: 5
   dialogue:
     introduction:
     - type: 0
@@ -95,4 +96,8 @@ MonoBehaviour:
     - type: 0
       phrase: "Je me demande ce que le docteur Lacroix dirait de \xE7a..."
     conclusion_3: []
-  "cons\xE9quences": []
+  "cons\xE9quences":
+  - conditions: 00000000
+    "cons\xE9quence": {fileID: 11400000, guid: 5761bb515dfd90a4e8b162cd743674db, type: 2}
+  - conditions: 03000000
+    "cons\xE9quence": {fileID: 11400000, guid: 4fd804e813d9dad4abe5fc23958d8f37, type: 2}

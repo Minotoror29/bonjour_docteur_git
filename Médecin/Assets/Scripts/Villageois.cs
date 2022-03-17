@@ -10,6 +10,8 @@ public class Villageois : ScriptableObject
     public Maladie maladie;
     public int age;
 
+    public int textSpeed;
+
     public Dialogue dialogue;
 
     public List<Conséquence> conséquences;

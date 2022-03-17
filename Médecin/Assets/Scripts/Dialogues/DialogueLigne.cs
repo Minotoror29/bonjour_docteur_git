@@ -10,6 +10,8 @@ public class DialogueLigne : MonoBehaviour
     public string ligne;
     public TypeLigne type;
 
+    public float textSpeed;
+
     private void Start()
     {
         GetComponent<Text>().text = ligne;

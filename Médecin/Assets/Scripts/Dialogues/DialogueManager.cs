@@ -23,6 +23,8 @@ public class DialogueManager : MonoBehaviour
     Phrase[] dialogueActuel;
     public Patient patient;
 
+    public float textSpeed;
+
     private void Start()
     {
         gm = GameObject.Find("Game Manager").GetComponent<GameManager>();
@@ -130,8 +132,15 @@ public class DialogueManager : MonoBehaviour
         TypeLigne type = types.Dequeue();
         ligneIndex += 1;
         GameObject ligne = Instantiate(ligneDialoguePrefab, scrollViewContent);
-        GetComponent<TextWriter>().AddWriter(ligne.GetComponent<Text>(), phrase, 0.01f);
-        ligne.GetComponent<DialogueLigne>().type = type;        
+        ligne.GetComponent<DialogueLigne>().type = type;
+        if (type == TypeLigne.Médecin)
+        {
+            textSpeed = 0.01f;
+        } else
+        {
+            textSpeed = patient.villageois.textSpeed / 100f;
+        }
+        GetComponent<TextWriter>().AddWriter(ligne.GetComponent<Text>(), phrase, textSpeed);
     }
 
     public void Interrompre()

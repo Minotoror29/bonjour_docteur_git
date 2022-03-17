@@ -16,6 +16,7 @@ MonoBehaviour:
   nom: 1
   maladie: {fileID: 11400000, guid: e0c3abdd87bc9604e831a075be24e3d4, type: 2}
   age: 9
+  textSpeed: 1
   dialogue:
     introduction:
     - type: 1
@@ -67,4 +68,5 @@ MonoBehaviour:
         d'accord ?"
     - type: 0
       phrase: D'accord... Merci madame docteur.
+    conclusion_3: []
   "cons\xE9quences": []

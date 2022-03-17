@@ -16,6 +16,7 @@ MonoBehaviour:
   nom: 1
   maladie: {fileID: 11400000, guid: e0c3abdd87bc9604e831a075be24e3d4, type: 2}
   age: 9
+  textSpeed: 1
   dialogue:
     introduction:
     - type: 0
@@ -65,12 +66,12 @@ MonoBehaviour:
         toi..."
     symptomes:
     - type: 1
-      phrase: Tu viens pour quoi aujourd'hui ?
+      phrase: "Tu viens pour quoi aujourd'hui\_?"
     - type: 0
       phrase: "En fait je tousse depuis euh... Lundi je crois et au d\xE9but \xE7a
         allait mais maintenant \xE7a fait mal \xE0 la gorge."
     - type: 1
-      phrase: "Est-ce que tu as d'autres probl\xE8mes ?"
+      phrase: "Est-ce que tu as d'autres probl\xE8mes\_?"
     - type: 0
       phrase: "J'\xE9tais malade et alors maman m'a pris la temp\xE9rature et j'avais
         beaucoup de fi\xE8vre."
