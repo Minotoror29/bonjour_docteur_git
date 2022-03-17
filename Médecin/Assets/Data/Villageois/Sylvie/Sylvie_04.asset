@@ -69,10 +69,10 @@ MonoBehaviour:
       phrase: Merci beaucoup pour Bruno madame docteur !
     conclusion_2:
     - type: 0
-      phrase: Tu ne me donnes pas de pillules pour Bruno ?
+      phrase: Tu ne me donnes pas de pilules pour Bruno ?
     - type: 1
       phrase: "Les m\xE9dicaments que j'ai c'est pour les gens. Pour les chats il
-        faut un v\xE9t\xE9rinaire. Du coup je t'ai pass\xE9 un mot pour ta maman."
+        faut un v\xE9t\xE9rinaire."
     - type: 0
       phrase: Mais Bruno va allez mieux ?
     - type: 1
@@ -80,15 +80,5 @@ MonoBehaviour:
         d'accord ?"
     - type: 0
       phrase: D'accord... Merci beaucoup pour Bruno madame docteur !
-    conclusion_3:
-    - type: 0
-      phrase: Tu ne donnes pas de pillules pour Bruno  ?
-    - type: 1
-      phrase: "Non, je pense qu'il ira bient\xF4t mieux."
-    - type: 0
-      phrase: "Vraiment, tu est s\xFBre ?"
-    - type: 1
-      phrase: "J'en suis s\xFBre. "
-    - type: 0
-      phrase: Merci beaucoup pour Bruno madame docteur !
+    conclusion_3: []
   "cons\xE9quences": []

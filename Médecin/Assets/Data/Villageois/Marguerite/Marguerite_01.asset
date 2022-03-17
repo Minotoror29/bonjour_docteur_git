@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf4e5973660b105478e4a2e29709d926, type: 3}
   m_Name: Marguerite_01
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: ce4840c7ca0055949b6d5ffb2ef02405, type: 3}
+  sprite: {fileID: 21300000, guid: 37dc60954e86f53478691b723c86cba2, type: 3}
   nom: 3
   maladie: {fileID: 11400000, guid: 57f6b6cc6c4c8db4497399f2367a51cf, type: 2}
   age: 82
@@ -26,8 +26,8 @@ MonoBehaviour:
       phrase: "Bonjour madame, je suis sa rempla\xE7ante. Pourriez-vous me donner
         votre nom et votre \xE2ge ?"
     - type: 0
-      phrase: "C'est Margerite, comme la fleur. J'en fait de la tisane d'ailleurs.
-        Vous remplacez sa secr\xE9taire... mais il n'en avais pas il me semble ?"
+      phrase: "C'est Margerite, comme la fleur. Vous remplacez sa secr\xE9taire...
+        ?"
     - type: 1
       phrase: Non, je remplace le docteur Lacroix.
     - type: 0

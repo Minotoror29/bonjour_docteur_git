@@ -16,6 +16,7 @@ MonoBehaviour:
   nom: 2
   maladie: {fileID: 0}
   age: 51
+  textSpeed: 0
   dialogue:
     introduction:
     - type: 0
@@ -65,15 +66,11 @@ MonoBehaviour:
       phrase: "C'est not\xE9 ! Merci beaucoup, Ren\xE9 !"
     conclusion:
     - type: 0
-      phrase: "Vous me donnez encore des m\xE9docs, vraiment ?"
-    - type: 1
-      phrase: "C'est juste pour \xEAtre s\xFBr que tout ira bien."
+      phrase: "\xC0 la prochaine docteur. Je vous l'ai dit, si vous avez besoin de
+        quoi que ce soit, n'h\xE9sitez pas !"
+    conclusion_2:
     - type: 0
       phrase: "Bon tr\xE8s bien, \xE0 la prochaine docteur. Je vous l'ai dit, si
         vous avez besoin de quoi que ce soit, n'h\xE9sitez pas !"
-    conclusion_2:
-    - type: 0
-      phrase: "\xC0 la prochaine docteur. Je vous l'ai dit, si vous avez besoin de
-        quoi que ce soit, n'h\xE9sitez pas !"
     conclusion_3: []
   "cons\xE9quences": []

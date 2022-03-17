@@ -43,12 +43,12 @@ MonoBehaviour:
         m\xE9decin."
     - type: 0
       phrase: "Ah bon mais c'est pas pareil, la Lune c'est trop loin et il faut \xEAtre
-        trop fort pour y aller et puis avoir des bonnes notes aussi et savoir plein
-        de trucs comme F\xE9lix... Et aussi ils sont jamais malades."
+        trop fort pour y aller et puis avoir des bonnes notes et puis savoir plein
+        de chose... Et aussi ils sont jamais malades."
     - type: 1
       phrase: Tu es souvent malade ?
     - type: 0
-      phrase: "Des fois un peu, j'aime pasl. Mais \xE7a passe, c'est pas grave comme
+      phrase: "Des fois un peu, j'aime pas. Mais \xE7a passe, c'est pas grave comme
         Bruno."
     - type: 1
       phrase: Bruno ?
@@ -89,7 +89,7 @@ MonoBehaviour:
     conclusion_2:
     - type: 0
       phrase: "Tu me donnes pas de m\xE9dicaments ? Le monsieur docteur a toujours
-        des pillules."
+        des pilules."
     - type: 1
       phrase: "Pour ce que tu as je pr\xE9f\xE8re attendre que \xE7a passe. \xC7a
         va aller mieux, ne t'inqui\xE8te pas."
