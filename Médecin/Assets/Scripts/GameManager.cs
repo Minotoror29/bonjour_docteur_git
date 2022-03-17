@@ -42,6 +42,8 @@ public class GameManager : MonoBehaviour
         {
             salleDattente.salleDattente.Add(village.village[i]);
         }
+
+        PatientSuivant();
     }
 
     // Remplit les informations du personnage sur la fiche de prescription à son arrivée
@@ -97,8 +99,13 @@ public class GameManager : MonoBehaviour
 
     public void PatientSuivant()
     {
-        if (salleDattente.salleDattente.Count == 0 || patient.villageois)
+        if (patient.villageois)
             return;
+
+        if (salleDattente.salleDattente.Count == 0)
+        {
+            JourSuivant();
+        }
 
         // Son
         NextPatient.Play();

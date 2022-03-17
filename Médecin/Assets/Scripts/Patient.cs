@@ -127,4 +127,9 @@ public class Patient : MonoBehaviour
         dialogue = null;
         spriteRenderer.sprite = null;
     }
+
+    public void PatientSuivant()
+    {
+        FindObjectOfType<GameManager>().PatientSuivant();
+    }
 }
