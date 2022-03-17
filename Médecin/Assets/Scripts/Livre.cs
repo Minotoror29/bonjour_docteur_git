@@ -6,6 +6,11 @@ public class Livre : MonoBehaviour
 {
     // Son
     private AudioSource Book;
+    private SpriteRenderer Pages;
+    public Sprite Bk01;
+    public Sprite Bk02;
+    public Sprite Bk03;
+    public Sprite Bk04;
 
     [SerializeField] List<GameObject> pages;
     int pageActuelle;
@@ -14,7 +19,12 @@ public class Livre : MonoBehaviour
     {
         pageActuelle = pages.IndexOf(pages[0]);
         Book = GameObject.Find("LIVRE").GetComponent<AudioSource>();
-    }
+        Pages = GameObject.Find("LIVRE").GetComponentInChildren<SpriteRenderer>();
+        Bk01 = Resources.Load<Sprite>("01_Visuals/spr_Book01");
+        Bk02 = Resources.Load<Sprite>("01_Visuals/spr_Book02");
+        Bk03 = Resources.Load<Sprite>("01_Visuals/spr_Book03");
+        Bk04 = Resources.Load<Sprite>("01_Visuals/spr_Book04");
+}
 
     public void Suivant()
     {
@@ -39,5 +49,25 @@ public class Livre : MonoBehaviour
         pages[pageActuelle].SetActive(true);
         // Son
         Book.Play();
+    }
+
+    public void Update()
+    {
+        if ( pageActuelle == 0 || pageActuelle == pages.Count -1)
+        {
+            Pages.sprite = Bk01;
+            if (pageActuelle == pages.Count - 1 && Pages.flipX == false)
+            {
+                Pages.flipX = true;
+            }
+        }
+        if ( pageActuelle != 0 && pageActuelle != pages.Count -1)
+        {
+            Pages.sprite = Bk03;
+            if (Pages.flipX == true)
+            {
+                Pages.flipX = false;
+            }
+        }
     }
 }

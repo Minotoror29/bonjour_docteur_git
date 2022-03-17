@@ -70,17 +70,6 @@ MonoBehaviour:
     - type: 0
       phrase: Tu ne me donnes pas de pillules pour Bruno ?
     - type: 1
-      phrase: "Non, je pense que \xE7a ira bient\xF4t mieux."
-    - type: 0
-      phrase: "Vraiment, tu est s\xFBre ?"
-    - type: 1
-      phrase: "J'en suis s\xFBre. "
-    - type: 0
-      phrase: Merci beaucoup pour Bruno madame docteur !
-    conclusion_3:
-    - type: 0
-      phrase: Tu ne donnes pas de pillules pour Bruno  ?
-    - type: 1
       phrase: "Les m\xE9dicaments que j'ai c'est pour les gens. Pour les chats il
         faut un v\xE9t\xE9rinaire. Du coup je t'ai pass\xE9 un mot pour ta maman."
     - type: 0
@@ -90,4 +79,15 @@ MonoBehaviour:
         d'accord ?"
     - type: 0
       phrase: D'accord... Merci beaucoup pour Bruno madame docteur !
+    conclusion_3:
+    - type: 0
+      phrase: Tu ne donnes pas de pillules pour Bruno  ?
+    - type: 1
+      phrase: "Non, je pense qu'il ira bient\xF4t mieux."
+    - type: 0
+      phrase: "Vraiment, tu est s\xFBre ?"
+    - type: 1
+      phrase: "J'en suis s\xFBre. "
+    - type: 0
+      phrase: Merci beaucoup pour Bruno madame docteur !
   "cons\xE9quences": []
