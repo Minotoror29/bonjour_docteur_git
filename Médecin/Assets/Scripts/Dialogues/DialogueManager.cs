@@ -25,7 +25,7 @@ public class DialogueManager : MonoBehaviour
 
     public float textSpeed;
 
-    private void Start()
+    public void PremierJour()
     {
         gm = GameObject.Find("Game Manager").GetComponent<GameManager>();
 

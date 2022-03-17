@@ -43,6 +43,7 @@ public class GameManager : MonoBehaviour
             salleDattente.salleDattente.Add(village.village[i]);
         }
 
+        dialogueManager.PremierJour();
         PatientSuivant();
     }
 
