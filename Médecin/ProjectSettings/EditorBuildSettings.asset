@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: "Assets/Scenes/MainScene - Johann - Int\xE9gration.unity"
     guid: fb1b6f0392e79ba48926c9868361149c
   - enabled: 1
+    path: Assets/Scenes/Nuit.unity
+    guid: f27a277142b43a6498d6ddf4848fd4a3
+  - enabled: 1
     path: Assets/Scenes/Conclusion.unity
     guid: 8f27a70a3457f884d88a1bb1fe3a73f4
   m_configObjects: {}

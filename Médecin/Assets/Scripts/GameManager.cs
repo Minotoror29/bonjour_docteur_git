@@ -116,9 +116,11 @@ public class GameManager : MonoBehaviour
             if (jour == 1)
             {
                 FinDeJournée();
+                return;
             } else if (jour == 2)
             {
                 Conclusion();
+                return;
             }
         }
 
@@ -141,7 +143,7 @@ public class GameManager : MonoBehaviour
 
     public void Nuit()
     {
-        SceneManager.LoadScene("Nuit");
+        SceneManager.LoadScene("Nuit", LoadSceneMode.Additive);
     }
 
     public void JourSuivant()

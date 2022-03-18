@@ -1019,8 +1019,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   village:
   - {fileID: 11400000, guid: df5db678eca7ce24c9c95bb9f3b397c7, type: 2}
-  - {fileID: 11400000, guid: 020d6ccde637cb541adc5c5d59f1319f, type: 2}
-  - {fileID: 11400000, guid: adc187fac59f8d64ea84cc45bad2c11a, type: 2}
 --- !u!114 &92488628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9320,7 +9318,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 519420031}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -9328,8 +9326,8 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 1405907487
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!1 &2022841832
 GameObject:
