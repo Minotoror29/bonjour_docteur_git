@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -22,8 +23,13 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] GameObject dialogueViewportContent;
 
+    [SerializeField] GameObject crossFade;
+    int jour;
+
     private void Start()
     {
+        DontDestroyOnLoad(gameObject);
+
         // Son
         NextDay = GameObject.Find("Jour Suivant").GetComponent<AudioSource>();
         NextPatient = GameObject.Find("Patient Suivant").GetComponent<AudioSource>();
@@ -31,6 +37,8 @@ public class GameManager : MonoBehaviour
         dialogueManager = GetComponent<DialogueManager>();
         village = GetComponent<Village>();
         salleDattente = GetComponent<SalleDattente>();
+
+        jour = 1;
 
         DébutDeJournée();
     }
@@ -105,7 +113,13 @@ public class GameManager : MonoBehaviour
 
         if (salleDattente.salleDattente.Count == 0)
         {
-            JourSuivant();
+            if (jour == 1)
+            {
+                FinDeJournée();
+            } else if (jour == 2)
+            {
+                Conclusion();
+            }
         }
 
         // Son
@@ -120,6 +134,16 @@ public class GameManager : MonoBehaviour
         FindObjectOfType<DialogueTrigger>().TriggerDialogue(patient);
     }
 
+    void FinDeJournée()
+    {
+        crossFade.GetComponent<Animator>().SetTrigger("Fade");
+    }
+
+    public void Nuit()
+    {
+        SceneManager.LoadScene("Nuit");
+    }
+
     public void JourSuivant()
     {
         if (patient.villageois)
@@ -127,7 +151,14 @@ public class GameManager : MonoBehaviour
         // Son
         NextDay.Play();
 
+        jour = 2;
+
         DébutDeJournée();
         PatientSuivant();
+    }
+
+    void Conclusion()
+    {
+
     }
 }
