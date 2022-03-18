@@ -28,52 +28,51 @@ MonoBehaviour:
     - type: 1
       phrase: Je le remplace pendant sa convalescence.
     - type: 0
-      phrase: Ah, excusez moi... je suis un peu sur les nerfs en ce moment.
+      phrase: Ah, excusez moi... Je suis un peu sur les nerfs en ce moment.
     - type: 1
       phrase: Qu'est-ce qu'il vous arrive ?
     - type: 0
-      phrase: Oh... par quoi je commence?
+      phrase: "Oh... Par quoi je commence\_?"
     - type: 1
-      phrase: Par ce qui vous semble le plus important ?
+      phrase: "Par ce qui vous semble le plus important\_?"
     - type: 0
       phrase: "Je suis au ch\xF4mage..."
     - type: 1
-      phrase: "Ah! Navr\xE9, je ne pense pas pouvoir vous aider pour \xE7a..."
+      phrase: "Ah, navr\xE9e, je ne suis pas s\xFBr de pouvoir vous aider l\xE0-dessus..."
     - type: 0
       phrase: "C'est mon chef. Depuis que j'ai perdu mon bras il veut plus d'moi
         \xE0 la scierie. Alors que j'peux encore tr\xE8s bien travailler !"
     - type: 1
-      phrase: "Et o\xF9 avez vous perdu votre bras ?"
+      phrase: "O\xF9 est-ce que vous avez perdu votre bras ?"
     - type: 0
       phrase: "\xC0 la scierie."
     - type: 1
-      phrase: "Du coup c'est peut \xEAtre mieux mieux que vous n'y travailliez plus,
-        non ?"
+      phrase: Pourquoi vouloir y retourner alors ?
     - type: 0
-      phrase: Je me sens inutile docteur ! Sans ce travail, je n'suis rien !
+      phrase: Je me sens inutile, docteur ! Sans ce travail, je n'suis rien !
     - type: 1
-      phrase: "Ne d\xEEtes pas \xE7a, allons !"
+      phrase: "Ne dites pas \xE7a, allons."
     - type: 0
       phrase: "Ce travail \xE9tais tout pour moi ! Des fois j'y repense, alors je
         commence \xE0 avoir le bras qui me d\xE9mange donc j'essaie de le gratter,
         sauf qu'il est pas l\xE0 du coup je peut pas et je me sens encore plus inutile..."
     - type: 1
-      phrase: "Je vois... et c'est donc pour \xE7a que vous veniez me voir..."
+      phrase: "Je vois. D'o\xF9 le fait que vous veniez me voir..."
     - type: 0
-      phrase: "Ah non, c'est parce que je me suis fait mordre par un \xE9cureuil."
+      phrase: "Ah non, \xE7a, c'est parce que je me suis fait mordre par un \xE9cureuil."
     - type: 1
       phrase: "Un \xE9cureuil ?"
     - type: 0
       phrase: Au doigt, il m'a bien eu le salaud !
     - type: 1
-      phrase: "C'est la premi\xE8re fois que j'entend que quelqu'un s'est fait mordre
-        par un \xE9cureil."
+      phrase: "C'est la premi\xE8re fois que j'entends que quelqu'un s'est fait mordre
+        par un \xE9cureuil."
     - type: 0
-      phrase: "C'\xE9tait pas n'importe quel \xE9cureil ! Celui l\xE0 avait la bave
+      phrase: "C'\xE9tait pas n'importe quel \xE9cureuil ! Celui-l\xE0 avait la bave
         aux l\xE8vres et s'est jet\xE9 sur moi depuis l'autre bout de la for\xEAt
         ! Un vrai diable !"
     - type: 1
-      phrase: "Et bien on va s'occuper de \xE7a."
+      phrase: "Et bien, on va s'occuper de \xE7a."
     symptomes:
     - type: 1
       phrase: Qu'est-ce qu'on a, donc ?

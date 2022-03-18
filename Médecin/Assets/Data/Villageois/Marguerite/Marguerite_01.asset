@@ -26,42 +26,40 @@ MonoBehaviour:
       phrase: "Bonjour madame, je suis sa rempla\xE7ante. Pourriez-vous me donner
         votre nom et votre \xE2ge ?"
     - type: 0
-      phrase: "C'est Margerite, comme la fleur. Vous remplacez sa secr\xE9taire...
+      phrase: "C'est Marguerite, comme la fleur. Vous remplacez sa secr\xE9taire
         ?"
     - type: 1
-      phrase: Non, je remplace le docteur Lacroix.
+      phrase: Non, je remplace le docteur.
     - type: 0
-      phrase: "Ah... Je vois... Je n'ai jamais vu de femme docteur, certainement
-        pas \xE0 la Roche-La-Rugeuse. "
+      phrase: "Ah, je vois... Je n'ai jamais vu de doctoresse, certainement pas \xE0
+        la Roche-La-Rugeuse."
     - type: 1
       phrase: "Il y a une premi\xE8re fois \xE0 tout. Est-ce que vous pouvez me donner
         votre \xE2ge ?"
     - type: 0
       phrase: "Le docteur Lacroix ne me posait pas cette question... Vous \xEAtes
-        s\xFBre d'\xEAtre comp\xE9tente ?"
+        s\xFBre que vous savez ce que vous faites ?"
     - type: 1
-      phrase: "Oui, j'ai besoin de conna\xEEtre votre \xE2ge, \xE7a peut \xEAtre
-        important pour la prescription."
+      phrase: "Oui, j'ai besoin de savoir votre \xE2ge, \xE7a peut \xEAtre important
+        pour la prescription."
     - type: 0
       phrase: "Excusez-moi ma petite, avec cette cr\xE8ve se suis si fatigu\xE9e."
     - type: 1
       phrase: Je comprend.
     - type: 0
-      phrase: "Le probl\xE8me c'est... Je ne suis pas s\xFBr de me souvenir de mon
-        \xE2ge. Vous savez, avec le temps on ne pense plus trop \xE0 ce genre de
-        chose."
+      phrase: "Le probl\xE8me... Je ne suis pas s\xFBre de me souvenir de mon \xE2ge.
+        Avec le temps on pense plus trop \xE0 ce genre de chose..."
     - type: 1
       phrase: Et votre date de naissance sinon?
     - type: 0
-      phrase: "Euh... Je ne sais plus mais je me souvient qu'on est arriv\xE9 \xE0
-        Roche-La-Rugeuse avant la grande guerre, la premi\xE8re, avec mon Joseph,
-        on avais tout juste vingt ans..."
+      phrase: "Euh... Eh bien, je suis arriv\xE9e \xE0 Roche-La-Rugueuse avant la
+        grande guerre, la premi\xE8re, avec mon Joseph, on avait juste vingt ans..."
     - type: 1
-      phrase: "Tr\xE8s bien. Laissez moi calculer, on est en 1974 et vous aviez vingt
+      phrase: "D'accord. Laissez-moi calculer, on est en 1974 et vous aviez vingt
         ans au d\xE9but du si\xE8cle."
     - type: 0
-      phrase: " ...Je me souviens dans le temps, il n'y avais encore tout ces gens.
-        On avais m\xEAme pas de docteur et encore moins une femme..."
+      phrase: "... Je me souviens dans le temps le village n'avait pas tous ces gens.
+        Et on n'avait m\xEAme pas de docteur, alors une doctoresse..."
     - type: 1
       phrase: Vous avez donc environ 80 ans.
     - type: 0
@@ -71,15 +69,15 @@ MonoBehaviour:
     - type: 1
       phrase: Bon. Vous venez pour quoi ?
     - type: 0
-      phrase: C'est pour une collique.
+      phrase: C'est pour une colique.
     - type: 1
-      phrase: "Une collique ? Vous pouvez pr\xE9ciser vos sympt\xF4mes ?"
+      phrase: "Une colique ? Vous pouvez pr\xE9ciser ?"
     - type: 0
       phrase: "Hum... Mal \xE0 l'estomac, la naus\xE9e et aussi... Vous savez..."
     - type: 1
       phrase: "Non, qu'est ce que je suis cens\xE9e savoir ?"
     - type: 0
-      phrase: "Le docteur Lacroix aurait compris, lui. Eh bien... La coulante, la
+      phrase: "Le docteur Lacroix aurait compris, lui. Eh bien... La courante, la
         diarrh\xE9e."
     - type: 1
       phrase: Merci beaucoup Marguerite.

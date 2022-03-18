@@ -24,28 +24,28 @@ MonoBehaviour:
     - type: 1
       phrase: Bonjour Sylvie, comment vas-tu ?
     - type: 0
-      phrase: "Tr\xE8s bien ! Hier je suis all\xE9e \xE0 l'\xE9cole et puis c'\xE9tait
-        dict\xE9e, mais moi j'aime pas c'est trop dur, et puis \xE0 la r\xE9cr\xE9
+      phrase: "Tr\xE8s bien ! Hier, je suis all\xE9e \xE0 l'\xE9cole et puis c'\xE9tait
+        dict\xE9e, mais moi j'aime pas, c'est trop dur, et puis \xE0 la r\xE9cr\xE9,
         on a jou\xE9 \xE0 aller sur la lune avec V\xE9ronique."
     - type: 1
       phrase: "Ta grippe a pass\xE9, tu te sens mieux ?"
     - type: 0
-      phrase: ...Euh, quoi ? Ah oui oui je suis plus malade du tout, merci !
+      phrase: Euh quoi ? Ah oui oui, je suis plus malade du tout, merci !
     - type: 1
       phrase: Tant mieux.
     - type: 0
       phrase: "Tiens maman m'a donn\xE9 \xE7a pour te remercier."
     - type: 1
-      phrase: "Oh c'est gentil, mais c'\xE9tait pas n\xE9cessaire."
+      phrase: "Oh, c'est gentil, mais ce n'\xE9tait pas n\xE9cessaire."
     - type: 0
       phrase: Prends-le, maman m'a dit de pas rentrer avec.
     - type: 1
       phrase: Merci ! Qu'est-ce que c'est dans ce panier... Ah... C'est un lapin...
         Mort ?
     - type: 0
-      phrase: Oui c'est le cadeau de maman.
+      phrase: Oui, c'est le cadeau de maman.
     - type: 1
-      phrase: "Qu'est-ce que suis je suis sens\xE9e faire avec un lapin..."
+      phrase: "Qu'est-ce que je suis cens\xE9e faire avec un lapin..."
     - type: 0
       phrase: Ben le manger !
     - type: 1
@@ -55,27 +55,27 @@ MonoBehaviour:
       phrase: "Pour \xEAtre s\xFBre, tu n'as plus de fi\xE8vre, de mal de t\xEAte
         ou de gorge ?"
     - type: 0
-      phrase: Non plus rien c'est chouette !
+      phrase: Non plus rien, c'est chouette !
     - type: 1
       phrase: Et tu n'a pas mal autre part ?
     - type: 0
-      phrase: "Non non \xE7a va."
+      phrase: "Non non, \xE7a va."
     - type: 1
       phrase: Parfait merci Sylvie.
     conclusion:
     - type: 0
       phrase: Je dois encore prendre des pilules ?
     - type: 1
-      phrase: Oui je pense que c'est mieux pour toi.
+      phrase: Oui, je pense que c'est mieux pour toi.
     - type: 0
-      phrase: "Bon j'aime pas trop \xE7a mais d'accord. Merci madame docteur, au
+      phrase: "Bon, j'aime pas trop \xE7a, mais d'accord. Merci madame docteur, au
         revoir !"
     - type: 1
-      phrase: Au revoir et merci pour le euh... lapin.
+      phrase: Au revoir et merci pour le euh... Lapin.
     conclusion_2:
     - type: 0
       phrase: Au revoir madame docteur !
     - type: 1
-      phrase: Au revoir et merci pour le euh... lapin.
+      phrase: Au revoir et merci pour le euh... Lapin.
     conclusion_3: []
   "cons\xE9quences": []

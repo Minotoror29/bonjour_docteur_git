@@ -22,39 +22,39 @@ MonoBehaviour:
     - type: 0
       phrase: Docteur !
     - type: 1
-      phrase: "Ren\xE9 ! Vous m'avez l'air d'aller mieux !"
+      phrase: "Ren\xE9 ! Vous m'avez l'air d'aller mieux."
     - type: 0
       phrase: Je suis encore en convalescence, mais oui, je vais mieux!
     - type: 1
-      phrase: "Qu'est-ce que c'\xE9tait alors ?"
+      phrase: "C'est une bonne nouvelle \xE9tant donn\xE9 que vous auriez pu avoir
+        la rage..."
     - type: 0
-      phrase: La rage.
+      phrase: La rage !
     - type: 1
-      phrase: "C'est bien ce que je pensais... Heureusement qu'on vous a soign\xE9
-        \xE0 temps, cette maladie est souvent mortelle..."
+      phrase: "Heureusement qu'on vous a soign\xE9 \xE0 temps, cette maladie est
+        souvent mortelle."
     - type: 0
       phrase: "Et \xE7a m'apprendra \xE0 moi, \xE0 pas me m\xE9fier des \xE9cureuils
-        ! Ils ont l'air tout mignon comme \xE7a, mais ce sont de vrais teignes !"
+        ! Ils ont l'air tous mignons comme \xE7a, mais ce sont de vraies teignes
+        !"
     - type: 1
-      phrase: "Ils sont inoffensifs vous savez, celui-l\xE0 avait probablement la
-        rag..."
+      phrase: "Ils sont inoffensifs en g\xE9n\xE9ral, vous savez..."
     - type: 0
-      phrase: "Des petits d\xE9mons ! Ils me rappellent mon chef ! Ah il avait un
+      phrase: "Des petits d\xE9mons ! Ils me rappellent mon chef ! Ah, il avait un
         beau sourire, \xE7a oui ! Avec de belles dents blanches ! \xC7a n'l'a pas
-        emp\xEAch\xE9 de me \rla mettre \xE0 l'envers quand j'ai perdu mon bras !"
+        emp\xEAch\xE9 de m'la mettre \xE0 l'envers quand j'ai perdu mon bras !"
     - type: 1
       phrase: "Qu'est-ce que vous faisiez dans cette for\xEAt, au fait ?"
     - type: 0
       phrase: "Quand je n'aide pas les vieux \xE0 la ferme, je m'en vais cueillir
         des champignons, \xE7a me d\xE9tend."
     - type: 1
-      phrase: "C'est une bonne id\xE9e!"
+      phrase: "C'est une bonne id\xE9e."
     symptomes:
     - type: 1
-      phrase: "Ravi que vous soyez r\xE9tabli Ren\xE9 ! Maintenant, si vous voulez
-        bien m'ex..."
+      phrase: "Ravie que vous soyez r\xE9tabli Ren\xE9."
     - type: 0
-      phrase: "Tenez, avant de partir. J'ai tenu \xE0 vous les offrir pour vous remerciez
+      phrase: "Tenez, avant de partir. J'ai tenu \xE0 vous les offrir pour vous remercier
         !"
     - type: 1
       phrase: Des champignons ?
@@ -63,11 +63,11 @@ MonoBehaviour:
         pour accompagner un poulet cuit au vin. Mais cuisez les bien ! Cru, c'est
         toxique."
     - type: 1
-      phrase: "C'est not\xE9 ! Merci beaucoup, Ren\xE9 !"
+      phrase: "C'est not\xE9. Merci beaucoup, Ren\xE9 !"
     conclusion:
     - type: 0
-      phrase: "\xC0 la prochaine docteur. Je vous l'ai dit, si vous avez besoin de
-        quoi que ce soit, n'h\xE9sitez pas !"
+      phrase: "\xC0 la prochaine, docteur. Je vous l'ai dit, si vous avez besoin
+        de quoi que ce soit, n'h\xE9sitez pas !"
     conclusion_2:
     - type: 0
       phrase: "Bon tr\xE8s bien, \xE0 la prochaine docteur. Je vous l'ai dit, si

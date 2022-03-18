@@ -34,7 +34,7 @@ MonoBehaviour:
     - type: 1
       phrase: "Et tu n'as pas pris d'autres m\xE9dicaments ?"
     - type: 0
-      phrase: Non, enfin je crois pas.
+      phrase: Non, enfin, je crois pas.
     - type: 1
       phrase: D'accord. Voyons ce que tu as.
     symptomes:
@@ -45,7 +45,7 @@ MonoBehaviour:
     - type: 1
       phrase: "Comment \xE7a ?"
     - type: 0
-      phrase: "Avant c'\xE9tait tout sec mais maintenant c'est gluant."
+      phrase: "Avant c'\xE9tait tout sec, mais maintenant c'est gluant."
     - type: 1
       phrase: "Hmm... Et ta fi\xE8vre ?"
     - type: 0

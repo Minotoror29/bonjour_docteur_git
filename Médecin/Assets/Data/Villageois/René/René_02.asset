@@ -22,7 +22,7 @@ MonoBehaviour:
     - type: 0
       phrase: Docteur !
     - type: 1
-      phrase: "Ren\xE9 ! Ca va mieux depuis la derni\xE8re fois ?"
+      phrase: "Ren\xE9 ! \xC7a va mieux depuis la derni\xE8re fois ?"
     - type: 0
       phrase: Soif... J'ai soif...
     - type: 1
@@ -35,7 +35,7 @@ MonoBehaviour:
       phrase: NE LE DITES PAS ! NE DITES PAS LE MOT ! Raaaah... J'ai mal... J'ai
         soif...
     - type: 1
-      phrase: Vous avez soif mais vous ne voulez pas boire ?
+      phrase: Vous avez soif, mais vous ne voulez pas boire ?
     - type: 0
       phrase: Raaaa...
     symptomes:

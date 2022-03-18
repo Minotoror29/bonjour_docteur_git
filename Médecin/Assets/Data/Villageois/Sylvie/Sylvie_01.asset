@@ -33,27 +33,27 @@ MonoBehaviour:
       phrase: "Tu viens de sortir de l'\xE9cole ! Mais tu es vieille ! Tu dois avoir
         au moins 15 ans, par l\xE0."
     - type: 1
-      phrase: "Un peu plus ! Toi aussi tu aimerais \xEAtre m\xE9decin ?"
+      phrase: "Un peu plus ! Toi aussi, tu aimerais \xEAtre m\xE9decin ?"
     - type: 0
-      phrase: "Euh nan les maladies c'est un peu trop d\xE9go\xFBtant, \xE0 chaque
-        fois je dirais berk. Moi ce que je veux c'est aller sur la Lune, mais maman
-        dit que c'est les gar\xE7ons qui ont le droit."
+      phrase: "Euh nan les maladies, c'est un peu trop d\xE9go\xFBtant. Moi ce que
+        je veux, c'est aller sur la lune, mais maman dit que c'est les gar\xE7ons
+        qui ont le droit."
     - type: 1
-      phrase: "Tu sais, moi aussi on m'a dit que seul les gar\xE7ons pouvaient \xEAtre
-        m\xE9decin."
+      phrase: "Tu sais, moi aussi, on m'a dit que seulement les gar\xE7ons pouvaient
+        \xEAtre m\xE9decin."
     - type: 0
-      phrase: "Ah bon mais c'est pas pareil, la Lune c'est trop loin et il faut \xEAtre
-        trop fort pour y aller et puis avoir des bonnes notes et puis savoir plein
-        de chose... Et aussi ils sont jamais malades."
+      phrase: "Ah bon, mais c'est pas pareil, la lune, c'est trop loin et il faut
+        \xEAtre trop fort pour y aller et puis avoir des bonnes notes et puis savoir
+        plein de choses. Et aussi, ils sont jamais malades."
     - type: 1
       phrase: Tu es souvent malade ?
     - type: 0
-      phrase: "Des fois un peu, j'aime pas. Mais \xE7a passe, c'est pas grave comme
+      phrase: "Des fois, un peu, j'aime pas. Mais \xE7a passe, c'est pas grave comme
         Bruno."
     - type: 1
       phrase: Bruno ?
     - type: 0
-      phrase: "Avant je jouais tout le temps avec lui mais plus depuis qu'il tousse
+      phrase: "Avant, je jouais tout le temps avec lui, mais plus depuis qu'il tousse
         et qu'il est fatigu\xE9 et qu'on sait pas ce qu'il a."
     - type: 1
       phrase: "Quand tu seras gu\xE9rie, tu pourras dire \xE0 Bruno de venir me voir
@@ -68,8 +68,8 @@ MonoBehaviour:
     - type: 1
       phrase: "Tu viens pour quoi aujourd'hui\_?"
     - type: 0
-      phrase: "En fait je tousse depuis euh... Lundi je crois et au d\xE9but \xE7a
-        allait mais maintenant \xE7a fait mal \xE0 la gorge."
+      phrase: "En fait, je tousse depuis euh... Lundi, je crois et au d\xE9but \xE7a
+        allait, mais maintenant \xE7a fait mal \xE0 la gorge."
     - type: 1
       phrase: "Est-ce que tu as d'autres probl\xE8mes\_?"
     - type: 0
@@ -91,7 +91,7 @@ MonoBehaviour:
       phrase: "Tu me donnes pas de m\xE9dicaments ? Le monsieur docteur a toujours
         des pilules."
     - type: 1
-      phrase: "Pour ce que tu as je pr\xE9f\xE8re attendre que \xE7a passe. \xC7a
+      phrase: "Pour ce que tu as, je pr\xE9f\xE8re attendre que \xE7a passe. \xC7a
         va aller mieux, ne t'inqui\xE8te pas."
     - type: 0
       phrase: D'accord, merci madame docteur, au revoir !
