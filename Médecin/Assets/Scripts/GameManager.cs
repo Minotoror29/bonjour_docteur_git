@@ -105,7 +105,7 @@ public class GameManager : MonoBehaviour
 
         if (salleDattente.salleDattente.Count == 0)
         {
-            JourSuivant();
+            FinDeJournée();
         }
 
         // Son
@@ -118,6 +118,11 @@ public class GameManager : MonoBehaviour
         Informations();
 
         FindObjectOfType<DialogueTrigger>().TriggerDialogue(patient);
+    }
+
+    void FinDeJournée()
+    {
+
     }
 
     public void JourSuivant()
