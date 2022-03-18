@@ -63,10 +63,22 @@ public class Livre : MonoBehaviour
         }
         if ( pageActuelle != 0 && pageActuelle != pages.Count -1)
         {
-            Pages.sprite = Bk03;
             if (Pages.flipX == true)
             {
                 Pages.flipX = false;
+            };
+
+            if (pageActuelle <= 13)
+            {
+                Pages.sprite = Bk02;
+            }
+            else if (pageActuelle <= 25)
+            {
+                Pages.sprite = Bk03;
+            }
+            else if (pageActuelle == 26)
+            {
+                Pages.sprite = Bk04;
             }
         }
     }
