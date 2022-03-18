@@ -901,7 +901,7 @@ MonoBehaviour:
   prescription: {fileID: 1087443109}
   dragDropPrefab: {fileID: 5658670162973608983, guid: b4213bf9c3ff7f44b9e3cf8eae4d3886, type: 3}
   dialogueViewportContent: {fileID: 48066548}
-  crossFade: {fileID: 0}
+  crossFade: {fileID: 1780708691}
 --- !u!4 &92488622
 Transform:
   m_ObjectHideFlags: 0
@@ -2140,7 +2140,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1155601515}
   m_Direction: 3
   m_Value: 0
-  m_Size: 1
+  m_Size: 0.4999999
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -6264,8 +6264,6 @@ GameObject:
   - component: {fileID: 1373061512}
   - component: {fileID: 1373061511}
   - component: {fileID: 1373061510}
-  - component: {fileID: 1373061513}
-  - component: {fileID: 1373061514}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -6342,37 +6340,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1373061508}
   m_CullTransparentMesh: 1
---- !u!95 &1373061513
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1373061508}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6ee9717c3cd9cf74ead304ccb2392cad, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1373061514
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1373061508}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c63e4c6657dc964cb5a0429417f1857, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1389434895
 GameObject:
   m_ObjectHideFlags: 0
@@ -8290,6 +8257,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1780708692}
+  - component: {fileID: 1780708694}
+  - component: {fileID: 1780708693}
   m_Layer: 0
   m_Name: CrossFade
   m_TagString: Untagged
@@ -8312,6 +8281,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1780708693
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780708691}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6ee9717c3cd9cf74ead304ccb2392cad, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1780708694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780708691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c63e4c6657dc964cb5a0429417f1857, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1785183647
 GameObject:
   m_ObjectHideFlags: 0
@@ -9277,7 +9277,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2002078355}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
   m_Name: 
