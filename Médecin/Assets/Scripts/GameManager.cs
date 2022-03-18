@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -22,8 +23,12 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] GameObject dialogueViewportContent;
 
+    [SerializeField] GameObject crossFade;
+
     private void Start()
     {
+        DontDestroyOnLoad(gameObject);
+
         // Son
         NextDay = GameObject.Find("Jour Suivant").GetComponent<AudioSource>();
         NextPatient = GameObject.Find("Patient Suivant").GetComponent<AudioSource>();
@@ -122,7 +127,12 @@ public class GameManager : MonoBehaviour
 
     void FinDeJournée()
     {
+        crossFade.GetComponent<Animator>().SetTrigger("Fade");
+    }
 
+    public void Nuit()
+    {
+        SceneManager.LoadScene("Nuit");
     }
 
     public void JourSuivant()
