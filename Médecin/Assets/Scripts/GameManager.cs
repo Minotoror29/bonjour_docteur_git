@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject dialogueViewportContent;
 
     [SerializeField] GameObject crossFade;
+    int jour;
 
     private void Start()
     {
@@ -36,6 +37,8 @@ public class GameManager : MonoBehaviour
         dialogueManager = GetComponent<DialogueManager>();
         village = GetComponent<Village>();
         salleDattente = GetComponent<SalleDattente>();
+
+        jour = 1;
 
         DébutDeJournée();
     }
@@ -110,7 +113,13 @@ public class GameManager : MonoBehaviour
 
         if (salleDattente.salleDattente.Count == 0)
         {
-            FinDeJournée();
+            if (jour == 1)
+            {
+                FinDeJournée();
+            } else if (jour == 2)
+            {
+                Conclusion();
+            }
         }
 
         // Son
@@ -142,7 +151,14 @@ public class GameManager : MonoBehaviour
         // Son
         NextDay.Play();
 
+        jour = 2;
+
         DébutDeJournée();
         PatientSuivant();
+    }
+
+    void Conclusion()
+    {
+
     }
 }
