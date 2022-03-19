@@ -5,6 +5,8 @@ using UnityEngine;
 public class Livre : MonoBehaviour
 {
     // Son
+    private GameObject Suiv;
+    private GameObject Prec;
     private AudioSource Book;
     private SpriteRenderer Pages;
     public Sprite Bk01;
@@ -24,6 +26,8 @@ public class Livre : MonoBehaviour
         Bk02 = Resources.Load<Sprite>("01_Visuals/spr_Book02");
         Bk03 = Resources.Load<Sprite>("01_Visuals/spr_Book03");
         Bk04 = Resources.Load<Sprite>("01_Visuals/spr_Book04");
+        Suiv = GameObject.Find("Suivant");
+        Prec = GameObject.Find("Precedent");
 }
 
     public void Suivant()
@@ -59,6 +63,15 @@ public class Livre : MonoBehaviour
             if (pageActuelle == pages.Count - 1 && Pages.flipX == false)
             {
                 Pages.flipX = true;
+            };
+
+            if (pageActuelle == 0)
+            {
+                Prec.SetActive(false);
+            }
+            else
+            {
+                Suiv.SetActive(false);
             }
         }
         if ( pageActuelle != 0 && pageActuelle != pages.Count -1)
@@ -67,6 +80,16 @@ public class Livre : MonoBehaviour
             {
                 Pages.flipX = false;
             };
+
+            if (Prec.activeSelf == false)
+            {
+                Prec.SetActive(true);
+            };
+
+            if (Suiv.activeSelf == false)
+            {
+                Suiv.SetActive(true);
+            }
 
             if (pageActuelle <= 13)
             {
