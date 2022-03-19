@@ -21,12 +21,10 @@ public class Radios : MonoBehaviour
             (AudioClip)Resources.Load("02_Sounds/1/Radio01_03"),
             (AudioClip)Resources.Load("02_Sounds/1/Radio01_04"),
             (AudioClip)Resources.Load("02_Sounds/1/Radio01_05"),
-            //(AudioClip)Resources.Load("02_Sounds/1/Radio01_06"),
             (AudioClip)Resources.Load("02_Sounds/1/Radio01_07"),
             (AudioClip)Resources.Load("02_Sounds/1/Radio02"),
             (AudioClip)Resources.Load("02_Sounds/1/Radio03"),
             (AudioClip)Resources.Load("02_Sounds/1/Radio04"),
-            (AudioClip)Resources.Load("02_Sounds/1/Radio06")
         };
     }
     void Update()
