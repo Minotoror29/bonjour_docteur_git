@@ -5,6 +5,12 @@ using UnityEngine;
 public class Livre : MonoBehaviour
 {
     // Son
+    private GameObject PartIG;
+    private GameObject PartIIG;
+    private GameObject PartIIIG;
+    private GameObject PartID;
+    private GameObject PartIID;
+    private GameObject PartIIID;
     private GameObject Suiv;
     private GameObject Prec;
     private AudioSource Book;
@@ -28,7 +34,41 @@ public class Livre : MonoBehaviour
         Bk04 = Resources.Load<Sprite>("01_Visuals/spr_Book04");
         Suiv = GameObject.Find("Suivant");
         Prec = GameObject.Find("Precedent");
+        PartID = GameObject.Find("Partie I D");
+        PartIID = GameObject.Find("Partie II D");
+        PartIIID = GameObject.Find("Partie III D");
+        PartIG = GameObject.Find("Partie I G");
+        PartIIG = GameObject.Find("Partie II G");
+        PartIIIG = GameObject.Find("Partie III G");
 }
+
+    public void PartieI()
+    {
+        pages[pageActuelle].SetActive(false);
+        pageActuelle = 1;
+        pages[pageActuelle].SetActive(true);
+        Book.pitch = Random.Range(0.95f, 1.05f);
+        Book.Play();
+
+    }
+
+    public void PartieII()
+    {
+        pages[pageActuelle].SetActive(false);
+        pageActuelle = 14;
+        pages[pageActuelle].SetActive(true);
+        Book.pitch = Random.Range(0.95f, 1.05f);
+        Book.Play();
+    }
+
+    public void PartieIII()
+    {
+        pages[pageActuelle].SetActive(false);
+        pageActuelle = 26;
+        pages[pageActuelle].SetActive(true);
+        Book.pitch = Random.Range(0.95f, 1.05f);
+        Book.Play();
+    }
 
     public void Suivant()
     {
@@ -39,6 +79,7 @@ public class Livre : MonoBehaviour
         pageActuelle += 1;
         pages[pageActuelle].SetActive(true);
         // Son
+        Book.pitch = Random.Range(0.95f, 1.05f);
         Book.Play();
 
     }
@@ -52,6 +93,7 @@ public class Livre : MonoBehaviour
         pageActuelle -= 1;
         pages[pageActuelle].SetActive(true);
         // Son
+        Book.pitch = Random.Range(0.95f, 1.05f);
         Book.Play();
     }
 
@@ -68,10 +110,22 @@ public class Livre : MonoBehaviour
             if (pageActuelle == 0)
             {
                 Prec.SetActive(false);
+                PartIG.SetActive(false);
+                PartIIG.SetActive(false);
+                PartIIIG.SetActive(false);
+                PartID.SetActive(true);
+                PartIID.SetActive(true);
+                PartIIID.SetActive(true);
             }
             else
             {
                 Suiv.SetActive(false);
+                PartIG.SetActive(true);
+                PartIIG.SetActive(true);
+                PartIIIG.SetActive(true);
+                PartID.SetActive(false);
+                PartIID.SetActive(false);
+                PartIIID.SetActive(false);
             }
         }
         if ( pageActuelle != 0 && pageActuelle != pages.Count -1)
@@ -94,14 +148,32 @@ public class Livre : MonoBehaviour
             if (pageActuelle <= 13)
             {
                 Pages.sprite = Bk02;
+                PartIG.SetActive(true);
+                PartIIG.SetActive(false);
+                PartIIIG.SetActive(false);
+                PartID.SetActive(false);
+                PartIID.SetActive(true);
+                PartIIID.SetActive(true);
             }
             else if (pageActuelle <= 25)
             {
                 Pages.sprite = Bk03;
+                PartIG.SetActive(true);
+                PartIIG.SetActive(true);
+                PartIIIG.SetActive(false);
+                PartID.SetActive(false);
+                PartIID.SetActive(false);
+                PartIIID.SetActive(true);
             }
             else if (pageActuelle == 26)
             {
                 Pages.sprite = Bk04;
+                PartIG.SetActive(true);
+                PartIIG.SetActive(true);
+                PartIIIG.SetActive(true);
+                PartID.SetActive(false);
+                PartIID.SetActive(false);
+                PartIIID.SetActive(false);
             }
         }
     }

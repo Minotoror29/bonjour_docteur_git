@@ -7,6 +7,7 @@ public class TextWriter : MonoBehaviour
 {
     //
     private AudioSource voice;
+    public AudioClip[] voiceclips;
     private float numberletters;
 
     Text UIText;
@@ -21,6 +22,15 @@ public class TextWriter : MonoBehaviour
         this.textToWrite = textToWrite;
         this.timePerCharacter = timePerCharacter;
         characterIndex = 0;
+    }
+
+    private void Awake()
+    {
+        voiceclips = new AudioClip[] {
+            (AudioClip)Resources.Load("02_Sounds/1/Voice01"),
+            (AudioClip)Resources.Load("02_Sounds/1/Voice02"),
+            (AudioClip)Resources.Load("02_Sounds/1/Voice03"),
+        };
     }
 
     private void Start()
@@ -42,6 +52,8 @@ public class TextWriter : MonoBehaviour
                 // Son
                 if (numberletters == 0)
                 {
+                    int randomClip = Random.Range(0, voiceclips.Length);
+                    voice.clip = voiceclips[randomClip];
                     voice.PlayDelayed(Random.Range(0, 3 / 2));
                 }
                 numberletters += 1;
