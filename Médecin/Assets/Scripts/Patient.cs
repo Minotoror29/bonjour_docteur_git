@@ -44,6 +44,11 @@ public class Patient : MonoBehaviour
         maladie = villageois.maladie;
     }
 
+    public void LancerDialogue()
+    {
+        FindObjectOfType<GameManager>().DébutDialogue();
+    }
+
     public Phrase[] Introduction()
     {
         return dialogue.introduction;

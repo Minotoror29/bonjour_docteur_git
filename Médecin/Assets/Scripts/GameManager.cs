@@ -131,7 +131,10 @@ public class GameManager : MonoBehaviour
         patient.GetComponent<Animator>().SetTrigger("Entrée");
 
         Informations();
+    }
 
+    public void DébutDialogue()
+    {
         FindObjectOfType<DialogueTrigger>().TriggerDialogue(patient);
     }
 
