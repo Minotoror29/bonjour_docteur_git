@@ -1425,6 +1425,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d50b1e8bf0c158479bb8759701a9ad2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  voiceclips: []
   textToWrite: 
   characterIndex: 0
 --- !u!114 &92488626
