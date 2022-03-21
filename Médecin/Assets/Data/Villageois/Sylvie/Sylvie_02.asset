@@ -16,6 +16,10 @@ MonoBehaviour:
   nom: 1
   maladie: {fileID: 11400000, guid: e0c3abdd87bc9604e831a075be24e3d4, type: 2}
   age: 9
+  clip:
+  - {fileID: 8300000, guid: ea0b2be069adc1b4f85ae83d2f148d40, type: 3}
+  - {fileID: 8300000, guid: a61da436912c88e40973e25862f1eb3b, type: 3}
+  - {fileID: 8300000, guid: ece289ee312f67949b9c962d0c5773ab, type: 3}
   textSpeed: 1
   dialogue:
     introduction:
