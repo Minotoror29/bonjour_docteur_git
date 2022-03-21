@@ -92,7 +92,7 @@ public class DialogueManager : MonoBehaviour
             patient.Pass = false;
         }
 
-        if (!patient.villageois)
+        if (!patient.villageois || phrases.Count == 0)
         {
             return;
         }
@@ -123,7 +123,6 @@ public class DialogueManager : MonoBehaviour
 
         if (GetComponent<TextWriter>().characterIndex < GetComponent<TextWriter>().textToWrite.Length)
         {
-
             return;
         }
 
