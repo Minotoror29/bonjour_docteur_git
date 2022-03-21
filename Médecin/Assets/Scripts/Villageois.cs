@@ -9,6 +9,7 @@ public class Villageois : ScriptableObject
     public VILLAGEOIS nom;
     public Maladie maladie;
     public int age;
+    public AudioClip[] clip;
 
     public int textSpeed;
 
