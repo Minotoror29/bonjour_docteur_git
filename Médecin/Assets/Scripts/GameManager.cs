@@ -7,8 +7,11 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     // Son
-    private AudioSource NextPatient;
     private AudioSource NextDay;
+    private AudioSource Pas;
+    private AudioClip NtoS;
+    private AudioClip StoS;
+    private AudioClip StoN;
 
     DialogueManager dialogueManager;
     Village village;
@@ -31,7 +34,10 @@ public class GameManager : MonoBehaviour
     {
         // Son
         NextDay = GameObject.Find("Jour Suivant").GetComponent<AudioSource>();
-        NextPatient = GameObject.Find("Patient Suivant").GetComponent<AudioSource>();
+        Pas = GameObject.Find("Patient Suivant").GetComponent<AudioSource>();
+        NtoS = (AudioClip)Resources.Load("02_Sounds/0/EnterWithoutExit");
+        StoS = (AudioClip)Resources.Load("02_Sounds/0/EnterWithExit");
+        StoN = (AudioClip)Resources.Load("02_Sounds/0/NoEnterWithExit");
 
         dialogueManager = GetComponent<DialogueManager>();
         village = GetComponent<Village>();
@@ -53,7 +59,10 @@ public class GameManager : MonoBehaviour
         }
 
         dialogueManager.PremierJour();
+        Pas.clip = NtoS;
+        Pas.Play();
         PatientSuivant();
+
     }
 
     // Remplit les informations du personnage sur la fiche de prescription à son arrivée
@@ -88,7 +97,18 @@ public class GameManager : MonoBehaviour
                     village.village[i] = patient.villageois.ChangeState(patient.conditions);
                 }
             }
+        };
+
+        if (salleDattente.salleDattente.Count == 0)
+        {
+            Pas.clip = StoN;
+            Pas.Play();
         }
+        else
+        {
+            Pas.clip = StoS;
+            Pas.Play();
+        };
 
         patient.GetComponent<Animator>().SetTrigger("Sortie");
 
@@ -117,9 +137,6 @@ public class GameManager : MonoBehaviour
             FinDeJournée();
             return;
         }
-
-        // Son
-        NextPatient.Play();
 
         patient.villageois = salleDattente.salleDattente[0];
         patient.AssignerPatient();
