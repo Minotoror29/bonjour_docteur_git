@@ -112,15 +112,8 @@ public class GameManager : MonoBehaviour
 
         if (salleDattente.salleDattente.Count == 0)
         {
-            if (jour == 1)
-            {
-                FinDeJournée();
-                return;
-            } else if (jour == 2)
-            {
-                Conclusion();
-                return;
-            }
+            FinDeJournée();
+            return;
         }
 
         // Son
@@ -145,16 +138,26 @@ public class GameManager : MonoBehaviour
 
     public void Nuit()
     {
-        if (nuit == false)
+        if (jour == 1)
         {
-            SceneManager.LoadScene("Nuit", LoadSceneMode.Additive);
-            nuit = true;
-            StartCoroutine(TempsNuit());
+            if (nuit == false)
+            {
+                SceneManager.LoadScene("Nuit", LoadSceneMode.Additive);
+                nuit = true;
+                StartCoroutine(TempsNuit());
+            }
+            else
+            {
+                SceneManager.UnloadSceneAsync("Nuit");
+                nuit = false;
+                JourSuivant();
+            }
         } else
         {
-            SceneManager.UnloadSceneAsync("Nuit");
-            nuit = false;
-            JourSuivant();
+            if (nuit == false)
+            {
+                Conclusion();
+            }
         }
     }
 
@@ -179,6 +182,6 @@ public class GameManager : MonoBehaviour
 
     void Conclusion()
     {
-
+        SceneManager.LoadScene("Conclusion");
     }
 }
