@@ -25,11 +25,10 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] GameObject crossFade;
     int jour;
+    bool nuit = false;
 
     private void Start()
     {
-        DontDestroyOnLoad(gameObject);
-
         // Son
         NextDay = GameObject.Find("Jour Suivant").GetComponent<AudioSource>();
         NextPatient = GameObject.Find("Patient Suivant").GetComponent<AudioSource>();
@@ -143,7 +142,23 @@ public class GameManager : MonoBehaviour
 
     public void Nuit()
     {
-        SceneManager.LoadScene("Nuit", LoadSceneMode.Additive);
+        if (nuit == false)
+        {
+            SceneManager.LoadScene("Nuit", LoadSceneMode.Additive);
+            nuit = true;
+            StartCoroutine(TempsNuit());
+        } else
+        {
+            SceneManager.UnloadSceneAsync("Nuit");
+            nuit = false;
+            JourSuivant();
+        }
+    }
+
+    IEnumerator TempsNuit()
+    {
+        yield return new WaitForSeconds(3);
+        crossFade.GetComponent<Animator>().SetTrigger("Fade");
     }
 
     public void JourSuivant()
