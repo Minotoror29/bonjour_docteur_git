@@ -44,6 +44,8 @@ public class GameManager : MonoBehaviour
 
     void DébutDeJournée()
     {
+        AudioListener.volume = 1;
+
         // Remplit la salle d'attente
         for (int i = 0; i < village.village.Count; i++)
         {
@@ -133,6 +135,7 @@ public class GameManager : MonoBehaviour
 
     void FinDeJournée()
     {
+        AudioListener.volume = 0;
         crossFade.GetComponent<Animator>().SetTrigger("Fade");
     }
 
