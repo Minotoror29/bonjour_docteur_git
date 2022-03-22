@@ -46,7 +46,7 @@ MonoBehaviour:
     symptomes:
     - type: 1
       phrase: "Vos sympt\xF4mes sont toujours pr\xE9sents ?"
-    - type: 1
+    - type: 0
       phrase: Oui... C'est devenu pire.
     - type: 1
       phrase: "C'est-\xE0-dire... ?"
@@ -71,7 +71,4 @@ MonoBehaviour:
       phrase: Le docteur Lacroix en entendra parler...
     conclusion_3: []
   "cons\xE9quences": []
-  conclusion: "\tMarguerite est revenue me voir depuis vos consultations. Elle ne
-    vous tient pas dans son c\u0153ur. Veuillez l\u2019excuser pour ses mani\xE8res,
-    elle est un peu vieille France. Elle m\u2019a dit que vous aviez tent\xE9 de
-    l\u2019assassiner, mais ne vous inqui\xE9tez pas, elle a tendance \xE0 exag\xE9rer."
+  conclusion: 

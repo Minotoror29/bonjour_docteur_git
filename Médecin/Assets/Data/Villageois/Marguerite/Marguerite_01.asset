@@ -46,7 +46,7 @@ MonoBehaviour:
       phrase: "Oui, j'ai besoin de savoir votre \xE2ge, \xE7a peut \xEAtre important
         pour la prescription."
     - type: 0
-      phrase: "Excusez-moi ma petite, avec cette cr\xE8ve se suis si fatigu\xE9e."
+      phrase: "Excusez-moi ma petite, avec cette cr\xE8ve je suis si fatigu\xE9e."
     - type: 1
       phrase: Je comprend.
     - type: 0
@@ -102,3 +102,4 @@ MonoBehaviour:
     "cons\xE9quence": {fileID: 11400000, guid: 5761bb515dfd90a4e8b162cd743674db, type: 2}
   - conditions: 03000000
     "cons\xE9quence": {fileID: 11400000, guid: 4fd804e813d9dad4abe5fc23958d8f37, type: 2}
+  conclusion: 
