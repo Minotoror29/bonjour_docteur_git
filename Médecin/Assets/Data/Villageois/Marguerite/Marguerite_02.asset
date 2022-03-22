@@ -46,7 +46,7 @@ MonoBehaviour:
     symptomes:
     - type: 1
       phrase: "Vos sympt\xF4mes sont toujours pr\xE9sents ?"
-    - type: 1
+    - type: 0
       phrase: Oui... C'est devenu pire.
     - type: 1
       phrase: "C'est-\xE0-dire... ?"
@@ -71,3 +71,4 @@ MonoBehaviour:
       phrase: Le docteur Lacroix en entendra parler...
     conclusion_3: []
   "cons\xE9quences": []
+  conclusion: 

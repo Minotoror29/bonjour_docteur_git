@@ -85,7 +85,8 @@ MonoBehaviour:
         ?"
     - type: 1
       phrase: "Mes m\xE9thodes sont diff\xE9rentes de celles du docteur Lacroix."
-    - type: 1
+    - type: 0
       phrase: "Quelle id\xE9e... Tant pis, vous me fatiguez. \xC0 tant\xF4t."
     conclusion_3: []
   "cons\xE9quences": []
+  conclusion: 

@@ -56,7 +56,7 @@ MonoBehaviour:
       phrase: "Par contre, il pourra pas r\xE9pondre, \xE0 part dire miaou."
     - type: 1
       phrase: Mais... Bruno, c'est le chat ?
-    - type: 1
+    - type: 0
       phrase: Ben oui, tu peux l'aider ?
     - type: 1
       phrase: Euh... Je vais voir ce que je peux faire. Qu'est-ce qu'il a, Bruno
@@ -85,3 +85,4 @@ MonoBehaviour:
       phrase: D'accord... Merci beaucoup pour Bruno madame docteur !
     conclusion_3: []
   "cons\xE9quences": []
+  conclusion: 
