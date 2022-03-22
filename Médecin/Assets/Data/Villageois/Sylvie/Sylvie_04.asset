@@ -85,3 +85,7 @@ MonoBehaviour:
       phrase: D'accord... Merci beaucoup pour Bruno madame docteur !
     conclusion_3: []
   "cons\xE9quences": []
+  conclusion: "\tSylvie est en grande forme. Elle est particuli\xE8rement contente
+    pour son chat. Le v\xE9t\xE9rinaire que vous aviez recommand\xE9 a pu sauver
+    la pauvre b\xEAte. \xC7a a m\xEAme fait changer d\u2019obsession la petite. Fini
+    la lune, maintenant elle ne parle que de sauver les animaux."

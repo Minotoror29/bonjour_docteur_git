@@ -16,6 +16,7 @@ MonoBehaviour:
   nom: 2
   maladie: {fileID: 11400000, guid: ba2f3c2fde16c1142924952a2534b5f7, type: 2}
   age: 51
+  clip: []
   textSpeed: 2
   dialogue:
     introduction:
@@ -64,3 +65,7 @@ MonoBehaviour:
         fa\xE7on."
     conclusion_3: []
   "cons\xE9quences": []
+  conclusion: "\tMalgr\xE9 vos efforts, la rage de Ren\xE9 s\u2019est d\xE9velopp\xE9e
+    jusqu\u2019\xE0 devenir incontr\xF4lable. Je ne souhaite pas vous donner de faux
+    espoirs quant \xE0 son sort. Malheureusement, les trag\xE9dies de ce genre font
+    partie de notre m\xE9tier."

@@ -16,6 +16,7 @@ MonoBehaviour:
   nom: 1
   maladie: {fileID: 0}
   age: 9
+  clip: []
   textSpeed: 1
   dialogue:
     introduction:
@@ -79,3 +80,7 @@ MonoBehaviour:
       phrase: Au revoir et merci pour le euh... Lapin.
     conclusion_3: []
   "cons\xE9quences": []
+  conclusion: "\tSylvie s\u2019est remise de sa maladie. Mais ce n\u2019est pas la
+    grande forme, elle est d\xE9vast\xE9e par la mort de son chat. C\u2019est dommage,
+    le chat est mort d\u2019une maladie que les v\xE9t\xE9rinaires savent traiter
+    de nos jours. Si on avait su, on aurait peut-\xEAtre pu faire quelque chose."

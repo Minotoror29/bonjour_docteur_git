@@ -16,6 +16,7 @@ MonoBehaviour:
   nom: 2
   maladie: {fileID: 0}
   age: 51
+  clip: []
   textSpeed: 0
   dialogue:
     introduction:
@@ -74,3 +75,7 @@ MonoBehaviour:
         vous avez besoin de quoi que ce soit, n'h\xE9sitez pas !"
     conclusion_3: []
   "cons\xE9quences": []
+  conclusion: "\tGr\xE2ce \xE0 vous, Ren\xE9 a \xE9chapp\xE9 \xE0 la rage. Il regrette
+    de ne pas avoir pu vous remercier plus g\xE9n\xE9reusement. Ce n\u2019est malheureusement
+    pas le dernier des probl\xE8mes de ce pauvre homme. Au moins il fait d\xE9sormais
+    plus attention lorsqu\u2019il se prom\xE8ne en for\xEAt."
