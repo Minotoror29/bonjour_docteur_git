@@ -1658,8 +1658,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1627936735
   m_SortingLayer: -1
-  m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 2585339d1b6546240b7b6c2db217a080, type: 3}
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 21300000, guid: 952dcf8656745c3488469a61c0f918d7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -1900,7 +1900,7 @@ SpriteRenderer:
   m_SortingLayerID: -1627936735
   m_SortingLayer: -1
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: e0c9e52d5c7b68a4e8d4b55b65e9a3d0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 45ee38665b4a29444bd91bcf227fe8e9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3142,7 +3142,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a7422c2be7d39c44e951112825af542e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e9d6cdd9acba56c4e84e82b4de049e35, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6606,7 +6606,7 @@ SpriteRenderer:
   m_Size: {x: 2.56, y: 1.44}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &659535080
@@ -7946,7 +7946,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &857109689
 Transform:
   m_ObjectHideFlags: 0
@@ -7955,8 +7955,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 857109688}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 12, y: 3.5, z: 1}
+  m_LocalPosition: {x: -3, y: 0.5, z: 0}
+  m_LocalScale: {x: 7, y: 7, z: 1}
   m_Children: []
   m_Father: {fileID: 1410729209}
   m_RootOrder: 0
@@ -7968,7 +7968,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 857109688}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -8001,8 +8001,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1627936735
   m_SortingLayer: -1
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: aa13654c1d8702d41b0f557140ffab0e, type: 3}
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300000, guid: b145606dd7a37584daa0c33313615950, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -8123,7 +8123,7 @@ SpriteRenderer:
   m_SortingLayerID: -1627936735
   m_SortingLayer: -1
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: b48efbdeaad9e1d4b950babbeeb8b449, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1bac3033bc78e7c41ac6dce160e2986d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -8908,7 +8908,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.38823533, g: 0.38823533, b: 0.38823533, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -9199,7 +9199,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.38823533, g: 0.38823533, b: 0.38823533, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -15252,7 +15252,7 @@ SpriteRenderer:
   m_SortingLayerID: -1627936735
   m_SortingLayer: -1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2277098ed9eac4a44b18cba2b40da96d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a55899dea4cec2844a6da873f395cb56, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -16955,7 +16955,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 14ffc125663659e47bb77a61da22dae3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e31077e1c0b5d8542a963296d733641d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -17519,14 +17519,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1410729209}
     m_Modifications:
-    - target: {fileID: 4226219185680223403, guid: 3c77af0684a97e941b762bdfb0e4d23a, type: 3}
-      propertyPath: m_FontData.m_FontSize
-      value: 35
-      objectReference: {fileID: 0}
-    - target: {fileID: 7178148004100184124, guid: 3c77af0684a97e941b762bdfb0e4d23a, type: 3}
-      propertyPath: m_FontData.m_FontSize
-      value: 35
-      objectReference: {fileID: 0}
     - target: {fileID: 7178148005388135499, guid: 3c77af0684a97e941b762bdfb0e4d23a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -17582,10 +17574,6 @@ PrefabInstance:
     - target: {fileID: 7178148005735465555, guid: 3c77af0684a97e941b762bdfb0e4d23a, type: 3}
       propertyPath: m_Name
       value: PRESCRIPTION
-      objectReference: {fileID: 0}
-    - target: {fileID: 8447454194672833391, guid: 3c77af0684a97e941b762bdfb0e4d23a, type: 3}
-      propertyPath: m_FontData.m_FontSize
-      value: 35
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c77af0684a97e941b762bdfb0e4d23a, type: 3}

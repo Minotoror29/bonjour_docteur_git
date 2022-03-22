@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf4e5973660b105478e4a2e29709d926, type: 3}
   m_Name: Marguerite_01
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 37dc60954e86f53478691b723c86cba2, type: 3}
+  sprite: {fileID: 21300000, guid: add7a591e2512ca4db6bb464b735c812, type: 3}
   nom: 3
   maladie: {fileID: 11400000, guid: 57f6b6cc6c4c8db4497399f2367a51cf, type: 2}
   age: 82
