@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf4e5973660b105478e4a2e29709d926, type: 3}
   m_Name: Sylvie_04
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 247e86934d1ccf447ac61cf2e20f66f3, type: 3}
+  sprite: {fileID: 21300000, guid: dbe75e50a97d66f4c944b8d118d9de36, type: 3}
   nom: 1
   maladie: {fileID: 11400000, guid: 7b53f61f02673c3498a78159257f9fc4, type: 2}
   age: 9

@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf4e5973660b105478e4a2e29709d926, type: 3}
   m_Name: "Ren\xE9_01"
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 84086045e0cab984cb99ee4f508495af, type: 3}
+  sprite: {fileID: 21300000, guid: fa3ef18fd100b8144920ff6a3040d9b2, type: 3}
   nom: 2
   maladie: {fileID: 11400000, guid: ca9f82aeef5025546b045472659efc2b, type: 2}
   age: 51
+  clip: []
   textSpeed: 2
   dialogue:
     introduction:
@@ -108,3 +109,4 @@ MonoBehaviour:
     "cons\xE9quence": {fileID: 11400000, guid: e0eb2028cd95198479633136cd1b3c10, type: 2}
   - conditions: 00000000
     "cons\xE9quence": {fileID: 11400000, guid: 7c7ceb4cf0ba580439c3dd9f240ada54, type: 2}
+  conclusion: 
