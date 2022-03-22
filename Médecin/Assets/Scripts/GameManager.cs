@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
     private AudioClip StoN;
 
     DialogueManager dialogueManager;
-    Village village;
+    public Village village;
     SalleDattente salleDattente;
 
     public Patient patient;
@@ -40,7 +40,7 @@ public class GameManager : MonoBehaviour
         StoN = (AudioClip)Resources.Load("02_Sounds/0/NoEnterWithExit");
 
         dialogueManager = GetComponent<DialogueManager>();
-        village = GetComponent<Village>();
+        //village = GetComponent<Village>();
         salleDattente = GetComponent<SalleDattente>();
 
         jour = 1;

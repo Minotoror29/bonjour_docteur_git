@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 64172378}
   - component: {fileID: 64172379}
+  - component: {fileID: 64172380}
   m_Layer: 5
   m_Name: Content
   m_TagString: Untagged
@@ -160,7 +161,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0.000025647563}
-  m_SizeDelta: {x: 0, y: 1517.1863}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &64172379
 MonoBehaviour:
@@ -188,6 +189,20 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &64172380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 64172377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalFit: 0
+  m_VerticalFit: 2
 --- !u!1 &205221501
 GameObject:
   m_ObjectHideFlags: 0
@@ -883,8 +898,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1521.244, y: 250}
+  m_AnchoredPosition: {x: 760.622, y: 0}
+  m_SizeDelta: {x: 1521.244, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &771100337
 MonoBehaviour:
@@ -919,10 +934,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\tSylvie est en grande forme. Elle est particuli\xE8rement contente pour
-    son chat. Le v\xE9t\xE9rinaire que vous aviez recommand\xE9 a pu sauver la pauvre
-    b\xEAte. \xC7a a m\xEAme fait changer d\u2019obsession la petite. Fini la lune,
-    maintenant elle ne parle que de sauver les animaux."
+  m_Text: 
 --- !u!222 &771100338
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -938,7 +950,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 771100335}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
   m_Name: 
@@ -1059,8 +1071,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1521.244, y: 200}
+  m_AnchoredPosition: {x: 760.622, y: 0}
+  m_SizeDelta: {x: 1521.244, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &873186973
 MonoBehaviour:
@@ -1095,9 +1107,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\tMarguerite va mieux depuis vos consultations. Veuillez l\u2019excuser
-    pour ses mani\xE8res, elle est un peu vieille France. Mais vous avez d\xFB lui
-    faire bonne impression. Je l\u2019ai \xE0 peine entendue vous critiquer."
+  m_Text: 
 --- !u!222 &873186974
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1113,7 +1123,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 873186971}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
   m_Name: 
@@ -1749,8 +1759,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1521.244, y: 250}
+  m_AnchoredPosition: {x: 760.622, y: 0}
+  m_SizeDelta: {x: 1521.244, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1679410957
 MonoBehaviour:
@@ -1785,10 +1795,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\tGr\xE2ce \xE0 vous, Ren\xE9 a \xE9chapp\xE9 \xE0 la rage. Il regrette
-    de ne pas avoir pu vous remercier plus g\xE9n\xE9reusement. Ce n\u2019est malheureusement
-    pas le dernier des probl\xE8mes de ce pauvre homme. Au moins il fait d\xE9sormais
-    plus attention lorsqu\u2019il se prom\xE8ne en for\xEAt."
+  m_Text: 
 --- !u!222 &1679410958
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1804,7 +1811,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1679410955}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
   m_Name: 
@@ -2095,7 +2102,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 205221502}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.5880406
+  m_Size: 0.58649486
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
