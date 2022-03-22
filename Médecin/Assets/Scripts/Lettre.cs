@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Lettre : MonoBehaviour
 {
-    public GameObject Letter;
     public AudioSource Ambiance;
     private AudioClip Base;
     private AudioClip After;
