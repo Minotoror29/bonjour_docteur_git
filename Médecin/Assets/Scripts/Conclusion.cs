@@ -12,18 +12,13 @@ public class Conclusion : MonoBehaviour
 
     Village village;
 
-    [TextArea(3, 10)] public string marguerite_01;
-    [TextArea(3, 10)] public string marguerite_02;
-    [TextArea(3, 10)] public string rené_01;
-    [TextArea(3, 10)] public string rené_02;
-    [TextArea(3, 10)] public string sylvie_01;
-    [TextArea(3, 10)] public string sylvie_02;
-
     private void Start()
     {
         village = FindObjectOfType<Village>();
 
-        
+        sylvie.text = village.village[0].conclusion;
+        rené.text = village.village[1].conclusion;
+        marguerite.text = village.village[2].conclusion;
     }
 
     private void Update()

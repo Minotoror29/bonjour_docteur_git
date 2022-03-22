@@ -17,6 +17,8 @@ public class Villageois : ScriptableObject
 
     public List<Conséquence> conséquences;
 
+    [TextArea(3, 10)] public string conclusion;
+
     public Villageois ChangeState(List<CONDITIONS> c)
     {
         List<CONDITIONS> conditions = new List<CONDITIONS>();
