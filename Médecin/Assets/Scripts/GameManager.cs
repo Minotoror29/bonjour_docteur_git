@@ -80,6 +80,9 @@ public class GameManager : MonoBehaviour
         if (!patient.maladie)
             return;
 
+        if (dialogueManager.dialogueIndex == 0)
+            return;
+
         patient.Prescription(prescription.GetComponent<Prescription>().traitements);
 
         if (dialogueManager.dialogueIndex < 3)

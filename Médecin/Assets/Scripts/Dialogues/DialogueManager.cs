@@ -92,7 +92,7 @@ public class DialogueManager : MonoBehaviour
             patient.Pass = false;
         }
 
-        if (!patient.villageois || phrases.Count == 0)
+        if (!patient.villageois)
         {
             return;
         }
@@ -100,6 +100,10 @@ public class DialogueManager : MonoBehaviour
         // Si le dialogue est fini on passe à la section suivante ou on finit la conversation
         if (phrases.Count == 0)
         {
+            if (dialogueIndex == 0)
+            {
+                return;
+            }
             if (dialogueIndex == 1)
             {
                 ContinueDialogue(dialogueIndex + 1);
