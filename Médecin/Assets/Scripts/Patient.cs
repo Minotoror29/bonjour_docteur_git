@@ -8,6 +8,9 @@ public class Patient : MonoBehaviour
     private AudioSource Prescript;
     public bool Pass = false;
     private bool Make = false;
+    private AudioSource Sound;
+    private AudioClip[] Clips;
+    private float Timer = 10;
 
     public Villageois villageois;
 
@@ -27,6 +30,7 @@ public class Patient : MonoBehaviour
     {
         // Son
         Prescript = GameObject.Find("AudioPrescript").GetComponent<AudioSource>();
+        Sound = gameObject.GetComponent<AudioSource>();
     }
 
     public void AssignerPatient()
@@ -42,6 +46,8 @@ public class Patient : MonoBehaviour
         spriteRenderer.sprite = villageois.sprite;
 
         maladie = villageois.maladie;
+
+        Clips = villageois.clip;
     }
 
     public void LancerDialogue()
@@ -136,5 +142,19 @@ public class Patient : MonoBehaviour
     public void PatientSuivant()
     {
         FindObjectOfType<GameManager>().PatientSuivant();
+    }
+
+    void Update()
+    {
+        Timer -= Time.deltaTime;
+
+        if (Timer <= 0 && Clips.Length !=0)
+        {
+            int randomClip = Random.Range(0, Clips.Length);
+            Sound.clip = Clips[randomClip];
+            Sound.pitch = UnityEngine.Random.Range(0.95f, 1.05f);
+            Sound.Play();
+            Timer = UnityEngine.Random.Range(10f,30f);
+        }
     }
 }
