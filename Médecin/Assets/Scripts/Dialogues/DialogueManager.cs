@@ -98,7 +98,7 @@ public class DialogueManager : MonoBehaviour
         }
 
         // Si le dialogue est fini on passe à la section suivante ou on finit la conversation
-        if (phrases.Count == 0)
+        if (phrases.Count == 0 && GetComponent<TextWriter>().characterIndex >= GetComponent<TextWriter>().textToWrite.Length)
         {
             if (dialogueIndex == 0)
             {
