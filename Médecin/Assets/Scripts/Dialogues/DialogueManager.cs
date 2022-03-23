@@ -149,7 +149,7 @@ public class DialogueManager : MonoBehaviour
 
     public void Interrompre()
     {
-        if (dialogueIndex >= 2 || dialogueIndex == 0 || !patient.pret)
+        if (dialogueIndex >= 2 || dialogueIndex == 0 || !patient.pret || !patient.villageois)
             return;
 
         ContinueDialogue(2);

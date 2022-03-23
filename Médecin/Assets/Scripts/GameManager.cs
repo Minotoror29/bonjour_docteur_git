@@ -91,7 +91,7 @@ public class GameManager : MonoBehaviour
 
     public void Prescrire()
     {
-        if (!patient.villageois)
+        if (!patient.villageois || !patient.pret)
             return;
 
         if (!patient.maladie)
