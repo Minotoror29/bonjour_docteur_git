@@ -1821,7 +1821,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u30FBTraiter diarrh\xE9e, naus\xE9e, douleur et fi\xE8vre."
+  m_Text: "\u30FBTraiter diarrh\xE9e, naus\xE9e, douleur."
 --- !u!222 &151798222
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3342,7 +3342,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1155601515}
   m_Direction: 3
   m_Value: 0
-  m_Size: 0.4999999
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -17530,6 +17530,7 @@ MonoBehaviour:
     conclusion_3: []
   spriteRenderer: {fileID: 1370671598}
   conditions: 
+  pret: 0
 --- !u!95 &2033255616
 Animator:
   serializedVersion: 3
