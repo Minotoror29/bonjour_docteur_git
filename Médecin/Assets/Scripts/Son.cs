@@ -15,4 +15,9 @@ public class Son : MonoBehaviour
     {
         AudioListener.volume = VolumeSlider.value;
     }
+
+    public void FullScreen()
+    {
+        Screen.fullScreen = !Screen.fullScreen;
+    }
 }
