@@ -278,6 +278,82 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 205221501}
   m_CullTransparentMesh: 1
+--- !u!1 &209237360
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 209237361}
+  - component: {fileID: 209237363}
+  - component: {fileID: 209237362}
+  m_Layer: 5
+  m_Name: Bouton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &209237361
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 209237360}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 746186635}
+  m_Father: {fileID: 909558464}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 882.69995, y: -465}
+  m_SizeDelta: {x: -1864.5801, y: -1036.6207}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &209237362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 209237360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.8207547, g: 0.8207547, b: 0.8207547, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 8dd62ffad3ef4454bab02278408261ff, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &209237363
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 209237360}
+  m_CullTransparentMesh: 1
 --- !u!1 &246250595
 GameObject:
   m_ObjectHideFlags: 0
@@ -879,29 +955,85 @@ MonoBehaviour:
   marguerite: {fileID: 873186973}
   "ren\xE9": {fileID: 1679410957}
   sylvie: {fileID: 771100337}
-  marguerite_01: "\tMarguerite va mieux depuis vos consultations. Veuillez l\u2019excuser
-    pour ses mani\xE8res, elle est un peu vieille France. Mais vous avez d\xFB lui
-    faire bonne impression. Je l\u2019ai \xE0 peine entendue vous critiquer."
-  marguerite_02: "\tMarguerite est revenue me voir depuis vos consultations. Elle
-    ne vous tient pas dans son c\u0153ur. Veuillez l\u2019excuser pour ses mani\xE8res,
-    elle est un peu vieille France. Elle m\u2019a dit que vous aviez tent\xE9 de
-    l\u2019assassiner, mais ne vous inqui\xE9tez pas, elle a tendance \xE0 exag\xE9rer."
-  "ren\xE9_01": "\tGr\xE2ce \xE0 vous, Ren\xE9 a \xE9chapp\xE9 \xE0 la rage. Il regrette
-    de ne pas avoir pu vous remercier plus g\xE9n\xE9reusement. Ce n\u2019est malheureusement
-    pas le dernier des probl\xE8mes de ce pauvre homme. Au moins il fait d\xE9sormais
-    plus attention lorsqu\u2019il se prom\xE8ne en for\xEAt."
-  "ren\xE9_02": "\tMalgr\xE9 vos efforts, la rage de Ren\xE9 s\u2019est d\xE9velopp\xE9e
-    jusqu\u2019\xE0 devenir incontr\xF4lable. Je ne souhaite pas vous donner de faux
-    espoirs quant \xE0 son sort. Malheureusement, les trag\xE9dies de ce genre font
-    partie de notre m\xE9tier."
-  sylvie_01: "\tSylvie est en grande forme. Elle est particuli\xE8rement contente
-    pour son chat. Le v\xE9t\xE9rinaire que vous aviez recommand\xE9 a pu sauver
-    la pauvre b\xEAte. \xC7a a m\xEAme fait changer d\u2019obsession la petite. Fini
-    la lune, maintenant elle ne parle que de sauver les animaux."
-  sylvie_02: "\tSylvie s\u2019est remise de sa maladie. Mais ce n\u2019est pas la
-    grande forme, elle est d\xE9vast\xE9e par la mort de son chat. C\u2019est dommage,
-    le chat est mort d\u2019une maladie que les v\xE9t\xE9rinaires savent traiter
-    de nos jours. Si on avait su, on aurait peut-\xEAtre pu faire quelque chose."
+--- !u!1 &746186634
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 746186635}
+  - component: {fileID: 746186637}
+  - component: {fileID: 746186636}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &746186635
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 746186634}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 209237361}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.000048637, y: -45.9}
+  m_SizeDelta: {x: 179.1902, y: 44.4428}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &746186636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 746186634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: ccbb0b73bce55a14eb7ca7234ae287b8, type: 3}
+    m_FontSize: 40
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 50
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Passer
+--- !u!222 &746186637
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 746186634}
+  m_CullTransparentMesh: 1
 --- !u!1 &771100335
 GameObject:
   m_ObjectHideFlags: 0
@@ -1341,6 +1473,7 @@ RectTransform:
   m_Children:
   - {fileID: 1362854333}
   - {fileID: 1469073867}
+  - {fileID: 209237361}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
