@@ -1823,7 +1823,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u30FBTraiter diarrh\xE9e, naus\xE9e, douleur."
+  m_Text: "\u30FBTraiter naus\xE9e, douleur et diarrh\xE9e."
 --- !u!222 &151798222
 CanvasRenderer:
   m_ObjectHideFlags: 0
