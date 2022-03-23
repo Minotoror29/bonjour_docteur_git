@@ -15,7 +15,15 @@ public class GameManager : MonoBehaviour
     public Horloge Minute;
     public Horloge Heure;
 
-    public float vol = 1;
+    private float volClock;
+    private float volAmb;
+    private float volPers;
+    private float volRad;
+    public AudioSource Clock;
+    public AudioSource Amb;
+    public AudioSource Pers;
+    public AudioSource Rad;
+
     DialogueManager dialogueManager;
     public Village village;
     SalleDattente salleDattente;
@@ -41,6 +49,10 @@ public class GameManager : MonoBehaviour
         NtoS = (AudioClip)Resources.Load("02_Sounds/0/EnterWithoutExit");
         StoS = (AudioClip)Resources.Load("02_Sounds/0/EnterWithExit");
         StoN = (AudioClip)Resources.Load("02_Sounds/0/NoEnterWithExit");
+        volAmb = Amb.volume;
+        volClock = Clock.volume;
+        volPers = Pers.volume;
+        volRad = Rad.volume;
 
         dialogueManager = GetComponent<DialogueManager>();
         //village = GetComponent<Village>();
@@ -62,7 +74,10 @@ public class GameManager : MonoBehaviour
 
     void DébutDeJournée()
     {
-        AudioListener.volume = vol;
+        Amb.volume = volAmb;
+        Clock.volume = volClock;
+        Pers.volume = volPers;
+        Rad.volume = volRad;
 
         // Remplit la salle d'attente
         for (int i = 0; i < village.village.Count; i++)
@@ -171,8 +186,11 @@ public class GameManager : MonoBehaviour
 
     void FinDeJournée()
     {
-        AudioListener.volume = 0;
         crossFade.GetComponent<Animator>().SetTrigger("Fade");
+        Amb.volume = 0;
+        Clock.volume = 0;
+        Pers.volume = 0;
+        Rad.volume = 0;
     }
 
     public void Nuit()
@@ -205,7 +223,7 @@ public class GameManager : MonoBehaviour
 
     IEnumerator TempsNuit()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(5);
         crossFade.GetComponent<Animator>().SetTrigger("Fade");
     }
 
@@ -224,7 +242,6 @@ public class GameManager : MonoBehaviour
 
     void Conclusion()
     {
-        AudioListener.volume = vol;
         SceneManager.LoadScene("Conclusion");
     }
 }
