@@ -26,6 +26,8 @@ public class Patient : MonoBehaviour
 
     public List<CONDITIONS> conditions;
 
+    public bool pret = false;
+
     private void Start()
     {
         // Son
@@ -52,6 +54,7 @@ public class Patient : MonoBehaviour
 
     public void LancerDialogue()
     {
+        pret = true;
         FindObjectOfType<GameManager>().DébutDialogue();
     }
 
@@ -137,6 +140,8 @@ public class Patient : MonoBehaviour
 
         dialogue = null;
         spriteRenderer.sprite = null;
+
+        pret = false;
     }
 
     public void PatientSuivant()

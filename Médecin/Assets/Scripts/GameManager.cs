@@ -67,7 +67,7 @@ public class GameManager : MonoBehaviour
     }
 
     // Remplit les informations du personnage sur la fiche de prescription à son arrivée
-    void Informations()
+    public void Informations()
     {
         prescription.transform.Find("Canvas").Find("Patient").GetComponent<Text>().text = "Patient : " + patient.nom.ToString();
         prescription.transform.Find("Canvas").Find("Âge").GetComponent<Text>().text = "Âge : " + patient.age.ToString();

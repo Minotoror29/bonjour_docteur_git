@@ -92,7 +92,12 @@ public class DialogueManager : MonoBehaviour
             patient.Pass = false;
         }
 
-        if (!patient.villageois)
+        if (!patient.villageois || !patient.pret)
+        {
+            return;
+        }
+
+        if (GetComponent<TextWriter>().characterIndex < GetComponent<TextWriter>().textToWrite.Length)
         {
             return;
         }
@@ -125,11 +130,6 @@ public class DialogueManager : MonoBehaviour
             }
         }
 
-        if (GetComponent<TextWriter>().characterIndex < GetComponent<TextWriter>().textToWrite.Length)
-        {
-            return;
-        }
-
         // Affiche la réplique caractère par caractère
         string phrase = phrases.Dequeue();
         TypeLigne type = types.Dequeue();
@@ -148,7 +148,7 @@ public class DialogueManager : MonoBehaviour
 
     public void Interrompre()
     {
-        if (dialogueIndex >= 2 || dialogueIndex == 0)
+        if (dialogueIndex >= 2 || dialogueIndex == 0 || !patient.pret)
             return;
 
         ContinueDialogue(2);
