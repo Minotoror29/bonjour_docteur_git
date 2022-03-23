@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
     private AudioClip NtoS;
     private AudioClip StoS;
     private AudioClip StoN;
+    public Horloge Minute;
+    public Horloge Heure;
 
     public float vol = 1;
     DialogueManager dialogueManager;
@@ -188,6 +190,9 @@ public class GameManager : MonoBehaviour
                 SceneManager.UnloadSceneAsync("Nuit");
                 nuit = false;
                 JourSuivant();
+                Minute.Reset();
+                Heure.Reset();
+                
             }
         } else
         {

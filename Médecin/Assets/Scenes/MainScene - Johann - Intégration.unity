@@ -1363,6 +1363,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a99870ecdf4f7f44bb572e282cefa77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Minute: {fileID: 1961900108}
+  Heure: {fileID: 174856969}
   vol: 1
   village: {fileID: 860569198}
   patient: {fileID: 2033255615}
@@ -4753,7 +4755,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "- Mal de gorge\n- Gorge rouche avec t\xE2ches blanches\n- Fi\xE8vre"
+  m_Text: "- Mal de gorge\n- Gorge rouge avec t\xE2ches blanches\n- Fi\xE8vre"
 --- !u!222 &438080944
 CanvasRenderer:
   m_ObjectHideFlags: 0

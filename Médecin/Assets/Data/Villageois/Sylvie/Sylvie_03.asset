@@ -58,21 +58,12 @@ MonoBehaviour:
     - type: 0
       phrase: Non plus rien, c'est chouette !
     - type: 1
-      phrase: Et tu n'a pas mal autre part ?
+      phrase: Et tu n'as pas mal autre part ?
     - type: 0
       phrase: "Non non, \xE7a va."
     - type: 1
       phrase: Parfait merci Sylvie.
-    conclusion:
-    - type: 0
-      phrase: Je dois encore prendre des pilules ?
-    - type: 1
-      phrase: Oui, je pense que c'est mieux pour toi.
-    - type: 0
-      phrase: "Bon, j'aime pas trop \xE7a, mais d'accord. Merci madame docteur, au
-        revoir !"
-    - type: 1
-      phrase: Au revoir et merci pour le euh... Lapin.
+    conclusion: []
     conclusion_2:
     - type: 0
       phrase: Au revoir madame docteur !
