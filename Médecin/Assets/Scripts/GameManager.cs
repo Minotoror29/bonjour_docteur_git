@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     private AudioClip StoS;
     private AudioClip StoN;
 
+    public float vol = 1;
     DialogueManager dialogueManager;
     public Village village;
     SalleDattente salleDattente;
@@ -50,7 +51,7 @@ public class GameManager : MonoBehaviour
 
     void DébutDeJournée()
     {
-        AudioListener.volume = 1;
+        AudioListener.volume = vol;
 
         // Remplit la salle d'attente
         for (int i = 0; i < village.village.Count; i++)
@@ -70,6 +71,11 @@ public class GameManager : MonoBehaviour
     {
         prescription.transform.Find("Canvas").Find("Patient").GetComponent<Text>().text = "Patient : " + patient.nom.ToString();
         prescription.transform.Find("Canvas").Find("Âge").GetComponent<Text>().text = "Âge : " + patient.age.ToString();
+    }
+
+    public void Menu()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 
     public void Prescrire()
@@ -186,7 +192,7 @@ public class GameManager : MonoBehaviour
 
     IEnumerator TempsNuit()
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(2);
         crossFade.GetComponent<Animator>().SetTrigger("Fade");
     }
 
@@ -205,6 +211,7 @@ public class GameManager : MonoBehaviour
 
     void Conclusion()
     {
+        AudioListener.volume = vol;
         SceneManager.LoadScene("Conclusion");
     }
 }
