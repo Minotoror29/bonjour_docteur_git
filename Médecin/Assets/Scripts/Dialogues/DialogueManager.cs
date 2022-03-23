@@ -109,7 +109,7 @@ public class DialogueManager : MonoBehaviour
             {
                 return;
             }
-            if (dialogueIndex == 1)
+            else if (dialogueIndex == 1)
             {
                 ContinueDialogue(dialogueIndex + 1);
                 gm.patient.conditions.Add(CONDITIONS.PasInterrompu);
@@ -123,7 +123,8 @@ public class DialogueManager : MonoBehaviour
                 {
                     return;
                 }
-            } else if (dialogueIndex == 3)
+            } 
+            else if (dialogueIndex == 3)
             {
                 FinDialogue();
                 return;
@@ -162,6 +163,5 @@ public class DialogueManager : MonoBehaviour
         Debug.Log("Fin de la conversation");
 
         gm.FinConsultation();
-        // Son de fin de conversation?
     }
 }
