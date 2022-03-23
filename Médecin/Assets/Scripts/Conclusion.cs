@@ -21,11 +21,8 @@ public class Conclusion : MonoBehaviour
         marguerite.text = village.village[2].conclusion;
     }
 
-    private void Update()
+    public void End()
     {
-        if (Input.anyKeyDown)
-        {
             SceneManager.LoadScene("MainMenu");
-        }
     }
 }
