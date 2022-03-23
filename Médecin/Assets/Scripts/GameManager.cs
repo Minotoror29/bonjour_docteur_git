@@ -49,6 +49,15 @@ public class GameManager : MonoBehaviour
         DébutDeJournée();
     }
 
+    public void Prescription()
+    {
+        Destroy(prescription);
+        prescription = Instantiate(prescriptionPrefab, GameObject.Find("BUREAU").transform);
+        prescription.transform.Find("Canvas").Find("Prescrire").GetComponent<Button>().onClick.AddListener(Prescrire);
+        prescription.transform.Find("Canvas").Find("Vider").GetComponent<Button>().onClick.AddListener(Prescription);
+        Informations();
+    }
+
     void DébutDeJournée()
     {
         AudioListener.volume = vol;
@@ -122,9 +131,7 @@ public class GameManager : MonoBehaviour
         patient.GetComponent<Animator>().SetTrigger("Sortie");
 
         // Crée une fiche de prescription vierge
-        Destroy(prescription);
-        prescription = Instantiate(prescriptionPrefab, GameObject.Find("BUREAU").transform);
-        prescription.transform.Find("Canvas").Find("Prescrire").GetComponent<Button>().onClick.AddListener(Prescrire);
+        Prescription();
 
         // Vide la boîte de dialogues
         for (int i = 0; i < dialogueViewportContent.transform.childCount; i++)
@@ -134,6 +141,7 @@ public class GameManager : MonoBehaviour
 
         salleDattente.salleDattente.Remove(salleDattente.salleDattente[0]);
         patient.conditions.Clear();
+
     }
 
     public void PatientSuivant()
