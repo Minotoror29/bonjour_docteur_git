@@ -3342,7 +3342,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1155601515}
   m_Direction: 3
   m_Value: 0
-  m_Size: 1
+  m_Size: 0.4999999
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -15817,7 +15817,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.05
-  m_Text: "\u30FBFaite attention, votre partie ne sera pas sauvegard\xE9 si vous
+  m_Text: "\u30FBFaite attention, votre partie ne sera pas sauvegard\xE9e si vous
     quittez le jeu."
 --- !u!222 &1738961513
 CanvasRenderer:
