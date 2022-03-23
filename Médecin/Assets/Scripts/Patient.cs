@@ -162,4 +162,9 @@ public class Patient : MonoBehaviour
             Timer = UnityEngine.Random.Range(10f,30f);
         }
     }
+
+    public void Sortie()
+    {
+        pret = false;
+    }
 }
