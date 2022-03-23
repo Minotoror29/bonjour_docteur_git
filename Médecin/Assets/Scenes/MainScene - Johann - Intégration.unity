@@ -4674,7 +4674,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Grippe
+  m_Text: GRIPPE
 --- !u!222 &432709478
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15817,7 +15817,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.05
-  m_Text: "\u30FBFaite attention, votre partie ne sera pas sauvegard\xE9 si vous
+  m_Text: "\u30FBFaite attention, votre partie ne sera pas sauvegard\xE9e si vous
     quittez le jeu."
 --- !u!222 &1738961513
 CanvasRenderer:
