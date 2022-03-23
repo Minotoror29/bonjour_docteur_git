@@ -97,11 +97,6 @@ public class DialogueManager : MonoBehaviour
             return;
         }
 
-        if (GetComponent<TextWriter>().characterIndex < GetComponent<TextWriter>().textToWrite.Length)
-        {
-            return;
-        }
-
         // Si le dialogue est fini on passe à la section suivante ou on finit la conversation
         if (phrases.Count == 0)
         {
@@ -111,7 +106,7 @@ public class DialogueManager : MonoBehaviour
             }
             else if (dialogueIndex == 1)
             {
-                ContinueDialogue(dialogueIndex + 1);
+                ContinueDialogue(2);
                 gm.patient.conditions.Add(CONDITIONS.PasInterrompu);
             }
             else if (dialogueIndex == 2)
@@ -129,6 +124,11 @@ public class DialogueManager : MonoBehaviour
                 FinDialogue();
                 return;
             }
+        }
+
+        if (GetComponent<TextWriter>().characterIndex < GetComponent<TextWriter>().textToWrite.Length)
+        {
+            return;
         }
 
         // Affiche la réplique caractère par caractère
