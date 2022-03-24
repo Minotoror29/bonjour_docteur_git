@@ -136,6 +136,7 @@ public class DialogueManager : MonoBehaviour
         TypeLigne type = types.Dequeue();
         ligneIndex += 1;
         GameObject ligne = Instantiate(ligneDialoguePrefab, scrollViewContent);
+        ligne.GetComponent<RectTransform>().position = new Vector2(ligne.GetComponent<RectTransform>().position.x, ligne.GetComponent<RectTransform>().position.y + 2);
         ligne.GetComponent<DialogueLigne>().type = type;
         if (type == TypeLigne.Médecin)
         {
