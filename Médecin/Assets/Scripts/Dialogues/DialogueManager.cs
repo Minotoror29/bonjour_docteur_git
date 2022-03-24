@@ -141,7 +141,7 @@ public class DialogueManager : MonoBehaviour
         if (type == TypeLigne.Médecin)
         {
             textSpeed = 0.01f;
-        } else
+        } else if (type == TypeLigne.Patient)
         {
             textSpeed = patient.villageois.textSpeed / 100f;
         }
