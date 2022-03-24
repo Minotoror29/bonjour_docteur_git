@@ -26,11 +26,11 @@ MonoBehaviour:
     - type: 0
       phrase: 'Bonjour madame docteur ! '
     - type: 1
-      phrase: "Bonjour... Sylvie, tu as quel \xE2ge ?"
+      phrase: Bonjour, comment tu t'appelles ?
     - type: 0
-      phrase: "9 ans et demi ! Je savais pas qu'il y avait d'autres docteurs que
-        le monsieur. Tu es all\xE9e \xE0 l'\xE9cole pour donner des m\xE9dicaments
-        et tout ?"
+      phrase: "Sylvie ! Et j'ai 9 ans et demi ! Je savais pas qu'il y avait d'autres
+        docteurs que le monsieur. Tu es all\xE9e \xE0 l'\xE9cole pour donner des
+        m\xE9dicaments et tout ?"
     - type: 1
       phrase: "Oui, je viens de sortir d'\xE9cole de m\xE9decine."
     - type: 0
