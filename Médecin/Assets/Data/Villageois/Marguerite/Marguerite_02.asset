@@ -38,11 +38,11 @@ MonoBehaviour:
       phrase: "Oui... J'aurais d\xFB plus me m\xE9fier. Et demander l'opinion du
         docteur Lacroix."
     - type: 1
-      phrase: "Vous savez que le docteur la croix est malade. Il a d'autres pr\xE9occupations."
+      phrase: "Vous savez que le docteur Lacroix est malade. Il a d'autres pr\xE9occupations."
     - type: 0
       phrase: Mais c'est une urgence, je vais mourir...
     - type: 1
-      phrase: "Calmez-vous, voyons plut\xF4t ce que vous avez."
+      phrase: "Du calme, voyons plut\xF4t ce que vous avez."
     symptomes:
     - type: 1
       phrase: "Vos sympt\xF4mes sont toujours pr\xE9sents ?"

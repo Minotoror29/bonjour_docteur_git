@@ -42,7 +42,7 @@ MonoBehaviour:
       phrase: "Ah, navr\xE9e, je ne suis pas s\xFBr de pouvoir vous aider l\xE0-dessus..."
     - type: 0
       phrase: "C'est mon chef. Depuis que j'ai perdu mon bras il veut plus d'moi
-        \xE0 la scierie. Alors que j'peux encore tr\xE8s bien travailler !"
+        \xE0 la scierie. Alors que j'peux tr\xE8s bien travailler !"
     - type: 1
       phrase: "O\xF9 est-ce que vous avez perdu votre bras ?"
     - type: 0
@@ -55,7 +55,7 @@ MonoBehaviour:
       phrase: "Ne dites pas \xE7a, allons."
     - type: 0
       phrase: "Ce travail \xE9tait tout pour moi ! Des fois j'y repense, alors je
-        commence \xE0 avoir le bras qui me d\xE9mange donc j'essaie de le gratter,
+        commence \xE0 avoir mon bras qui me d\xE9mange donc j'essaie de le gratter,
         sauf qu'il est pas l\xE0 du coup je peux pas et je me sens encore plus inutile..."
     - type: 1
       phrase: "Je vois. D'o\xF9 le fait que vous veniez me voir..."

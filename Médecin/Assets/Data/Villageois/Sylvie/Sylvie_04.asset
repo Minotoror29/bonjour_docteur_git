@@ -77,7 +77,7 @@ MonoBehaviour:
       phrase: "Les m\xE9dicaments que j'ai, c'est pour les gens. Pour les chats,
         il faut un v\xE9t\xE9rinaire."
     - type: 0
-      phrase: Mais Bruno va allez mieux ?
+      phrase: Mais est-ce que Bruno va allez mieux ?
     - type: 1
       phrase: "J'en suis s\xFBre, mais il faut que ta maman l'emm\xE8ne chez le v\xE9t\xE9rinaire,
         d'accord ?"

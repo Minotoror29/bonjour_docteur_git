@@ -35,7 +35,7 @@ MonoBehaviour:
       phrase: Non, je remplace le docteur.
     - type: 0
       phrase: "Ah, je vois... Je n'ai jamais vu de doctoresse, certainement pas \xE0
-        la Roche-La-Rugeuse."
+        Roche-La-Rugeuse."
     - type: 1
       phrase: "Il y a une premi\xE8re fois \xE0 tout. Est-ce que vous pouvez me donner
         votre \xE2ge ?"
@@ -48,7 +48,7 @@ MonoBehaviour:
     - type: 0
       phrase: "Excusez-moi ma petite, avec cette cr\xE8ve je suis si fatigu\xE9e."
     - type: 1
-      phrase: Je comprend.
+      phrase: Je comprends.
     - type: 0
       phrase: "Le probl\xE8me... Je ne suis pas s\xFBre de me souvenir de mon \xE2ge.
         Avec le temps on pense plus trop \xE0 ce genre de chose..."
@@ -78,7 +78,7 @@ MonoBehaviour:
     - type: 0
       phrase: "Hum... Mal \xE0 l'estomac, la naus\xE9e et aussi... Vous savez..."
     - type: 1
-      phrase: "Non, qu'est ce que je suis cens\xE9e savoir ?"
+      phrase: Non ?
     - type: 0
       phrase: "Le docteur Lacroix aurait compris, lui. Eh bien... La courante, la
         diarrh\xE9e."
@@ -92,8 +92,7 @@ MonoBehaviour:
       phrase: Vous ne me donnez rien ? Vous allez vraiment laisser une vieille dame
         souffrir ?
     - type: 1
-      phrase: "Vous n'avez pas besoin de tra\xEEtement, vos symptomes vont passer
-        tout seuls."
+      phrase: "Vous n'avez pas besoin de tra\xEEtement, vos symptomes vont passer."
     - type: 0
       phrase: "Je me demande ce que le docteur Lacroix dirait de \xE7a..."
     conclusion_3: []
