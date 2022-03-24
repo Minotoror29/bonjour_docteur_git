@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     private AudioClip NtoS;
     private AudioClip StoS;
     private AudioClip StoN;
+    public AudioSource CrumplePaper;
     public Horloge Minute;
     public Horloge Heure;
 
@@ -69,6 +70,7 @@ public class GameManager : MonoBehaviour
         prescription = Instantiate(prescriptionPrefab, GameObject.Find("BUREAU").transform);
         prescription.transform.Find("Canvas").Find("Prescrire").GetComponent<Button>().onClick.AddListener(Prescrire);
         prescription.transform.Find("Canvas").Find("Vider").GetComponent<Button>().onClick.AddListener(Prescription);
+        prescription.transform.Find("Canvas").Find("Vider").GetComponent<Button>().onClick.AddListener(CrumplePaper.Play);
         Informations();
     }
 
