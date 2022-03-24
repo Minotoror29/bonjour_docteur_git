@@ -17,7 +17,7 @@ MonoBehaviour:
   maladie: {fileID: 0}
   age: 9
   clip: []
-  textSpeed: 1
+  textSpeed: 0.01
   dialogue:
     introduction:
     - type: 0

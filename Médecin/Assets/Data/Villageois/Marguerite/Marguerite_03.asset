@@ -19,7 +19,7 @@ MonoBehaviour:
   clip:
   - {fileID: 8300000, guid: cd741bd55722db14f9020fc0b4c44137, type: 3}
   - {fileID: 8300000, guid: 7213576c9517a5c469dc90aab16c1af2, type: 3}
-  textSpeed: 5
+  textSpeed: 0.05
   dialogue:
     introduction:
     - type: 0
@@ -89,6 +89,7 @@ MonoBehaviour:
       phrase: "Quelle id\xE9e... Tant pis, vous me fatiguez. \xC0 tant\xF4t."
     conclusion_3: []
   "cons\xE9quences": []
-  conclusion: "\tMarguerite va mieux depuis vos consultations. Veuillez l\u2019excuser
-    pour ses mani\xE8res, elle est un peu vieille France. Mais vous avez d\xFB lui
-    faire bonne impression. Je l\u2019ai \xE0 peine entendue vous critiquer."
+  conclusion: "\tMarguerite est revenue me voir depuis vos consultations. Elle ne
+    vous tient pas dans son c\u0153ur. Veuillez l\u2019excuser pour ses mani\xE8res,
+    elle est un peu vieille France. Elle m\u2019a dit que vous aviez tent\xE9 de
+    l\u2019assassiner, mais ne vous inqui\xE9tez pas, elle a tendance \xE0 exag\xE9rer."

@@ -141,11 +141,13 @@ public class DialogueManager : MonoBehaviour
         if (type == TypeLigne.Médecin)
         {
             textSpeed = 0.01f;
-        } else if (type == TypeLigne.Patient)
-        {
-            textSpeed = patient.villageois.textSpeed / 100f;
         }
-        GetComponent<TextWriter>().AddWriter(ligne.GetComponent<Text>(), phrase, textSpeed);
+        else if (type == TypeLigne.Patient)
+        {
+            textSpeed = patient.villageois.textSpeed/* / 100f*/;
+            //textSpeed = 0.05f;
+        }
+        GetComponent<TextWriter>().AddWriter(ligne.GetComponent<Text>(), phrase, textSpeed, true);
     }
 
     public void Interrompre()

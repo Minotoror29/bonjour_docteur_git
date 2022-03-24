@@ -11,7 +11,7 @@ public class Villageois : ScriptableObject
     public int age;
     public AudioClip[] clip;
 
-    public int textSpeed;
+    public float textSpeed;
 
     public Dialogue dialogue;
 

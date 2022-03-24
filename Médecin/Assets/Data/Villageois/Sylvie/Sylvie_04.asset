@@ -19,7 +19,7 @@ MonoBehaviour:
   clip:
   - {fileID: 8300000, guid: ed790aac8f619824bb90840ea805a7ee, type: 3}
   - {fileID: 8300000, guid: 47b7c79b1654dc440a16e86939d09e37, type: 3}
-  textSpeed: 1
+  textSpeed: 0.01
   dialogue:
     introduction:
     - type: 0

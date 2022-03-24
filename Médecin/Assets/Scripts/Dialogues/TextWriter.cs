@@ -15,12 +15,14 @@ public class TextWriter : MonoBehaviour
     public int characterIndex;
     float timePerCharacter;
     float timer;
+    bool invisibleCharacters;
 
-    public void AddWriter(Text UIText, string textToWrite, float timePerCharacter)
+    public void AddWriter(Text UIText, string textToWrite, float timePerCharacter, bool invisibleCharacters)
     {
         this.UIText = UIText;
         this.textToWrite = textToWrite;
         this.timePerCharacter = timePerCharacter;
+        this.invisibleCharacters = invisibleCharacters;
         characterIndex = 0;
     }
 
@@ -44,11 +46,16 @@ public class TextWriter : MonoBehaviour
         if (UIText != null)
         {
             timer -= Time.deltaTime;
-            if (timer <= 0f)
+            while (timer <= 0f)
             {
                 timer += timePerCharacter;
                 characterIndex++;
-                UIText.text = textToWrite.Substring(0, characterIndex);
+                string text = textToWrite.Substring(0, characterIndex);
+                if (invisibleCharacters)
+                {
+                    text += "<color=#00000000>" + textToWrite.Substring(characterIndex) + "</color>";
+                }
+                UIText.text = text;
                 // Son
                 if (numberletters == 0)
                 {
