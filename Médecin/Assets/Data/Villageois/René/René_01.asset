@@ -54,9 +54,9 @@ MonoBehaviour:
     - type: 1
       phrase: "Ne dites pas \xE7a, allons."
     - type: 0
-      phrase: "Ce travail \xE9tais tout pour moi ! Des fois j'y repense, alors je
+      phrase: "Ce travail \xE9tait tout pour moi ! Des fois j'y repense, alors je
         commence \xE0 avoir le bras qui me d\xE9mange donc j'essaie de le gratter,
-        sauf qu'il est pas l\xE0 du coup je peut pas et je me sens encore plus inutile..."
+        sauf qu'il est pas l\xE0 du coup je peux pas et je me sens encore plus inutile..."
     - type: 1
       phrase: "Je vois. D'o\xF9 le fait que vous veniez me voir..."
     - type: 0
