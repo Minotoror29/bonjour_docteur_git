@@ -44,6 +44,7 @@ public class DialogueManager : MonoBehaviour
         // Son
         Star = true;
 
+        gm.Informations();
         ContinueDialogue(1);
     }
 
