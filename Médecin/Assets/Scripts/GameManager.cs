@@ -20,10 +20,12 @@ public class GameManager : MonoBehaviour
     private float volAmb;
     private float volPers;
     private float volRad;
+    private float volFoot;
     public AudioSource Clock;
     public AudioSource Amb;
     public AudioSource Pers;
     public AudioSource Rad;
+    public AudioSource Foot;
 
     DialogueManager dialogueManager;
     public Village village;
@@ -54,6 +56,7 @@ public class GameManager : MonoBehaviour
         volClock = Clock.volume;
         volPers = Pers.volume;
         volRad = Rad.volume;
+        volFoot = Foot.volume;
 
         dialogueManager = GetComponent<DialogueManager>();
         //village = GetComponent<Village>();
@@ -80,6 +83,7 @@ public class GameManager : MonoBehaviour
         Clock.volume = volClock;
         Pers.volume = volPers;
         Rad.volume = volRad;
+        Foot.volume = volFoot;
 
         // Remplit la salle d'attente
         for (int i = 0; i < village.village.Count; i++)
@@ -193,6 +197,7 @@ public class GameManager : MonoBehaviour
         Clock.volume = 0;
         Pers.volume = 0;
         Rad.volume = 0;
+        Foot.volume = 0;
     }
 
     public void Nuit()

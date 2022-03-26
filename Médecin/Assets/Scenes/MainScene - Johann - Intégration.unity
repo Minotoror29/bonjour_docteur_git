@@ -1370,6 +1370,7 @@ MonoBehaviour:
   Amb: {fileID: 1410729208}
   Pers: {fileID: 2033255617}
   Rad: {fileID: 1907095711}
+  Foot: {fileID: 1425840564}
   village: {fileID: 860569198}
   patient: {fileID: 2033255615}
   prescriptionPrefab: {fileID: 7178148005735465555, guid: 3c77af0684a97e941b762bdfb0e4d23a, type: 3}
