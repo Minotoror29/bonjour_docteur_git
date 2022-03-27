@@ -88,7 +88,9 @@ MonoBehaviour:
     - type: 0
       phrase: "Quelle id\xE9e... Tant pis, vous me fatiguez. \xC0 tant\xF4t."
     conclusion_3: []
-  "cons\xE9quences": []
+  "cons\xE9quences":
+  - conditions: 00000000
+    "cons\xE9quence": {fileID: 11400000, guid: a915cd615daa8784b9da1e1b10d38158, type: 2}
   conclusion: "\tMarguerite est revenue me voir depuis vos consultations. Elle ne
     vous tient pas dans son c\u0153ur. Veuillez l\u2019excuser pour ses mani\xE8res,
     elle est un peu vieille France. Elle m\u2019a dit que vous aviez tent\xE9 de
