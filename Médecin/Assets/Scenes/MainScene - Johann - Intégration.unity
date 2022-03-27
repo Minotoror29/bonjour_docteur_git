@@ -1363,6 +1363,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a99870ecdf4f7f44bb572e282cefa77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  vider: 0
   CrumplePaper: {fileID: 1441395810}
   Minute: {fileID: 1961900108}
   Heure: {fileID: 174856969}
@@ -1370,6 +1371,7 @@ MonoBehaviour:
   Amb: {fileID: 1410729208}
   Pers: {fileID: 2033255617}
   Rad: {fileID: 1907095711}
+  Foot: {fileID: 1425840564}
   village: {fileID: 860569198}
   patient: {fileID: 2033255615}
   prescriptionPrefab: {fileID: 7178148005735465555, guid: 3c77af0684a97e941b762bdfb0e4d23a, type: 3}
@@ -18626,6 +18628,10 @@ PrefabInstance:
       objectReference: {fileID: 92488621}
     - target: {fileID: 638192806, guid: 3c77af0684a97e941b762bdfb0e4d23a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 92488621}
+    - target: {fileID: 638192806, guid: 3c77af0684a97e941b762bdfb0e4d23a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 1441395810}
     - target: {fileID: 7178148005388135499, guid: 3c77af0684a97e941b762bdfb0e4d23a, type: 3}

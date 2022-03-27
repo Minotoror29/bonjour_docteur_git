@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     private AudioClip NtoS;
     private AudioClip StoS;
     private AudioClip StoN;
+    public bool vider;
     public AudioSource CrumplePaper;
     public Horloge Minute;
     public Horloge Heure;
@@ -20,10 +21,12 @@ public class GameManager : MonoBehaviour
     private float volAmb;
     private float volPers;
     private float volRad;
+    private float volFoot;
     public AudioSource Clock;
     public AudioSource Amb;
     public AudioSource Pers;
     public AudioSource Rad;
+    public AudioSource Foot;
 
     DialogueManager dialogueManager;
     public Village village;
@@ -54,6 +57,7 @@ public class GameManager : MonoBehaviour
         volClock = Clock.volume;
         volPers = Pers.volume;
         volRad = Rad.volume;
+        volFoot = Foot.volume;
 
         dialogueManager = GetComponent<DialogueManager>();
         //village = GetComponent<Village>();
@@ -64,14 +68,24 @@ public class GameManager : MonoBehaviour
         DébutDeJournée();
     }
 
+    public void Vid()
+    {
+        vider = true;
+    }
+
     public void Prescription()
     {
         Destroy(prescription);
         prescription = Instantiate(prescriptionPrefab, GameObject.Find("BUREAU").transform);
         prescription.transform.Find("Canvas").Find("Prescrire").GetComponent<Button>().onClick.AddListener(Prescrire);
+        prescription.transform.Find("Canvas").Find("Vider").GetComponent<Button>().onClick.AddListener(Vid);
         prescription.transform.Find("Canvas").Find("Vider").GetComponent<Button>().onClick.AddListener(Prescription);
         prescription.transform.Find("Canvas").Find("Vider").GetComponent<Button>().onClick.AddListener(CrumplePaper.Play);
-        Informations();
+        if (vider == true)
+        {
+            Informations();
+            vider = false;
+        }
     }
 
     void DébutDeJournée()
@@ -80,6 +94,7 @@ public class GameManager : MonoBehaviour
         Clock.volume = volClock;
         Pers.volume = volPers;
         Rad.volume = volRad;
+        Foot.volume = volFoot;
 
         // Remplit la salle d'attente
         for (int i = 0; i < village.village.Count; i++)
@@ -118,6 +133,7 @@ public class GameManager : MonoBehaviour
             return;
 
         patient.Prescription(prescription.GetComponent<Prescription>().traitements);
+        Destroy(prescription);
 
         if (dialogueManager.dialogueIndex < 3)
             dialogueManager.ContinueDialogue(3);
@@ -177,8 +193,6 @@ public class GameManager : MonoBehaviour
         patient.villageois = salleDattente.salleDattente[0];
         patient.AssignerPatient();
         patient.GetComponent<Animator>().SetTrigger("Entrée");
-
-        Informations();
     }
 
     public void DébutDialogue()
@@ -193,6 +207,7 @@ public class GameManager : MonoBehaviour
         Clock.volume = 0;
         Pers.volume = 0;
         Rad.volume = 0;
+        Foot.volume = 0;
     }
 
     public void Nuit()
